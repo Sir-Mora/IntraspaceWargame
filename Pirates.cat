@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="e192-78d3-d022-397f" name="Pirates" gameSystemId="sys-61df-4102-3143-2eae" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Faction Rule: Improvised Improvements" hidden="false" id="2ddd-9161-8eea-26ee">
+      <rules>
+        <rule name="Improvised Improvements" id="618c-24bc-9c3e-7c45" hidden="false">
+          <description>When creating a Pirate Army, some vehicles have access to “Improvised Improvements” these are listed in equipment options, each piece of equipment changes the vehicles in some way, usually dangerously…</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="a3b2-f462-e2f2-0a9b" targetId="629c-c441-50b1-a5c9" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Improvised Improvements Table" hidden="false" id="a943-b844-60d9-44b9">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="b329-ec1d-55f5-bdbb" targetId="629c-c441-50b1-a5c9" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <profileTypes>
+    <profileType name="Improvised Improvements" id="127b-fada-9a3e-ab3c" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Name" id="a5ae-ca1e-7303-4091"/>
+        <characteristicType name="Effect" id="d05f-f8e6-424e-bba8"/>
+        <characteristicType name="Restriction" id="cf47-137a-3313-a79d"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Up-Armored" hidden="false" id="a1a9-eb6b-0a07-a99c">
+      <profiles>
+        <profile name="Up-Armored" typeId="127b-fada-9a3e-ab3c" typeName="Improvised Improvements" hidden="false" id="b3f6-2b99-76d8-e7db">
+          <characteristics>
+            <characteristic name="Name" typeId="a5ae-ca1e-7303-4091">Up-Armored</characteristic>
+            <characteristic name="Effect" typeId="d05f-f8e6-424e-bba8">Add +2 to all Armor Facings
+subtract -1 to movement</characteristic>
+            <characteristic name="Restriction" typeId="cf47-137a-3313-a79d">Cannot be taken with &quot;Reinforced Front&quot; or &quot;Stripped Down&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reinforced Front" hidden="false" id="c581-31db-3c40-95f0">
+      <profiles>
+        <profile name="Reinforced Front" typeId="127b-fada-9a3e-ab3c" typeName="Improvised Improvements" hidden="false" id="8796-593b-a0ac-e43b">
+          <characteristics>
+            <characteristic name="Name" typeId="a5ae-ca1e-7303-4091">Reinforced Front</characteristic>
+            <characteristic name="Effect" typeId="d05f-f8e6-424e-bba8">Add +2 to the front armor facing
+Add +1 to the side armor facings
+subtract -2 from the rear armor facing</characteristic>
+            <characteristic name="Restriction" typeId="cf47-137a-3313-a79d">Cannot be taken with &quot;Up-Armored&quot; or &quot;Stripped Down&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>

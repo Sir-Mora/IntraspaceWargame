@@ -1,0 +1,1505 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="5dc9-3fca-b097-ca71" name="Hegemonic Order" gameSystemId="sys-61df-4102-3143-2eae" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry name="Field Commandant" id="fa7e-b61d-149b-8fba" hidden="false"/>
+    <categoryEntry name="Officer" id="fc2b-f529-fffa-b511" hidden="false"/>
+    <categoryEntry name="Lieutenant" id="5a29-3b23-a198-7f95" hidden="false"/>
+    <categoryEntry name="H.V.A.D Sergeant" id="051c-3b16-9225-1d94" hidden="false"/>
+    <categoryEntry name="H.V.A.D" id="8b07-23a7-a5bf-7b28" hidden="false"/>
+    <categoryEntry name="Hegemonic Trooper" id="fc82-84ee-6262-14dd" hidden="false"/>
+    <categoryEntry name="Hegemonic Conscripts" id="03b8-65cb-83f5-8dc1" hidden="false"/>
+  </categoryEntries>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Orders Reference" hidden="false" id="e31d-e35e-c3c3-ac83" sortIndex="2">
+      <profiles>
+        <profile name="Keep Moving!" typeId="7b98-76b9-2e4a-4af5" typeName="Order" hidden="false" id="fede-7562-37d5-f522">
+          <characteristics>
+            <characteristic name="Order Effect" typeId="1f4c-2669-eed8-da03">Increase Movement by 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Take Aim!" typeId="7b98-76b9-2e4a-4af5" typeName="Order" hidden="false" id="badd-eed0-e0ba-cbfc">
+          <characteristics>
+            <characteristic name="Order Effect" typeId="1f4c-2669-eed8-da03">Add 1 to all hit rolls</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ready to Melee!" typeId="7b98-76b9-2e4a-4af5" typeName="Order" hidden="false" id="37e2-3956-f352-f32c">
+          <characteristics>
+            <characteristic name="Order Effect" typeId="1f4c-2669-eed8-da03">Add 1 attacks to all melee weapons</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Keep fighting!" typeId="7b98-76b9-2e4a-4af5" typeName="Order" hidden="false" id="dceb-21e6-3ae5-723c">
+          <characteristics>
+            <characteristic name="Order Effect" typeId="1f4c-2669-eed8-da03">the unit may shoot after taking the Fall Back action</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Take Cover!" typeId="7b98-76b9-2e4a-4af5" typeName="Order" hidden="false" id="33d6-4e46-d98a-e1dc">
+          <characteristics>
+            <characteristic name="Order Effect" typeId="1f4c-2669-eed8-da03">add 1 to all cover saves if in cover, or gain a 10+ cover save if not in cover</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Over the line!" typeId="7b98-76b9-2e4a-4af5" typeName="Order" hidden="false" id="41b1-af14-437b-bb0f">
+          <characteristics>
+            <characteristic name="Order Effect" typeId="1f4c-2669-eed8-da03">Add 2 to all charge rolls</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="629c-c441-50b1-a5c9" id="0c4c-ecbe-bd47-3e19" primary="true" name="Configuration"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Regimental Orders Reference" hidden="false" id="3bea-bc69-fd7d-4875" sortIndex="4">
+      <profiles>
+        <profile name="Rapid Reposition!" typeId="0b14-1e44-6fd3-fc2d" typeName="Regimental order" hidden="false" id="0de9-c941-5c1f-d5c1">
+          <characteristics>
+            <characteristic name="Regiment" typeId="3509-7d52-d550-0e32">H.V.A.D Corps</characteristic>
+            <characteristic name="Order Effect" typeId="933c-819b-89af-ff96">this unit may take a 3&quot; move order for 0 AP during their turn at any time</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Eliminate Target" typeId="0b14-1e44-6fd3-fc2d" typeName="Regimental order" hidden="false" id="ceda-4f43-be0c-008f">
+          <characteristics>
+            <characteristic name="Regiment" typeId="3509-7d52-d550-0e32"/>
+            <characteristic name="Order Effect" typeId="933c-819b-89af-ff96"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="629c-c441-50b1-a5c9" id="02d1-3f73-9f5b-857c" primary="true" name="Configuration"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Faction Rule: Issue orders" hidden="false" id="87f6-4a2f-b7da-ade3" sortIndex="1">
+      <rules>
+        <rule name="Issue Orders" id="9879-6fbc-0432-18cd" hidden="false">
+          <description>If you have selected Hegemonic Order as your faction, then officer models you control may choose to issue orders during their turn. To do so, the officer must give a order (see the orders reference) to a friendly unit within 9&quot; of the officer, officers may order themselves/their own unit if they are the correct type of unit for the order. Each order lasts until the start of the next round. Each unit can only be effected by 1 order at a time. If a unit is under the effect a order and is ordered again, the new order overrides the old one.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink targetId="629c-c441-50b1-a5c9" id="be93-e743-5ad2-00e3" primary="true" name="Configuration"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <profileTypes>
+    <profileType name="Order" id="7b98-76b9-2e4a-4af5" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Order Effect" id="1f4c-2669-eed8-da03"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Regimental order" id="0b14-1e44-6fd3-fc2d" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Regiment" id="3509-7d52-d550-0e32"/>
+        <characteristicType name="Order Effect" id="933c-819b-89af-ff96"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Regiment" hidden="false" id="827a-b209-15fe-a4c9" sortIndex="0">
+      <entryLinks>
+        <entryLink import="true" name="Regiment" hidden="false" id="01cb-cd93-2f59-1ca0" type="selectionEntryGroup" targetId="b3c6-1e45-b005-9bc2">
+          <categoryLinks>
+            <categoryLink targetId="629c-c441-50b1-a5c9" id="89b5-11a3-d8bf-2786" primary="true" name="Configuration"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="5ed1-7063-cb37-fefb" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e8da-b7ea-8f6a-59db" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Field Comamndant" hidden="false" id="4286-30a4-5ef6-2e68" sortIndex="101">
+      <categoryLinks>
+        <categoryLink targetId="60b7-3bbc-e392-6c6d" id="4609-adff-d169-51c7" primary="true" name="Commander"/>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="44df-7b1b-5d72-ac1c" primary="false" name="Infantry"/>
+        <categoryLink targetId="fa7e-b61d-149b-8fba" id="588f-85f5-e46d-b432" primary="false" name="Field Commandant"/>
+        <categoryLink targetId="fc2b-f529-fffa-b511" id="3ca5-2135-6187-f650" primary="false" name="Officer"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipment" id="9021-a5a9-e3e8-978b" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Heavy Pistol" hidden="false" id="f7da-f44a-a4b9-d02a" type="selectionEntry" targetId="1885-ecc2-a5d1-0770">
+              <categoryLinks>
+                <categoryLink targetId="4f8f-e83d-8d24-eab5" id="7ebf-4f1f-a7f6-e804" primary="false" name="Ranged Weapon"/>
+              </categoryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e40a-748f-3440-19b7" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c501-6c79-224f-d5bd" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Rippersword" hidden="false" id="8cea-ea44-bf71-83d5" type="selectionEntry" targetId="d243-170f-816f-a8ee">
+              <categoryLinks>
+                <categoryLink targetId="5bbf-e9f1-338b-c996" id="0983-3286-ad03-88aa" primary="false" name="Melee Weapon"/>
+              </categoryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1dc-8307-1f91-69e0" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a7ea-a0be-451d-9ab5" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="3513-57f3-6212-3f59" value="45"/>
+      </costs>
+      <profiles>
+        <profile name="Field Comamndant (⌀28 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="8e85-d465-e8e1-748a">
+          <characteristics>
+            <characteristic name="AP" typeId="43a8-4786-0175-dcd0">5</characteristic>
+            <characteristic name="M" typeId="ed74-71b7-9404-c409">3&quot;</characteristic>
+            <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">5+</characteristic>
+            <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">5+</characteristic>
+            <characteristic name="Save" typeId="cd53-7d25-3999-ff79">5+(9+)</characteristic>
+            <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">3</characteristic>
+            <characteristic name="HP" typeId="0638-f061-dc89-fc79">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Inspiring Execution (1 AP)" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="2d01-2c60-5780-5424">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">select one friendly unit t destroy 1 model from that unit, that unit starts its next turn with 1 extra AP. This does not stack.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Issue Orders (1 AP)" id="646c-3014-96f2-148c" hidden="false" type="profile" targetId="a8c8-3d77-703a-a85b"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Pistol" hidden="false" id="1885-ecc2-a5d1-0770" sortIndex="11">
+      <profiles>
+        <profile name="Heavy Pistol" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="ac6c-b0e0-a2b6-5f16">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">12&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">1</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">0</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Pistol</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rippersword" hidden="false" id="d243-170f-816f-a8ee" sortIndex="4">
+      <profiles>
+        <profile name="Rippersword" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="60c1-f9ff-2814-f6d7">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">1</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">3</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">4</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">0</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="5bbf-e9f1-338b-c996" id="23c5-aad3-bbf3-b0c5" primary="false" name="Melee Weapon"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Lieutenant" hidden="false" id="4b6f-ec7c-9004-759a" sortIndex="102">
+      <costs>
+        <cost name="Points" typeId="3513-57f3-6212-3f59" value="40"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipment" id="0431-9517-a1f7-aa67" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Heavy Pistol" hidden="false" id="4e47-6785-57de-2dc2" type="selectionEntry" targetId="1885-ecc2-a5d1-0770">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edda-9c74-c635-3977" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9b1-da21-239a-a6ee" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Main hand" id="53ae-8723-2556-e71e" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Officer Saber" hidden="false" id="0cfd-997f-f803-7b9a" type="selectionEntry" targetId="a924-a86b-b217-1443" defaultAmount="1" sortIndex="1"/>
+                <entryLink import="true" name="Command Stave" hidden="false" id="9c6d-f8b6-e30d-839c" type="selectionEntry" targetId="368b-40c1-f31e-35ac" sortIndex="2">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5af2-8f15-2491-8cdb" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3685-b9fd-922c-cc7d" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="c1b1-95a4-979c-f2b1" primary="false" name="Infantry"/>
+        <categoryLink targetId="60b7-3bbc-e392-6c6d" id="b1cd-64ed-c029-019d" primary="true" name="Commander"/>
+        <categoryLink targetId="fc2b-f529-fffa-b511" id="16d7-80ed-81ca-cc78" primary="false" name="Officer"/>
+        <categoryLink targetId="5a29-3b23-a198-7f95" id="46b0-5748-d719-fd70" primary="false" name="Lieutenant"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Lieutenant (⌀28 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="44e8-f890-6d66-bce4">
+          <characteristics>
+            <characteristic name="AP" typeId="43a8-4786-0175-dcd0">5</characteristic>
+            <characteristic name="M" typeId="ed74-71b7-9404-c409">3&quot;</characteristic>
+            <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">5+</characteristic>
+            <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">5+</characteristic>
+            <characteristic name="Save" typeId="cd53-7d25-3999-ff79">5+(9+)</characteristic>
+            <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">3</characteristic>
+            <characteristic name="HP" typeId="0638-f061-dc89-fc79">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Issue Orders (1 AP)" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="a32d-7ba3-2f5c-7778">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">This unit may issue 2 orders to infantry units</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Officer Saber" hidden="false" id="a924-a86b-b217-1443" sortIndex="3">
+      <profiles>
+        <profile name="Officer Saber" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="7f58-0c8c-1042-983e">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">2</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">5</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">4</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">0</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="5bbf-e9f1-338b-c996" id="30b4-cc65-a4e4-380e" primary="false" name="Melee Weapon"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Command Stave" hidden="false" id="368b-40c1-f31e-35ac" sortIndex="81">
+      <profiles>
+        <profile name="Command Stave" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="a593-a544-a0cc-c656">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">This model may issue orders to units within 12&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="H.V.A.D Sergeant" hidden="false" id="a5a6-aee4-59f7-a350" sortIndex="103">
+      <costs>
+        <cost name="Points" typeId="3513-57f3-6212-3f59" value="45"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipment" id="2934-316c-a67a-8cad" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Main Hand" id="c86e-d2f3-3c7a-6ee9" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Command Stave" hidden="false" id="754f-4fe1-b199-a970" type="selectionEntry" targetId="368b-40c1-f31e-35ac" sortIndex="3"/>
+                <entryLink import="true" name="Heavy Pistol" hidden="false" id="1d93-ea1d-74e3-d10f" type="selectionEntry" targetId="1885-ecc2-a5d1-0770" sortIndex="2"/>
+                <entryLink import="true" name="Laz-Pistol" hidden="false" id="29c5-3e2b-35e5-d793" type="selectionEntry" targetId="8bfb-dbf2-9262-2702" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2647-997e-968b-9bc0" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0edc-3ddb-face-d074" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Rippersword" hidden="false" id="10cd-e97c-d668-386c" type="selectionEntry" targetId="d243-170f-816f-a8ee">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8884-726c-fb23-1925" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36f1-02f3-9359-b141" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="39ed-0ce8-ec64-f4f0" primary="false" name="Infantry"/>
+        <categoryLink targetId="60b7-3bbc-e392-6c6d" id="ab4f-7e3c-df21-5b73" primary="true" name="Commander"/>
+        <categoryLink targetId="fc2b-f529-fffa-b511" id="e0f0-d39f-1d01-6285" primary="false" name="Officer"/>
+        <categoryLink targetId="051c-3b16-9225-1d94" id="b405-bc5e-888b-bad4" primary="false" name="H.V.A.D Sergeant"/>
+        <categoryLink targetId="8b07-23a7-a5bf-7b28" id="17bd-6217-196a-9757" primary="false" name="H.V.A.D"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="H.V.A.D Sergeant (⌀28 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="a0e4-a2e8-46de-49e8">
+          <characteristics>
+            <characteristic name="AP" typeId="43a8-4786-0175-dcd0">5</characteristic>
+            <characteristic name="M" typeId="ed74-71b7-9404-c409">3&quot;</characteristic>
+            <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">4+ (9+)</characteristic>
+            <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">4+</characteristic>
+            <characteristic name="Save" typeId="cd53-7d25-3999-ff79">5+ (9+)</characteristic>
+            <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">3</characteristic>
+            <characteristic name="HP" typeId="0638-f061-dc89-fc79">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Issue Orders (1 AP)" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="e09e-f3bd-b560-21a3">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">This unit may issue 1 order to infantry units</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Drop Commander" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="dd7a-1ac4-3bd0-bf5b">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">You may select a unit with the Drop Trooper ability to attach this model to, for the rest of the game, this model is treated as part of that unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Laz-Pistol" hidden="false" id="8bfb-dbf2-9262-2702" sortIndex="32">
+      <profiles>
+        <profile name="Laz-Pistol" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="9c3b-7c92-82ae-018c">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">6&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">1</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">3</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-2</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Pistol</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="4f8f-e83d-8d24-eab5" id="80e3-0e49-bd8f-95f2" primary="false" name="Ranged Weapon"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hegemonic Infantry Squad" hidden="false" id="0d00-11a1-4044-f0e6" sortIndex="121">
+      <categoryLinks>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="b0a8-0449-413c-d6ff" primary="false" name="Infantry"/>
+        <categoryLink targetId="fc82-84ee-6262-14dd" id="94cf-fee1-537d-5a1e" primary="false" name="Hegemonic Trooper"/>
+        <categoryLink targetId="19d7-3b92-a41b-df59" id="54ef-b74c-baa7-24c0" primary="true" name="Troops"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="9-19 Hegemonic Troopers" id="7b52-56e9-3fc7-655e" hidden="false" sortIndex="2">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Special Weapons" id="1caf-9305-dad3-4dbc" hidden="false" sortIndex="2">
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Hegemonic Trooper w/ Disposable A.T.L" hidden="false" id="9f14-4401-9a40-29de" sortIndex="1">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="7"/>
+                  </costs>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Equipment" id="a16f-11fe-d895-d67a" hidden="false">
+                      <entryLinks>
+                        <entryLink import="true" name="Bayonet" hidden="false" id="6c57-aac4-a899-ab92" type="selectionEntry" targetId="7afb-6e6b-fde3-54fe">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ba0-b7bf-d75a-17db" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3077-17ce-60e1-724a" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Disposable A.T.L" hidden="false" id="bc69-349f-6fca-a2ec" type="selectionEntry" targetId="c76b-250e-87b5-9a9f" sortIndex="1">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="872a-6e05-e25c-ec5a" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c89-2b6d-9e91-f824" includeChildSelections="false"/>
+                          </constraints>
+                          <costs>
+                            <cost name="Points" typeId="3513-57f3-6212-3f59" value="7"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <infoLinks>
+                    <infoLink name="Hegemonic Trooper (⌀25 mm)" id="6dc3-0361-eb41-c37e" hidden="false" type="profile" targetId="63e6-c416-fa2d-2a3d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Hegemonic Trooper w/ Sniper Rifle" hidden="false" id="c6fc-cc86-4e6e-38b4" sortIndex="2">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="7"/>
+                  </costs>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Equipment" id="e320-1a11-674f-9cd5" hidden="false">
+                      <entryLinks>
+                        <entryLink import="true" name="Bayonet" hidden="false" id="2e81-4858-b560-4543" type="selectionEntry" targetId="7afb-6e6b-fde3-54fe" sortIndex="2">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f45-8b20-a85d-cf85" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c97-324c-432b-6a0c" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Sniper Rifle" hidden="false" id="76be-d950-6715-b9e2" type="selectionEntry" targetId="2b41-a66c-07f0-61ca" sortIndex="1">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e7e-f35b-315e-0b8e" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="58ce-4bd2-7278-7714" includeChildSelections="false"/>
+                          </constraints>
+                          <costs>
+                            <cost name="Points" typeId="3513-57f3-6212-3f59" value="2"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <infoLinks>
+                    <infoLink name="Hegemonic Trooper (⌀25 mm)" id="7890-9f32-197d-e949" hidden="false" type="profile" targetId="63e6-c416-fa2d-2a3d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Hegemonic Trooper w/ HE Grenade Launcher" hidden="false" id="6431-6e5a-f2b9-2e37" sortIndex="3">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="7"/>
+                  </costs>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Equipment" id="ad08-0548-b47d-7f53" hidden="false">
+                      <entryLinks>
+                        <entryLink import="true" name="Bayonet" hidden="false" id="5408-04f4-554d-b523" type="selectionEntry" targetId="7afb-6e6b-fde3-54fe" sortIndex="2">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aea3-8a1e-017b-9370" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4da5-9d88-3f21-466d" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="HE Grenade Launcher" hidden="false" id="7a3c-0a0b-f8cc-36c2" type="selectionEntry" targetId="804b-3fd0-d06e-1311" sortIndex="1">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c59-11f2-aa08-1e25" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e4b-1ea4-3bbc-c8a5" includeChildSelections="false"/>
+                          </constraints>
+                          <costs>
+                            <cost name="Points" typeId="3513-57f3-6212-3f59" value="2"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                      <infoLinks>
+                        <infoLink name="Hegemonic Trooper (⌀25 mm)" id="d6af-8af1-52ef-14be" hidden="false" type="profile" targetId="63e6-c416-fa2d-2a3d"/>
+                      </infoLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b0f7-ebe0-f9b0-42c5" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="4" field="b0f7-ebe0-f9b0-42c5">
+                  <conditions>
+                    <condition type="atLeast" value="19" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Hegemonic Trooper" hidden="false" id="36e8-12dd-d4a7-b793" sortIndex="1" defaultAmount="9">
+              <constraints>
+                <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="d1bb-eff8-6b99-c787" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Equipment" id="0d3d-fc78-55f5-f510" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Automatik Rifle" hidden="false" id="d552-60f9-de0c-5cb2" type="selectionEntry" targetId="c9d2-d48b-723c-00fb">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="384e-b7c4-9ada-5086" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b477-01bf-e186-92f6" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Bayonet" hidden="false" id="9f3c-5a01-f932-3138" type="selectionEntry" targetId="7afb-6e6b-fde3-54fe">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25bc-1acf-1701-c670" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7cc-83b9-3173-de70" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="7"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Hegemonic Trooper (⌀25 mm)" id="726a-bddd-72c8-22ba" hidden="false" type="profile" targetId="63e6-c416-fa2d-2a3d"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="false" id="fe16-3bbe-215a-54da" includeChildSelections="false"/>
+            <constraint type="max" value="19" field="selections" scope="parent" shared="false" id="d22a-7af3-08c7-8d46" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Hegemonic Sargent" hidden="false" id="90bc-2abc-6eb1-fd3a" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="3513-57f3-6212-3f59" value="7"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Officer" hidden="false" id="8381-2107-bcae-2103" targetId="fc2b-f529-fffa-b511" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98cc-8ec0-b9fd-28c6" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5269-13bd-658e-a914" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Equipment" id="8cbe-ad1e-137b-f0a3" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Automatik Rifle" hidden="false" id="6502-a798-cb1d-0f89" type="selectionEntry" targetId="c9d2-d48b-723c-00fb">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7549-94ff-a182-3e59" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd27-6b70-ba29-4287" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Rippersword" hidden="false" id="bb9a-d0c4-3ceb-4934" type="selectionEntry" targetId="d243-170f-816f-a8ee">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="53f6-c799-cf61-d987" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48fb-4cde-f59b-7224" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <profiles>
+            <profile name="Hegemonic Sargent (⌀25 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="0a70-26bc-4181-8acd">
+              <characteristics>
+                <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+                <characteristic name="M" typeId="ed74-71b7-9404-c409">3&quot;</characteristic>
+                <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">6+</characteristic>
+                <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">6+</characteristic>
+                <characteristic name="Save" typeId="cd53-7d25-3999-ff79">7+</characteristic>
+                <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">3</characteristic>
+                <characteristic name="HP" typeId="0638-f061-dc89-fc79">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Automatik Rifle" hidden="false" id="c9d2-d48b-723c-00fb" sortIndex="21">
+      <profiles>
+        <profile name="Automatik Rifle" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="8c38-10bc-6f66-7a64">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">24&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">0</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="4f8f-e83d-8d24-eab5" id="76e3-2bd2-c56e-7756" primary="false" name="Ranged Weapon"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bayonet" hidden="false" id="7afb-6e6b-fde3-54fe" sortIndex="1">
+      <categoryLinks>
+        <categoryLink targetId="5bbf-e9f1-338b-c996" id="8021-6324-7093-17e1" primary="false" name="Melee Weapon"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Bayonet" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="4859-6ccb-49c8-287b">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">2</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">2</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">3</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">0</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Disposable A.T.L" hidden="false" id="c76b-250e-87b5-9a9f" sortIndex="52">
+      <profiles>
+        <profile name="Disposable A.T.L" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="b05b-263c-3c9d-27f4">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">30</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">9</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-3</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">D5</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Accurate -1, Anti-Vehicle 6+, Limited 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="4f8f-e83d-8d24-eab5" id="0ec3-412b-309d-484f" primary="false" name="Ranged Weapon"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="false" id="2b41-a66c-07f0-61ca" sortIndex="12">
+      <profiles>
+        <profile name="Sniper Rifle" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="cf6a-acda-fa6b-47f3">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">36</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">2</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Heavy, Precise</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Ranged Weapon" hidden="false" id="1fc0-9001-adbe-218e" targetId="4f8f-e83d-8d24-eab5" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="HE Grenade Launcher" hidden="false" id="804b-3fd0-d06e-1311" sortIndex="41">
+      <profiles>
+        <profile name="HE Grenade Launcher" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="24cf-9b92-640b-022f">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">24&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">1</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">6</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">D2+1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Barrage 8 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Ranged Weapon" hidden="false" id="7ee0-38d3-e892-ecb6" targetId="4f8f-e83d-8d24-eab5" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Hegemonic Conscripts" hidden="false" id="a518-161c-bd0b-5eb6" sortIndex="122">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Hegemonic Conscript" hidden="false" id="0cb0-abca-ac50-d773">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Equipment" id="ca39-cec1-5488-b825" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Automatik Rifle" hidden="false" id="5f78-51a2-fcfd-9ced" type="selectionEntry" targetId="c9d2-d48b-723c-00fb">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e9a-add4-5c9e-7056" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea24-928b-29bc-2fb3" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Fists" hidden="false" id="fffd-5076-b039-a33d" type="selectionEntry" targetId="ab1e-5e23-259f-330f">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c03-d281-d7d1-365b" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90d3-3542-34ac-da4a" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="795b-0a45-863f-104e" includeChildSelections="false"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="3f16-c488-e576-8e4b" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Hegemonic Conscripts (⌀25 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="fa93-09b3-db37-f587">
+              <characteristics>
+                <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+                <characteristic name="M" typeId="ed74-71b7-9404-c409">3</characteristic>
+                <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">8+</characteristic>
+                <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">8+</characteristic>
+                <characteristic name="Save" typeId="cd53-7d25-3999-ff79">8+</characteristic>
+                <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">3</characteristic>
+                <characteristic name="HP" typeId="0638-f061-dc89-fc79">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Points" typeId="3513-57f3-6212-3f59" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="3989-93fc-e7b0-9679" primary="false" name="Infantry"/>
+        <categoryLink targetId="03b8-65cb-83f5-8dc1" id="b72d-1d7f-32a1-22cc" primary="false" name="Hegemonic Conscripts"/>
+        <categoryLink targetId="19d7-3b92-a41b-df59" id="ab85-64bc-ca5f-f2fa" primary="true" name="Troops"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fists" hidden="false" id="ab1e-5e23-259f-330f" sortIndex="2">
+      <profiles>
+        <profile name="Fists" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="9e9e-bfa3-6173-6be9">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">2</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">1</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">3</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">0</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="H.V.A.D Squad" hidden="false" id="bf91-5076-8318-4c85" sortIndex="151">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="5-10 H.V.A.D Troopers" id="56a8-e0c9-f807-3e61" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="H.V.A.D Troopers" hidden="false" id="2541-d2ef-a91c-6dd7" defaultAmount="5" sortIndex="1">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="10"/>
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Equipment" id="7033-26c0-f556-c2ec" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Laz-Rifle" hidden="false" id="9f6b-7c86-d5f3-c976" type="selectionEntry" targetId="e906-5d7c-4cd2-8105" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22bc-c127-2a37-a8b0" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d01-d165-ae9a-f861" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Frag Grenade" hidden="false" id="7fb0-f6e3-d633-efbe" type="selectionEntry" targetId="25a4-e9e4-390b-8b0f" sortIndex="2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27a0-b3a2-cf42-0ec5" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="3513-57f3-6212-3f59" value="1"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Bayonet" hidden="false" id="7fcd-1c79-4ec5-7d26" type="selectionEntry" targetId="7afb-6e6b-fde3-54fe" sortIndex="3">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a77-5ff3-f7bd-0726" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77dd-232f-bf63-d06a" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <infoLinks>
+                <infoLink name="H.V.A.D Trooper (⌀28 mm)" id="77e4-ba9d-297d-cde6" hidden="false" type="profile" targetId="bcbd-af0d-46ca-6839"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="H.V.A.D Trooper W/ Disposable A.T.L" hidden="false" id="652b-4a2a-508e-7b10" defaultAmount="0" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="10"/>
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Equipment" id="2c31-bf18-1e23-12d8" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Frag Grenade" hidden="false" id="98b2-42f8-9109-f9ac" type="selectionEntry" targetId="25a4-e9e4-390b-8b0f" sortIndex="10">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f38-bed0-0d63-ff2f" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="3513-57f3-6212-3f59" value="1"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Bayonet" hidden="false" id="37f0-aa81-f42c-f615" type="selectionEntry" targetId="7afb-6e6b-fde3-54fe" sortIndex="5">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e47-c2f2-0d5f-fa7d" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d095-6057-eb4f-fa63" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Laz-Rifle" hidden="false" id="d2de-f0ff-6cfe-a163" type="selectionEntry" targetId="e906-5d7c-4cd2-8105" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="73f7-1384-7300-51ae" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e8f-82d9-e2f2-a880" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Disposable A.T.L" hidden="false" id="3ac7-e4a2-9f06-190f" type="selectionEntry" targetId="c76b-250e-87b5-9a9f" sortIndex="2">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c09-c4e9-2d94-8d0d" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7210-be97-4b28-d4ad" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="3513-57f3-6212-3f59" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2222-acbc-488c-3462" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="2222-acbc-488c-3462">
+                  <conditions>
+                    <condition type="atLeast" value="10" field="selections" scope="bf91-5076-8318-4c85" childId="56a8-e0c9-f807-3e61" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink name="H.V.A.D Trooper (⌀28 mm)" id="f317-f8be-1c97-b987" hidden="false" type="profile" targetId="bcbd-af0d-46ca-6839"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="H.V.A.D Trooper W/Special Weapon" hidden="false" id="9588-d718-b396-b138" sortIndex="3">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Equipment" id="53b7-de17-b33f-1d24" hidden="false">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Special Weapon" id="e9f7-cf7d-099f-9547" hidden="false" sortIndex="1">
+                      <entryLinks>
+                        <entryLink import="true" name="Laz-Machine Gun" hidden="false" id="8668-c0b2-5a6d-4572" type="selectionEntry" targetId="b419-f47e-65ee-e8e9" sortIndex="1" defaultAmount="1">
+                          <costs>
+                            <cost name="Points" typeId="3513-57f3-6212-3f59" value="7"/>
+                          </costs>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a23d-d04b-97cf-e56c" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Flame Thrower" hidden="false" id="bda6-6b98-8ed9-16fe" type="selectionEntry" targetId="3c52-19c0-260e-c183" sortIndex="2">
+                          <costs>
+                            <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+                          </costs>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77a9-453c-3381-0ff9" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Volt Gun" hidden="false" id="f3ce-24d8-53a7-b758" type="selectionEntry" targetId="c89b-bd2e-69ec-35a4" sortIndex="3">
+                          <costs>
+                            <cost name="Points" typeId="3513-57f3-6212-3f59" value="10"/>
+                          </costs>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9346-2dd4-de0f-ba51" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1620-cdbb-82b8-2401" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9dd-9475-a64c-2388" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
+                    <entryLink import="true" name="Frag Grenade" hidden="false" id="1088-2811-d893-b308" type="selectionEntry" targetId="25a4-e9e4-390b-8b0f" sortIndex="2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ebe-3af4-4773-3f52" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="3513-57f3-6212-3f59" value="1"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Bayonet" hidden="false" id="3829-10b7-aac4-7027" type="selectionEntry" targetId="7afb-6e6b-fde3-54fe" sortIndex="3">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6b6-6fd4-3c6d-af9d" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c47-b701-09fa-dc43" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="H.V.A.D Trooper (⌀28 mm)" id="2c96-0aca-b173-debd" hidden="false" type="profile" targetId="bcbd-af0d-46ca-6839"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dff0-9f66-9cf5-9464"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="dff0-9f66-9cf5-9464">
+                  <conditions>
+                    <condition type="atLeast" value="10" field="selections" scope="bf91-5076-8318-4c85" childId="56a8-e0c9-f807-3e61" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="e78b-71ea-6c41-d921" includeChildSelections="false"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="4fd4-d6d5-b3aa-e285" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="b86d-694c-17a5-e461" primary="false" name="Infantry"/>
+        <categoryLink targetId="8b07-23a7-a5bf-7b28" id="732f-d402-5da9-bdf3" primary="false" name="H.V.A.D"/>
+        <categoryLink targetId="2727-059b-b6db-360e" id="426d-7c4c-17f9-8446" primary="true" name="Elites"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Laz-Rifle" hidden="false" id="e906-5d7c-4cd2-8105" sortIndex="31">
+      <profiles>
+        <profile name="Laz-Rifle" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="4161-b66e-0352-8849">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">18&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-2</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Rapid Fire 1, Accurate 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Frag Grenade" hidden="false" id="25a4-e9e4-390b-8b0f" sortIndex="61">
+      <profiles>
+        <profile name="Frag Grenade" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="3744-6ca2-9909-65a1">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">6&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">1</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Barrage 8 2, Limited 1, Grenade</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Laz-Machine Gun" hidden="false" id="b419-f47e-65ee-e8e9" sortIndex="33">
+      <profiles>
+        <profile name="Laz-Machine Gun" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="9d6d-efae-0ef0-4863">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">18&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">4</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-2</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flame Thrower" hidden="false" id="3c52-19c0-260e-c183" sortIndex="51">
+      <profiles>
+        <profile name="Flame Thrower" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="d5c8-a1a9-e38f-b589">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">12&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">D5+1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">0</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Auto-Hit</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Volt Gun" hidden="false" id="c89b-bd2e-69ec-35a4" sortIndex="53">
+      <profiles>
+        <profile name="Volt Gun" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="841e-f8fd-bae3-7c36">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">24&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">8</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-2</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">D5</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Accurate -1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Marksmen Squad" hidden="false" id="836f-0a96-ce3e-47ed" sortIndex="152">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="5-10 Marksmen Troopers" id="68d7-1ec4-3a48-7aac" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Marksmen Troopers" hidden="false" id="5110-27a8-35e5-3069" defaultAmount="5">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="7"/>
+              </costs>
+              <profiles>
+                <profile name="Marksmen Trooper (⌀25 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="a0d6-d19b-d7f3-da01">
+                  <characteristics>
+                    <characteristic name="AP" typeId="43a8-4786-0175-dcd0">3</characteristic>
+                    <characteristic name="M" typeId="ed74-71b7-9404-c409">4&quot;</characteristic>
+                    <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">3+</characteristic>
+                    <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">7+</characteristic>
+                    <characteristic name="Save" typeId="cd53-7d25-3999-ff79">9+</characteristic>
+                    <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">3</characteristic>
+                    <characteristic name="HP" typeId="0638-f061-dc89-fc79">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Sniper Rifle" hidden="false" id="3766-cfaf-51c2-a36a" type="selectionEntry" targetId="2b41-a66c-07f0-61ca" sortIndex="1">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b6a-18d5-b370-d547" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3d1-a49d-8400-5a75" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Fists" hidden="false" id="7fd6-6785-ef8c-0c6d" type="selectionEntry" targetId="ab1e-5e23-259f-330f" sortIndex="5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b2df-2d77-1620-848b" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7703-a2e3-9346-098f" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <rules>
+                <rule name="Sharp Shooter Scapper" id="2d7e-cc63-2f06-5e93" hidden="false">
+                  <description>After Taking a shoot action, every model in this unit may take a free normal move action, they cannot take any movement or offensive actions after finishing this movement.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="4eb3-53ac-0c75-a6f7" primary="false" name="Infantry"/>
+        <categoryLink targetId="2727-059b-b6db-360e" id="c8a8-8dfe-26e1-59dd" primary="true" name="Elites"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="&quot;Chainsaw&quot; Heavy Weapon Squad" hidden="false" id="4563-5c6e-bd20-aa14" sortIndex="161">
+      <categoryLinks>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="4038-0ad3-b19a-56aa" primary="false" name="Infantry"/>
+        <categoryLink targetId="ee70-a05d-9619-a81c" id="5967-766c-777f-7c26" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="3-6 Heavy Weapons Teams" id="08ef-c236-39b8-73bd" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Heavy Weapons Team" hidden="false" id="ab1f-554f-f05a-0a61" defaultAmount="3">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Emplacement Weapon" id="8f9b-3b34-8e2f-b6d3" hidden="false" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="50aa-88e9-85db-7ced" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24f8-1baa-a81e-1ed7" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Heavy Automatik gun" hidden="false" id="23c8-0fe7-b917-222a" type="selectionEntry" targetId="9f1f-0f0c-b043-29d9" sortIndex="1" defaultAmount="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="953f-9cb4-8632-e876" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Automatik Cannon" hidden="false" id="4a0b-ee76-e3ba-8ac7" type="selectionEntry" targetId="5396-e90c-914a-96ff" sortIndex="2">
+                      <costs>
+                        <cost name="Points" typeId="3513-57f3-6212-3f59" value="3"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Volt Cannon" hidden="false" id="dafd-fd1e-466b-a468" type="selectionEntry" targetId="b5c1-1d3c-16af-ffa3" sortIndex="3">
+                      <costs>
+                        <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Mortar" hidden="false" id="9b67-8c2b-3999-ac4b" type="selectionEntry" targetId="d8fe-32cb-4c7e-e5cd">
+                      <costs>
+                        <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Automatik Rifle" hidden="false" id="3d79-d222-d91b-4f9c" type="selectionEntry" targetId="c9d2-d48b-723c-00fb" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be6e-4f5c-a69c-104a" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7613-79a0-19bb-d598" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="15"/>
+              </costs>
+              <profiles>
+                <profile name="Heavy Weapons Team (⌀50 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="95e6-8c87-a28d-f4e6">
+                  <characteristics>
+                    <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+                    <characteristic name="M" typeId="ed74-71b7-9404-c409">2&quot;</characteristic>
+                    <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">6+</characteristic>
+                    <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">7+</characteristic>
+                    <characteristic name="Save" typeId="cd53-7d25-3999-ff79">3</characteristic>
+                    <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">5+</characteristic>
+                    <characteristic name="HP" typeId="0638-f061-dc89-fc79">2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="12c1-5548-1e6d-fa5d"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="291b-2e05-ac02-7823" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Automatik gun" hidden="false" id="9f1f-0f0c-b043-29d9" sortIndex="22">
+      <profiles>
+        <profile name="Heavy Automatik gun" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="53f8-f36f-8944-54f4">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">36&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">3</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">5</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">2</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Rapid fire 2, Heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Automatik Cannon" hidden="false" id="5396-e90c-914a-96ff" sortIndex="23">
+      <profiles>
+        <profile name="Automatik Cannon" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="7da0-1396-2096-a92b">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">48</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">2</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">7</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">3</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Volt Cannon" hidden="false" id="b5c1-1d3c-16af-ffa3" sortIndex="54">
+      <profiles>
+        <profile name="Volt Cannon" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="9dc7-5ead-3d4e-2da7">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">24&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">9</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-3</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">D5+2</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mortar" hidden="false" id="d8fe-32cb-4c7e-e5cd" sortIndex="42">
+      <profiles>
+        <profile name="Mortar" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="06b8-a86b-1512-bb4d">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">48&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">6</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">D2+1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Barrage 3 3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="&quot;Sledgehammer&quot; Battle Tank" hidden="false" id="cf08-882f-8bc5-f3e6" sortIndex="162">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Turret Weapons" id="5018-4b75-ae2c-b3b2" hidden="false" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e1c-d2fd-7cb6-f51a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="290f-50cb-5db1-6878" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Eruption Cannon" hidden="false" id="5703-4cee-d2ca-5da5" type="selectionEntry" targetId="807e-e4c0-2ce1-2cc7" sortIndex="3">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="20"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Heavy Laz Cannon" hidden="false" id="b38b-a07e-13e0-0af9" type="selectionEntry" targetId="3c82-bcd3-5de3-9fd5" sortIndex="4">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="20"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Destructor Cannon" hidden="false" id="bd5b-a4ef-d699-8284" type="selectionEntry" targetId="bd10-b6da-a57f-7d8d" defaultAmount="1" sortIndex="1"/>
+            <entryLink import="true" name="Jackhammer Autocannon" hidden="false" id="e41f-1357-3f14-1355" type="selectionEntry" targetId="23e2-1af0-6d09-7bfc" sortIndex="2"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Front Weapon" id="628b-abc1-8d9d-5292" hidden="false" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b8c-1e9a-5f64-53b8" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95ac-a83f-9c3d-e925" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Automatik gun" hidden="false" id="f64b-a89c-f58b-2213" type="selectionEntry" targetId="9f1f-0f0c-b043-29d9">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Flame Thrower" hidden="false" id="b758-4776-e3e1-ae8c" type="selectionEntry" targetId="3c52-19c0-260e-c183">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="3"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Side Weapons" id="b8cb-c78e-5644-5b2b" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="2 Automatik Rifles" hidden="false" id="b0b7-0175-1964-2532">
+              <entryLinks>
+                <entryLink import="true" name="Automatik Rifle" hidden="false" id="7074-00c2-2390-1770" type="selectionEntry" targetId="c9d2-d48b-723c-00fb">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b6de-004e-a75a-71f0" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7263-d02a-9959-9020" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="2 Laz-Machine Guns" hidden="false" id="8213-f520-c814-91b7">
+              <entryLinks>
+                <entryLink import="true" name="Laz-Machine Gun" hidden="false" id="a4d5-cbd7-4cf2-85f3" type="selectionEntry" targetId="b419-f47e-65ee-e8e9">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1258-da11-cf5a-f698" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f35e-bea3-d58f-dd4f" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="15"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3828-078f-305e-e0ab" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="1783-40df-349b-4bdd" id="0bd3-8b27-8687-0626" primary="false" name="Vehicle"/>
+        <categoryLink targetId="ee70-a05d-9619-a81c" id="d785-3e3a-c256-a629" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="3513-57f3-6212-3f59" value="120"/>
+      </costs>
+      <profiles>
+        <profile name="&quot;Sledgehammer&quot; Battle Tank (⌀120x92 mm)" typeId="0f74-e791-1423-bb47" typeName="Vehicle" hidden="false" id="871c-8331-0482-dcd3">
+          <characteristics>
+            <characteristic name="AP" typeId="6f3e-0c10-951f-79a3">4</characteristic>
+            <characteristic name="M" typeId="6dcb-59ed-386f-0f47">3&quot;</characteristic>
+            <characteristic name="RS" typeId="f5ab-f47a-e83b-e93d">5+</characteristic>
+            <characteristic name="WS" typeId="8eac-d857-bc43-f54a">6+</characteristic>
+            <characteristic name="Front" typeId="e6cb-8d4c-6d1f-0b9f">14</characteristic>
+            <characteristic name="Side" typeId="47e8-d724-9e09-78a2">13</characteristic>
+            <characteristic name="Rear" typeId="a649-6921-b44c-55b6">10</characteristic>
+            <characteristic name="Save" typeId="9c7d-1809-8957-b7a8">4+</characteristic>
+            <characteristic name="HP" typeId="a87f-3cb8-5628-b9b5">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Eruption Cannon" hidden="false" id="807e-e4c0-2ce1-2cc7" sortIndex="45">
+      <profiles>
+        <profile name="Eruption Cannon" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="9498-916b-ff8d-70c3">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">72&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">8</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-2</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">2</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Heavy, Barrage 3 3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Laz Cannon" hidden="false" id="3c82-bcd3-5de3-9fd5" sortIndex="34">
+      <profiles>
+        <profile name="Heavy Laz Cannon" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="d5e2-b06b-5d90-234b">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">24</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">3</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">10</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-2</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">D5</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Destructor Cannon" hidden="false" id="bd10-b6da-a57f-7d8d" sortIndex="15">
+      <profiles>
+        <profile name="Destructor Cannon" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="081a-5c36-c22f-afc1">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">36&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">2</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">7</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-2</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">2</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Jackhammer Autocannon" hidden="false" id="23e2-1af0-6d09-7bfc" sortIndex="13">
+      <profiles>
+        <profile name="Jackhammer Autocannon" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="5e04-386e-5940-bd18">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">24&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">4</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">7</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">2</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="b7cf-c491-b0e6-a3be" sortIndex="1">
+      <comment>1-10 Melee Weapons</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="b6d2-2bad-6d37-e7a7" sortIndex="21">
+      <comment>21-30 Automatik Weapons</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="9554-350d-98d3-cced" sortIndex="31">
+      <comment>31-40 Laz Weaons
+</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="10ec-b91a-4ce9-3e93" sortIndex="41">
+      <comment>41 - 50 Explosive Weapons</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="8b31-0889-95ff-4971" sortIndex="11">
+      <comment>11-20 Conventional Weapons</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="8c8f-7ed5-fd61-36d6" sortIndex="51">
+      <comment>51-60 Exotics</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="a812-8437-8fcf-68db" sortIndex="61">
+      <comment>61-70 Grenades</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="f758-f5c3-2564-b2c8" sortIndex="81">
+      <comment>81-100 Equipment</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="5504-5d9d-4b6f-593a" sortIndex="101">
+      <comment>101-120 Commanders</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="91f4-6953-d3f6-849b" sortIndex="121">
+      <comment>121-150 Troops</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="9d1c-eddf-cfb2-a8e1" sortIndex="151">
+      <comment>151-160 Elites</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="ebe0-89d2-62fb-47ea" sortIndex="161">
+      <comment>161-170 Heavy Support</comment>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Regiment" id="b3c6-1e45-b005-9bc2" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Battlegroup Seven" hidden="false" id="6d10-9191-a318-9c74">
+          <rules>
+            <rule name="Battlegroup Seven" id="c99b-79ac-9404-1571" hidden="true">
+              <comment>With lore</comment>
+              <description>*The Elite of the Elites in the hegemonic order, deployed to the front lines and defending command Structures during sieges, the Battlegroup Seven infantry are a gold standard for all regiments.*
+
+When you have Battlegroup Seven Selected as your regiment, all units in your army gain the following
+
+**Parade Firing line:** If all models in a infantry unit in your army are in contract with atleast 1 other model in that unit, every model in that unit adds 1 to their hit rolls when making ranged attacks
+
+**Only the Best:** Your army cannot have Conscript units</description>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </rule>
+            <rule name="Battlegroup Seven" id="0ba1-66f1-4db1-ab58" hidden="false">
+              <comment>Without lore</comment>
+              <description>When you have Battlegroup Seven Selected as your regiment, all units in your army gain the following
+
+**Parade Firing line:** If all models in a infantry unit in your army are in contract with atleast 1 other model in that unit, every model in that unit adds 1 to their hit rolls when making ranged attacks
+
+**Only the Best:** Your army cannot have Conscript units</description>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="H.V.A.D Corps" hidden="false" id="4fef-936c-67d4-aae0">
+          <rules>
+            <rule name="H.V.A.D Corps" id="51e7-031c-e094-560e" hidden="true">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <description>*The High Velocity Air Drop Corps form the elite of the Hegemonic Order’s Air Deployed Infantry, while this does have some advantages, their high Ego can make certain battlefield operations difficult.*
+
+When you have H.V.A.D Corps Selected as your regiment, all units in your army gain the following
+
+Short Range Elimination: When Firing a weapon at a enemy unit within half range of the attacking model, that weapon gains Sustained 1.
+
+Itchy Trigger Finger: When this unit fires, it must fire at the closet Visible enemy</description>
+              <comment>With lore</comment>
+            </rule>
+            <rule name="H.V.A.D Corps" id="5d9d-a191-ef4c-cd6d" hidden="false">
+              <comment>Without lore</comment>
+              <description>When you have H.V.A.D Corps Selected as your regiment, all units in your army gain the following
+
+Short Range Elimination: When Firing a weapon at a enemy unit within half range of the attacking model, that weapon gains Sustained 1.
+
+Itchy Trigger Finger: When this unit fires, it must fire at the closet Visible enemy</description>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Last Chancers" hidden="false" id="b53d-33a2-df4e-c527">
+          <rules>
+            <rule name="Last Chancers" id="61d9-e92e-7211-7c68" hidden="true">
+              <comment>With Lore</comment>
+              <description>*Constructed of Conscripts and prisoners, so called “Last Chance” regiments are deployed under armed poorly supplied to hellish combat scenarios.*
+
+When you have Last Chancers Selected as your regiment, all units in your army gain the following
+
+**Self Preservation instincts**: When a Last Chancers unit is selected as the target of attacks, if that unit has less than its starting number of models, that unit gains +1 to its save
+
+**Look out Commandant!**: For each Field Commandant model in your army, roll 1d10 before the game starts, on each roll of 1 that Field Commandant has a unfortunate accident and is removed from play before the game begins.</description>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </rule>
+            <rule name="Last Chancers" id="2eb9-7127-e08d-bd63" hidden="false">
+              <comment>Without Lore</comment>
+              <description>When you have Last Chancers Selected as your regiment, all units in your army gain the following
+
+**Self Preservation instincts**: When a Last Chancers unit is selected as the target of attacks, if that unit has less than its starting number of models, that unit gains +1 to its save
+
+**Look out Commandant!**: For each Field Commandant model in your army, roll 1d10 before the game starts, on each roll of 1 that Field Commandant has a unfortunate accident and is removed from play before the game begins.</description>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03cd-7140-425a-d7c5" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="629c-c441-50b1-a5c9" id="c8c4-5232-e06a-377f" primary="true" name="Configuration"/>
+      </categoryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <entryLinks>
+    <entryLink import="true" name="Regiment" hidden="false" id="5a33-c4e2-9910-26ec" type="selectionEntry" targetId="827a-b209-15fe-a4c9" sortIndex="4">
+      <categoryLinks>
+        <categoryLink targetId="629c-c441-50b1-a5c9" id="ace8-362b-ee9f-1817" primary="true" name="Configuration"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Field Comamndant" hidden="false" id="1bee-287f-c8be-81e4" type="selectionEntry" targetId="4286-30a4-5ef6-2e68"/>
+    <entryLink import="true" name="Lieutenant" hidden="false" id="4961-135f-0b58-6730" type="selectionEntry" targetId="4b6f-ec7c-9004-759a"/>
+    <entryLink import="true" name="H.V.A.D Sergeant" hidden="false" id="09ff-48db-cc6d-cd8b" type="selectionEntry" targetId="a5a6-aee4-59f7-a350"/>
+    <entryLink import="true" name="Hegemonic Infantry Squad" hidden="false" id="dbe9-669e-c6a9-6b2f" type="selectionEntry" targetId="0d00-11a1-4044-f0e6"/>
+    <entryLink import="true" name="Hegemonic Conscripts" hidden="false" id="b34b-9d78-0a38-9391" type="selectionEntry" targetId="a518-161c-bd0b-5eb6"/>
+    <entryLink import="true" name="H.V.A.D Squad" hidden="false" id="f973-2845-f411-5b33" type="selectionEntry" targetId="bf91-5076-8318-4c85"/>
+    <entryLink import="true" name="Marksmen Squad" hidden="false" id="428c-0dbb-6b1d-50dd" type="selectionEntry" targetId="836f-0a96-ce3e-47ed"/>
+    <entryLink import="true" name="&quot;Chainsaw&quot; Heavy Weapon Squad" hidden="false" id="4258-4acd-db7e-c6ae" type="selectionEntry" targetId="4563-5c6e-bd20-aa14"/>
+    <entryLink import="true" name="&quot;Sledgehammer&quot; Battle Tank" hidden="false" id="1dca-1d64-5404-0c6f" type="selectionEntry" targetId="cf08-882f-8bc5-f3e6"/>
+  </entryLinks>
+  <sharedProfiles>
+    <profile name="Issue Orders (1 AP)" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="a8c8-3d77-703a-a85b">
+      <characteristics>
+        <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">This unit may issue 1 orders to infantry units</characteristic>
+      </characteristics>
+      <comment>1 order infantry</comment>
+    </profile>
+    <profile name="H.V.A.D Trooper (⌀28 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="bcbd-af0d-46ca-6839">
+      <characteristics>
+        <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+        <characteristic name="M" typeId="ed74-71b7-9404-c409">3&quot;</characteristic>
+        <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">5+</characteristic>
+        <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">5+</characteristic>
+        <characteristic name="Save" typeId="cd53-7d25-3999-ff79">5+</characteristic>
+        <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">3</characteristic>
+        <characteristic name="HP" typeId="0638-f061-dc89-fc79">1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Hegemonic Trooper (⌀25 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="63e6-c416-fa2d-2a3d">
+      <characteristics>
+        <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+        <characteristic name="M" typeId="ed74-71b7-9404-c409">3&quot;</characteristic>
+        <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">6+</characteristic>
+        <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">6+</characteristic>
+        <characteristic name="Save" typeId="cd53-7d25-3999-ff79">7+</characteristic>
+        <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">3</characteristic>
+        <characteristic name="HP" typeId="0638-f061-dc89-fc79">1</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>

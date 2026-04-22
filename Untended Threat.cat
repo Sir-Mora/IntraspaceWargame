@@ -1,0 +1,1229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="f4c0-5fe7-1dfe-88c4" name="Untended Threat" gameSystemId="sys-61df-4102-3143-2eae" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Faction Rule: Terror" hidden="false" id="2ad7-d175-fdb2-c60c" sortIndex="1">
+      <categoryLinks>
+        <categoryLink targetId="629c-c441-50b1-a5c9" id="8559-fff6-9f14-e437" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Faction keyword: Terror" id="9f57-b199-6aef-363c" hidden="false" type="rule" targetId="7679-8baf-220a-5196"/>
+        <infoLink name="Faction keyword: Terror" id="1eed-3331-21af-ba40" hidden="false" type="rule" targetId="a555-8a51-062c-b31d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Terror Modifier Table" hidden="false" id="f931-53f1-f16f-82c5" sortIndex="2">
+      <profiles>
+        <profile name="1. Commander" typeId="5eb2-208c-977d-5abd" typeName="Terror Modifer Table" hidden="false" id="7d5a-6856-3cbe-e7a8">
+          <characteristics>
+            <characteristic name="Modifier" typeId="56d6-08f6-5a67-f3c3">+2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="2. Troops" typeId="5eb2-208c-977d-5abd" typeName="Terror Modifer Table" hidden="false" id="b74e-27b5-8012-8414">
+          <characteristics>
+            <characteristic name="Modifier" typeId="56d6-08f6-5a67-f3c3">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3. Elite" typeId="5eb2-208c-977d-5abd" typeName="Terror Modifer Table" hidden="false" id="be65-a302-2dfb-730a">
+          <characteristics>
+            <characteristic name="Modifier" typeId="56d6-08f6-5a67-f3c3">+1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="4. Heavy Support (Infantry)" typeId="5eb2-208c-977d-5abd" typeName="Terror Modifer Table" hidden="false" id="71df-4821-b460-1ca3">
+          <characteristics>
+            <characteristic name="Modifier" typeId="56d6-08f6-5a67-f3c3">-1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5. Heavy Support (monsters)" typeId="5eb2-208c-977d-5abd" typeName="Terror Modifer Table" hidden="false" id="07cc-8f44-64e6-13e3">
+          <characteristics>
+            <characteristic name="Modifier" typeId="56d6-08f6-5a67-f3c3">+1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="6. Heavy Support (vehicles)" typeId="5eb2-208c-977d-5abd" typeName="Terror Modifer Table" hidden="false" id="5468-8fc1-8059-e984">
+          <characteristics>
+            <characteristic name="Modifier" typeId="56d6-08f6-5a67-f3c3">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="629c-c441-50b1-a5c9" id="86d0-fe4f-eba5-2656" primary="true" name="Configuration"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Faction Rule: Self Repairing" hidden="false" id="0843-3079-2c56-7b8c" sortIndex="3">
+      <categoryLinks>
+        <categoryLink targetId="629c-c441-50b1-a5c9" id="81fd-31d8-7606-6c07" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Faction Rule: Self Repairing" id="049e-34ed-321d-a430" hidden="true" type="rule" targetId="9790-3a48-3321-98f6"/>
+        <infoLink name="Faction Rule: Self Repairing" id="2227-f7b6-3521-c241" hidden="false" type="rule" targetId="8f7a-d3d6-3c11-b2fa"/>
+      </infoLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <profileTypes>
+    <profileType name="Terror Modifer Table" id="5eb2-208c-977d-5abd" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Modifier" id="56d6-08f6-5a67-f3c3"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Neoferric Coil" hidden="false" id="4cd2-f8d7-f1d1-35bd" sortIndex="23">
+      <profiles>
+        <profile name="Neoferric Coil" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="24c8-e543-7fa9-1207">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">60&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">12</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-10</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">D5+5</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Limited 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Defabrication Swarm" hidden="false" id="0bd5-2bd1-7466-5db5" sortIndex="41">
+      <profiles>
+        <profile name="Defabrication Swarm" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="5c0a-26c7-bd87-19f3">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">12&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">D5+1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-2</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Auto-Hit, Ignore cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Energy Lash" hidden="false" id="4ab0-62d2-8f25-b7e2" sortIndex="21">
+      <profiles>
+        <profile name="Energy Lash" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="ca60-aa82-03d5-da5f">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">12&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">1</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">3</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">5</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-2</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Energy Lash" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="0cb0-ddd7-c411-1ab5">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">1</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">4</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">5</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">-2</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Deconstruction Claws" hidden="false" id="5fb5-f491-5f50-5cc9" sortIndex="11">
+      <profiles>
+        <profile name="Deconstruction Claws" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="6a34-72ee-b7b8-aaaa">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">1</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">3</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">5</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">-3</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af">Terror 7+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Fabricator" hidden="false" id="bd58-b979-156a-9aef" sortIndex="102">
+      <costs>
+        <cost name="Points" typeId="3513-57f3-6212-3f59" value="105"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ranged Weapons" id="4c21-a028-0a56-d4a1" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Defabrication Swarm" hidden="false" id="9ab8-6ca6-fcf2-aa30" type="selectionEntry" targetId="0bd5-2bd1-7466-5db5" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="4"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Reclamation Swarm" hidden="false" id="6e9e-b283-f0a2-a130" type="selectionEntry" targetId="f4b4-e8d3-cfdd-c7d0" sortIndex="3">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Attack Swarm" hidden="false" id="1089-6a88-76ea-dce9" type="selectionEntry" targetId="922f-e610-fcdc-a1b0" sortIndex="1">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="3"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f15-f4e1-987d-98fc"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="97df-402c-53d0-6388" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Melee Weapons" id="3059-31fd-d76d-b072" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Fabricator Claws" hidden="false" id="9699-1ba9-949c-5d63" type="selectionEntry" targetId="7cc2-0a9e-99b1-1d28">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a28b-0121-084e-de7e" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb48-8b69-c9ea-7fc9" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d2d0-fba1-c583-1464" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d96-2e62-ebc8-b31a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Fabricator (⌀60 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="8c06-baf8-7d38-5cb8">
+          <characteristics>
+            <characteristic name="AP" typeId="43a8-4786-0175-dcd0">5</characteristic>
+            <characteristic name="M" typeId="ed74-71b7-9404-c409">3&quot;</characteristic>
+            <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">5+</characteristic>
+            <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">6+</characteristic>
+            <characteristic name="Save" typeId="cd53-7d25-3999-ff79">5+</characteristic>
+            <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">8</characteristic>
+            <characteristic name="HP" typeId="0638-f061-dc89-fc79">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Construction Swarms (1 AP)" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="5429-0a17-d2b7-3fe6">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">When this ability is used, select another Untended Threat Unit within 3&quot;, that target unit regains up to 3 HP, this unit loses the amount of HP gained by the other unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Self Repairing" id="a215-58dd-6eea-33ec" hidden="false" type="rule" targetId="e1eb-2603-e99e-b97c"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="60b7-3bbc-e392-6c6d" id="ea7b-a4da-9d3c-6c5e" primary="true" name="Commander"/>
+        <categoryLink targetId="6695-a701-809a-0f15" id="9ce9-91ff-3342-5334" primary="false" name="Monster"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reclamation Swarm" hidden="false" id="f4b4-e8d3-cfdd-c7d0" sortIndex="42">
+      <costs>
+        <cost name="Points" typeId="3513-57f3-6212-3f59" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Reclamation Swarm" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="157d-e8d4-fb3d-ce40">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">12&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">D2+1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">5</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-2</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">2</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Reclamation, Ignore Cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Overseer" hidden="false" id="b4d3-3b14-50c2-de6c" sortIndex="101">
+      <categoryLinks>
+        <categoryLink name="Commander" hidden="false" id="c2f1-e7f0-9eac-808e" targetId="60b7-3bbc-e392-6c6d" primary="true"/>
+        <categoryLink name="Infantry" hidden="false" id="333f-fc42-383e-48e1" targetId="bc8a-1751-58b3-bcce" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="3513-57f3-6212-3f59" value="80"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ranged Weapons" id="8894-2c0a-05d5-7615" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Neoferric Coil" hidden="false" id="1e68-e0a3-8485-7599" type="selectionEntry" targetId="4cd2-f8d7-f1d1-35bd">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="25"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e604-e4ce-dfa3-1af2" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Defabrication Swarm" hidden="false" id="3111-9a83-b151-8577" type="selectionEntry" targetId="0bd5-2bd1-7466-5db5">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dcd2-f119-ba2a-3fc7" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1474-7e76-cd8b-d069"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Melee Weapons" id="78e6-a70c-f0fb-74c2" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Energy Lash" hidden="false" id="7a68-70e0-1e60-af17" type="selectionEntry" targetId="4ab0-62d2-8f25-b7e2" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1d5-4b35-1d47-b473" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Deconstruction Claws" hidden="false" id="142b-86b4-c156-23f8" type="selectionEntry" targetId="5fb5-f491-5f50-5cc9" sortIndex="1" defaultAmount="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d49-a832-d2ae-e8f4" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f85b-4655-3549-0ea9"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50b8-70a4-19ef-09b6" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipment" id="bceb-6d60-d129-0489" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Nanoswarm Infusion" hidden="false" id="33a7-5432-f615-eaaa" type="selectionEntry" targetId="dc74-05d0-d27a-c814" sortIndex="1">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Nanoswarm Cloud" hidden="false" id="1744-6cdb-1a2b-a23e" type="selectionEntry" targetId="df70-ed91-d568-9f02" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="25"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4cf-159e-1b7e-fd2f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Overseer (⌀30 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="36a5-134f-8d2b-abbb">
+          <characteristics>
+            <characteristic name="AP" typeId="43a8-4786-0175-dcd0">5</characteristic>
+            <characteristic name="M" typeId="ed74-71b7-9404-c409">2&quot;</characteristic>
+            <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">2+</characteristic>
+            <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">2+</characteristic>
+            <characteristic name="Save" typeId="cd53-7d25-3999-ff79">3+</characteristic>
+            <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">5</characteristic>
+            <characteristic name="HP" typeId="0638-f061-dc89-fc79">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Self Repairing" id="384f-4993-77fa-0228" hidden="false" type="rule" targetId="e1eb-2603-e99e-b97c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fabricator Claws" hidden="false" id="7cc2-0a9e-99b1-1d28" sortIndex="2">
+      <profiles>
+        <profile name="Fabricator Claws" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="4427-9d8b-4a47-03cd">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">1</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">4</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">5</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">0</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Attack Swarm" hidden="false" id="922f-e610-fcdc-a1b0" sortIndex="41">
+      <profiles>
+        <profile name="Attack Swarm" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="19fa-1274-9d82-34c8">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">18&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">D2+3</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">3</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Ignores Cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Berserker Drone" hidden="false" id="0bdf-db8b-29de-6afd" sortIndex="103">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Melee Weapons" id="c030-f14a-cb0a-08f6" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Deconstruction Claws" hidden="false" id="a444-4936-b426-2699" type="selectionEntry" targetId="5fb5-f491-5f50-5cc9"/>
+            <entryLink import="true" name="Energy Lash" hidden="false" id="463b-763f-1ff5-2bb3" type="selectionEntry" targetId="4ab0-62d2-8f25-b7e2">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Ripper Claws" hidden="false" id="eff4-0306-a142-6da7" type="selectionEntry" targetId="1f5d-22fa-4124-6111">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1db9-acf8-be8f-6c3d"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3000-11f1-486e-53ba" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipment" id="a911-bd88-2666-5929" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Nanoswarm Cloud" hidden="false" id="3641-b889-b695-2de9" type="selectionEntry" targetId="df70-ed91-d568-9f02" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="25"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Nanoswarm Infusion" hidden="false" id="5f71-3275-4c3d-ea93" type="selectionEntry" targetId="dc74-05d0-d27a-c814" sortIndex="1">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d217-a21f-4498-5156" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="fbd0-7f68-6971-14c3" primary="false" name="Infantry"/>
+        <categoryLink targetId="60b7-3bbc-e392-6c6d" id="9b44-92e4-574a-a998" primary="true" name="Commander"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="3513-57f3-6212-3f59" value="75"/>
+      </costs>
+      <profiles>
+        <profile name="Berserker Drone  (⌀60mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="0111-cde5-9567-f085">
+          <characteristics>
+            <characteristic name="AP" typeId="43a8-4786-0175-dcd0">5</characteristic>
+            <characteristic name="M" typeId="ed74-71b7-9404-c409">3&quot;</characteristic>
+            <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">3+</characteristic>
+            <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">2+</characteristic>
+            <characteristic name="Save" typeId="cd53-7d25-3999-ff79">3+</characteristic>
+            <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">5</characteristic>
+            <characteristic name="HP" typeId="0638-f061-dc89-fc79">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Berserker" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="56e9-48ce-9310-e4ca">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">A Model with this ability may attack with multiple Melee weapons in 1 turn, however, After doing so, subtract 1 wound from this model</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ripper Claws" hidden="false" id="1f5d-22fa-4124-6111" sortIndex="12">
+      <profiles>
+        <profile name="Ripper Claws" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="2218-ec6b-d1c2-a0e2">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">1</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">4</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">4</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">-1</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af">Sustained 1, Terror 6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Nanoswarm Cloud" hidden="false" id="df70-ed91-d568-9f02" sortIndex="51">
+      <profiles>
+        <profile name="Nanoswarm cloud (1 AP)" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="6898-e3dd-c260-2da5">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">Once per battle, this model may instantly activate a units Self Repairing ability as if it was the end of the turn. Instead of gaining a HP point on a roll of a 10+, HP points are gained on a roll of a 8+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Nanoswarm Infusion" hidden="false" id="dc74-05d0-d27a-c814" sortIndex="52">
+      <profiles>
+        <profile name="Nanoswarm infusion" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="efd8-9f17-cba9-c3c1">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">This model regains wounds from the Self Repairing rule on a 9+ instead of a 10+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Skirmish Drones" hidden="false" id="e14b-4553-8df0-54e9" sortIndex="111">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="10-20 Skirmish Drones" id="f93e-e322-8b42-4628" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Skirmish Drone" hidden="false" id="a3c5-0840-1fce-80bf" defaultAmount="10">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Ranged Weapons" id="8402-a643-e337-c02a" hidden="false" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Voltaic Launcher" hidden="false" id="95fc-8ba8-e365-ca68" type="selectionEntry" targetId="b8d2-5af7-ec77-6692" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b198-1b94-8250-a0b3" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Voltaic Projector" hidden="false" id="14f8-0e69-40f8-078d" type="selectionEntry" targetId="b804-6820-5f6c-62ef" sortIndex="2">
+                      <costs>
+                        <cost name="Points" typeId="3513-57f3-6212-3f59" value="2"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5772-cb63-9eba-02f2" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b53-acd5-0d45-32b9" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Melee Weapons" id="e025-12ea-8c6f-18fa" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Drone Claws" hidden="false" id="886f-fd13-498f-e5fe" type="selectionEntry" targetId="9235-60f6-7f99-e9b6">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8338-9c3a-8097-a3f2" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0087-e8f5-25e3-4d9d" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6166-5ec1-73f3-d90f" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0677-032b-f17b-852f" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Skirmish Drone (⌀32mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="8fa4-d3d1-e730-d813">
+                  <characteristics>
+                    <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+                    <characteristic name="M" typeId="ed74-71b7-9404-c409">2&quot;</characteristic>
+                    <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">6+</characteristic>
+                    <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">6+</characteristic>
+                    <characteristic name="Save" typeId="cd53-7d25-3999-ff79">6+</characteristic>
+                    <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">4</characteristic>
+                    <characteristic name="HP" typeId="0638-f061-dc89-fc79">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="9"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Self Repairing" id="546e-1970-1383-f5fb" hidden="false" type="rule" targetId="e1eb-2603-e99e-b97c"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="8edd-c07d-e7bf-27da" includeChildSelections="false"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="288d-a52a-0ef5-f543"/>
+          </constraints>
+          <rules>
+            <rule name="Lore" id="ffad-b768-4634-a27a" hidden="true">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <description> &quot;I swear I&apos;ve seen them, I&apos;ve even heard &apos;em too. chittering, clattering, clawing, and then came the screaming... the screaming...&quot; - Deckhand Calloway, interview for &quot;Tall tales of deep space vol. 5&quot;.</description>
+            </rule>
+          </rules>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="e209-7b6b-fd78-0102" primary="false" name="Infantry"/>
+        <categoryLink targetId="19d7-3b92-a41b-df59" id="b1ac-449b-d2a1-576d" primary="true" name="Troops"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Voltaic Launcher" hidden="false" id="b8d2-5af7-ec77-6692" sortIndex="24">
+      <profiles>
+        <profile name="Voltaic Launcher" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="6751-a1f9-5d46-523b">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">24&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">0</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Voltaic Projector" hidden="false" id="b804-6820-5f6c-62ef" sortIndex="25">
+      <profiles>
+        <profile name="Voltaic Projector" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="085e-c9af-8f9b-150b">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">18&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">2</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Drone Claws" hidden="false" id="9235-60f6-7f99-e9b6" sortIndex="1">
+      <profiles>
+        <profile name="Drone Claws" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="c3ce-386e-9ae6-eff1">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">1</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">1</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">4</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">0</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Skinner Drones" hidden="false" id="80bb-a494-ccfa-7b0a" sortIndex="112">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="5-10 Skinner Drones" id="d184-9246-f945-1eda" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Skiner Drone" hidden="false" id="2320-d03e-a91d-b057" defaultAmount="5">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="15"/>
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Melee Weapons" id="336a-875a-f0c6-d493" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Ripper Claws" hidden="false" id="15ca-cca4-5250-d183" type="selectionEntry" targetId="1f5d-22fa-4124-6111">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e79-b003-a7b4-4b81" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7eb8-84bf-d410-5465" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b899-65fc-c1c6-d8c0" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ea2-2c84-94fe-1643" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Skinner Drone (⌀32mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="1dce-f6fa-bf00-4f12">
+                  <characteristics>
+                    <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+                    <characteristic name="M" typeId="ed74-71b7-9404-c409">3&quot;</characteristic>
+                    <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">8+</characteristic>
+                    <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">5+</characteristic>
+                    <characteristic name="Save" typeId="cd53-7d25-3999-ff79">6+</characteristic>
+                    <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">5</characteristic>
+                    <characteristic name="HP" typeId="0638-f061-dc89-fc79">2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Self Repairing" id="fa42-63aa-d42d-965f" hidden="false" type="rule" targetId="e1eb-2603-e99e-b97c"/>
+                <infoLink name="Infiltrating" id="8935-9698-4de4-aa06" hidden="false" type="rule" targetId="552c-93b0-76c6-01e9"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="67d4-75f8-dcd2-cf28" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="b541-9463-8785-7e94" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="2116-67ca-c2b1-0cbb" primary="false" name="Infantry"/>
+        <categoryLink targetId="19d7-3b92-a41b-df59" id="b5aa-4678-a62d-9977" primary="true" name="Troops"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flaying Wraith Drones" hidden="false" id="a452-8985-b991-77c3" sortIndex="121">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="3-6 Flaying Wraiths" id="da85-899b-03a1-9af4" hidden="false">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="a85f-16f5-9cf6-23ba" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ddd5-fdf0-5059-22b6" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Flaying Wraith" hidden="false" id="be33-9f39-f472-46dc" defaultAmount="3">
+              <profiles>
+                <profile name="Flaying Wraith (⌀50mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="0db1-fccc-5b27-e287">
+                  <characteristics>
+                    <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+                    <characteristic name="M" typeId="ed74-71b7-9404-c409">5&quot;</characteristic>
+                    <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">6+</characteristic>
+                    <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">6+</characteristic>
+                    <characteristic name="Save" typeId="cd53-7d25-3999-ff79">5+</characteristic>
+                    <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">5</characteristic>
+                    <characteristic name="HP" typeId="0638-f061-dc89-fc79">5</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="35"/>
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Melee Weapon" id="85ff-c630-1db0-17c2" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Vicious Claws" hidden="false" id="0b4f-ce7e-b326-72ca" type="selectionEntry" targetId="057c-2d27-6871-e525" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8ef-237e-aa59-4ec7" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Particle Lash" hidden="false" id="110e-bea5-e0a5-c5c8" type="selectionEntry" targetId="a299-4acd-00f7-573b" sortIndex="2">
+                      <costs>
+                        <cost name="Points" typeId="3513-57f3-6212-3f59" value="2"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0bbc-a630-ef5a-8d0d" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a68b-fea9-f48c-5ce5" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad45-1f71-b3a1-fedb" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Ranged Weapons" id="008d-813d-a2f9-dede" hidden="false" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Voidblaster" hidden="false" id="b5f6-1ffe-e633-21be" type="selectionEntry" targetId="6684-9ffc-512d-4cdc">
+                      <costs>
+                        <cost name="Points" typeId="3513-57f3-6212-3f59" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9d8-086f-1e82-097a" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cce2-86b6-d2bd-3e06" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="2727-059b-b6db-360e" id="2a62-ad86-d96f-949b" primary="true" name="Elites"/>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="f8af-4133-9def-bd13" primary="false" name="Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Voidblaster" hidden="false" id="6684-9ffc-512d-4cdc" sortIndex="28">
+      <profiles>
+        <profile name="Voidblaster" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="f13b-fe83-18ef-1739">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">12&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-6</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">3</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Heavy, Intra-Exile, Terror 4+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vicious Claws" hidden="false" id="057c-2d27-6871-e525" sortIndex="13">
+      <profiles>
+        <profile name="Vicious Claws" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="7a47-864b-36f6-5289">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">1</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">4</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">6</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">-1</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">2</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af">Terror 8+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Particle Lash" hidden="false" id="a299-4acd-00f7-573b" sortIndex="22">
+      <profiles>
+        <profile name="Particle Lash" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="240f-5646-e92a-1ace">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">12&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">1</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">5</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-2</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Particle Lash" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="4c05-6bb3-60ac-a0d9">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">1</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">3</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">5</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">-2</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lore - Weapons" hidden="false" id="4570-7d29-1d90-a250" sortIndex="200"/>
+    <selectionEntry type="upgrade" import="true" name="Buried Wraith Drones" hidden="false" id="a39d-91f9-dbf5-fc01" sortIndex="122">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="3-6 Buried Wraith Drones" id="881e-b9bf-8c62-a615" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Buried Wraith" hidden="false" id="4984-5950-c74e-f2a7" defaultAmount="3">
+              <profiles>
+                <profile name="Buried Wraith (⌀50mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="e09b-6adc-1912-4d48">
+                  <characteristics>
+                    <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+                    <characteristic name="M" typeId="ed74-71b7-9404-c409">4&quot;</characteristic>
+                    <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">6+</characteristic>
+                    <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">6+</characteristic>
+                    <characteristic name="Save" typeId="cd53-7d25-3999-ff79">5+</characteristic>
+                    <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">5</characteristic>
+                    <characteristic name="HP" typeId="0638-f061-dc89-fc79">5</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Buried Horrors" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="b47e-d2df-b27c-a4f2">
+                  <characteristics>
+                    <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">During deployment, instead of setting this unit up normally, place 3 1&quot; Buried tokens anywhere on the battlefield that is outside of the enemies deployment area, write down which token this unit is buried under. 
+
+
+If a enemy unit ends their turn within 6&quot; of a Buried token, you may reveal and activate this unit, placing each model within 3&quot; of the buried token.
+
+you may also chose to spend 2 AP to reveal this unit, placing each model within 3&quot; of the buried token.
+
+If multiple units have this ability, more than 1 unit may not be assigned to each buried token, each unit after the first unit that activates this ability only places down 2 additional buried tokens</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Melee Weapons" id="4006-b6f8-3984-d2ca" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Vicious Claws" hidden="false" id="8a69-bf85-78b7-bb5a" type="selectionEntry" targetId="057c-2d27-6871-e525" defaultAmount="">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f080-3723-ffb9-f671" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Ripper Claws" hidden="false" id="a309-ed3f-a0f9-afb7" type="selectionEntry" targetId="1f5d-22fa-4124-6111" defaultAmount="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="239a-c853-b858-951b" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59e2-4ca0-7cad-db38" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d168-7bd3-8d94-5290" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="35"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="e232-2742-2460-2f94" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="6604-b7fe-8665-9ed2" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="61c5-8850-3ef2-3214" primary="false" name="Infantry"/>
+        <categoryLink targetId="2727-059b-b6db-360e" id="9b28-06d7-267c-4f2f" primary="true" name="Elites"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rampart Drone" hidden="false" id="bb4c-e1f0-be36-83ca" sortIndex="131">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="1 Rampart Drone" id="ae85-2227-af87-5e12" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rampart Drone" hidden="false" id="5811-2522-62f1-50b1" defaultAmount="1">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="130"/>
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Turret Weapons" id="7a8d-0a12-5165-c35a" hidden="false" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Heavy Mass Driver" hidden="false" id="188a-363b-2b86-e507" type="selectionEntry" targetId="d500-e508-7149-eea3" defaultAmount="1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f57a-7954-b907-e269" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8ff-766a-9063-4834" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Melee Weapons" id="7d60-da16-6f70-e349" hidden="false" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Deconstruction Claws" hidden="false" id="bc52-7cbd-6d6e-5b9d" type="selectionEntry" targetId="5fb5-f491-5f50-5cc9" defaultAmount="1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ae1-831c-9597-7cdc" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddef-a187-0d51-843d" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd1a-bfb8-aad7-c576" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0fa-d5ab-bab4-c35d" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Rampart Shielding" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="db92-4ffe-87a4-8627">
+                  <characteristics>
+                    <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">If a model with this ability takes no movement actions during its turn. Then it gains Intravoid Shields.
+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Rampart Drone (⌀90 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="4dd7-e38e-7a0c-cbbb">
+                  <characteristics>
+                    <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+                    <characteristic name="M" typeId="ed74-71b7-9404-c409">4&quot;</characteristic>
+                    <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">4+</characteristic>
+                    <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">7+</characteristic>
+                    <characteristic name="Save" typeId="cd53-7d25-3999-ff79">7+</characteristic>
+                    <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">8</characteristic>
+                    <characteristic name="HP" typeId="0638-f061-dc89-fc79">12</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Self Repairing" id="6a62-1506-c387-2817" hidden="false" type="rule" targetId="e1eb-2603-e99e-b97c"/>
+              </infoLinks>
+              <rules>
+                <rule name="Intravoid Shields" id="9439-18b9-4e87-26ea" hidden="false">
+                  <description>When a model with this rule suffers damage, roll a d5 against the damage, if the result is greater than the damage amount, then ignore that damage. The first time a model with this ability rolls lower than the amount, it loses this ability.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c227-7238-1f14-3e71" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c72-79e6-da4e-c870" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e88a-70f1-34fb-03c0" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85e7-6d87-1a14-c681" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="1783-40df-349b-4bdd" id="60e6-1512-2271-4520" primary="false" name="Vehicle"/>
+        <categoryLink targetId="ee70-a05d-9619-a81c" id="36a2-21a2-7f39-2991" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rampart Claws" hidden="false" id="f5bd-1cac-8f60-149c" sortIndex="3">
+      <profiles>
+        <profile name="Rampart Claws" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="b166-76b5-cf34-349e">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">1</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">3</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">6</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">-1</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Mass Driver" hidden="false" id="d500-e508-7149-eea3" sortIndex="29">
+      <profiles>
+        <profile name="➤ Heavy Mass Driver - Low Power" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="3b96-a9f8-96cd-dcc4">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">24&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">8</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-3</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">D2+1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Heavy, Barrage 4 3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ Heavy Mass Driver - High Power" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="fed3-ec54-12a8-b61d" noindex="false">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">72&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">4</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">10</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-4 </characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">D2+4</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Heavy, Barrage 4 6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="42db-dec1-5472-b5c4" sortIndex="0">
+      <comment>1-100 Weapons, 100-200 Units, 200+ lore</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="abca-c575-959f-9429" sortIndex="1">
+      <comment>1-20 Melee Weaons</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="5629-9210-c63d-9a4d" sortIndex="21">
+      <comment>21-40 Ranged Weaons</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="8382-a9ad-8e91-368c" sortIndex="41">
+      <comment>41-50 Swarm Weapons</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="63d6-4d45-2882-5179" sortIndex="51">
+      <comment>51-60 Equipment</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="16a8-ecaa-4767-b10e" sortIndex="101">
+      <comment>101-110 Commanders</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="6424-1f2a-f2b0-98a3" sortIndex="111">
+      <comment>111-120 Troops</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="ae36-02f3-4843-6dc5" sortIndex="121">
+      <comment>121-130 Elites</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="8446-05a2-5095-4b12" sortIndex="131">
+      <comment>131-140 Heavy Support</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="d68f-ee67-d3e8-d3f8" sortIndex="200">
+      <comment>200+ Lore</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Guardian Drone" hidden="false" id="b22d-eafe-b0ed-a5ad" sortIndex="132">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="1 Guardian Drone" id="18e3-77f8-7660-c3ad" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Guardian Drone" hidden="false" id="8011-eadc-e103-3ec0" defaultAmount="1">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="200"/>
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Turret Weapons" id="0b88-9a92-388e-7efd" hidden="false" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Heavy Mass Driver" hidden="false" id="4212-d0dc-2112-9327" type="selectionEntry" targetId="d500-e508-7149-eea3" defaultAmount="1" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c5e-d9a8-6e0b-41f0" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73f4-e5e1-a05f-ec2b" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="0-2 Swarms" id="ac35-0656-9c3e-06fe" hidden="false" sortIndex="2">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2de3-419f-428f-ef07"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink import="true" name="Attack Swarm" hidden="false" id="7a31-d651-fe72-6aaa" type="selectionEntry" targetId="922f-e610-fcdc-a1b0">
+                          <costs>
+                            <cost name="Points" typeId="3513-57f3-6212-3f59" value="3"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Defabrication Swarm" hidden="false" id="743f-4e67-a4a2-0fb7" type="selectionEntry" targetId="0bd5-2bd1-7466-5db5">
+                          <costs>
+                            <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Melee Weapons" id="44b1-2457-e3a2-3822" hidden="false" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Rampart Claws" hidden="false" id="5865-be6d-2a63-6ca8" type="selectionEntry" targetId="f5bd-1cac-8f60-149c" defaultAmount="1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4904-8b1a-b55a-8b75" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa05-7560-4888-d5c9" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a915-e8db-8400-734d" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b08d-4b6e-6906-1c56" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Side Weapons" id="ccbd-c309-072c-bd65" hidden="false" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cbd-0976-4356-719c"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="2 Volatic Launcher Arrays" hidden="false" id="2f69-7c0a-9498-37af" defaultAmount="1">
+                      <entryLinks>
+                        <entryLink import="true" name="Voltaic Launcher Array" hidden="false" id="2c18-f382-be16-dfd4" type="selectionEntry" targetId="5048-597c-cd60-838b">
+                          <constraints>
+                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="93d8-f410-6e11-e7e5" includeChildSelections="false"/>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b2f3-0d9e-8141-9ac0" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="2 Voltaic Projector Arrays" hidden="false" id="811d-053a-03e0-8522">
+                      <entryLinks>
+                        <entryLink import="true" name="Voltaic Projector Array" hidden="false" id="4e61-88ed-e3de-4f06" type="selectionEntry" targetId="0ef4-7364-1828-89eb">
+                          <constraints>
+                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e835-a910-95a8-e942" includeChildSelections="false"/>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9161-ceba-90de-5787" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Guardian Drone (⌀120x92 mm)" typeId="0f74-e791-1423-bb47" typeName="Vehicle" hidden="false" id="a59a-e046-d31f-e7eb">
+                  <characteristics>
+                    <characteristic name="AP" typeId="6f3e-0c10-951f-79a3">4</characteristic>
+                    <characteristic name="M" typeId="6dcb-59ed-386f-0f47">5&quot;</characteristic>
+                    <characteristic name="RS" typeId="f5ab-f47a-e83b-e93d">4+</characteristic>
+                    <characteristic name="WS" typeId="8eac-d857-bc43-f54a">7+</characteristic>
+                    <characteristic name="Front" typeId="e6cb-8d4c-6d1f-0b9f">11</characteristic>
+                    <characteristic name="Side" typeId="47e8-d724-9e09-78a2">11</characteristic>
+                    <characteristic name="Rear" typeId="a649-6921-b44c-55b6">11</characteristic>
+                    <characteristic name="Save" typeId="9c7d-1809-8957-b7a8">7+</characteristic>
+                    <characteristic name="HP" typeId="a87f-3cb8-5628-b9b5">13</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Guardian Shields" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="2801-9521-4b51-3c26">
+                  <characteristics>
+                    <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">Until this model suffers a penetrating hit, this model is treated as having 13 armor on all sides.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Self Repairing" id="9de0-ccfc-80c1-118d" hidden="false" type="rule" targetId="e1eb-2603-e99e-b97c"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b799-2c41-a18f-0f9a" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa1f-23e3-b4bc-a203" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d369-e5e8-0c9e-c22d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="066c-83fd-f05a-4e81" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="4400-6d22-accc-d2a5" targetId="1783-40df-349b-4bdd" primary="false"/>
+        <categoryLink name="Heavy Support" hidden="false" id="526a-5d4f-1892-4471" targetId="ee70-a05d-9619-a81c" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Voltaic Projector Array" hidden="false" id="0ef4-7364-1828-89eb" sortIndex="26">
+      <profiles>
+        <profile name="Voltaic Projector Array" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="57b0-bf42-0ad7-9790">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">18&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">10</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Voltaic Launcher Array" hidden="false" id="5048-597c-cd60-838b" sortIndex="27">
+      <profiles>
+        <profile name="Voltaic Launcher Array" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="a2d0-6084-5234-96b9">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">24&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">5</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">0</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Rapid Fire 5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedRules>
+    <rule name="Terror" id="6ab6-05fc-f3ac-7fe3" hidden="false">
+      <alias>Terror X</alias>
+      <description>Weapons with Terror X cause enemy units hit by them to have to roll terror tests, after attacking, if any models in the target unit were killed by a attack, that unit must roll 2d5 against the value, adding or subtracting a bonus depending on the type of unit hit. See Faction Rule: Terror for more detail</description>
+      <comment>Weapon Keyword</comment>
+    </rule>
+    <rule name="Self Repairing" id="e1eb-2603-e99e-b97c" hidden="false">
+      <description>If a model has this ability, then at the end of that units turn, roll a d10 for each missing wound for each roll of 10+, that wound is recovered.
+
+
+For units with downed models with multiple wounds, sum the entirety of the downed models wounds.</description>
+    </rule>
+    <rule name="Faction keyword: Terror" id="7679-8baf-220a-5196" hidden="true">
+      <comment>With lore</comment>
+      <description>*Few mortal men have fought the Untended, those who have are shocked, left in states of panic and delirium from horrors wrought from a past better left forgotten.*
+
+Some weapons and abilities will have a “Terror X+” keyword, after attacking with these weapons, if any models in the target unit were killed by the attack, that unit must roll 2d5 against X+ adding or subtracting values based on that units type on the [Terror Modifier Table]
+
+If a unit fails its Terror Test, then that unit is now terrified until the end of the round, and several modifiers now apply.
+
+The unit must reroll charge rolls and take the lower result.
+The unit must fall back if possible
+at the end of the round, for each missing model in that unit, roll a d10, on a 1, another model is removed from play.</description>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="Faction keyword: Terror" id="a555-8a51-062c-b31d" hidden="false">
+      <comment>Without lore</comment>
+      <description>Some weapons and abilities will have a “Terror X+” keyword, after attacking with these weapons, if any models in the target unit were killed by the attack, that unit must roll 2d5 against X+ adding or subtracting values based on that units type on the [Terror Modifier Table]
+
+
+If a unit fails its Terror Test, then that unit is now terrified until the end of the round, and several modifiers now apply.
+
+
+The unit must reroll charge rolls and take the lower result.
+The unit must fall back if possible
+at the end of the round, for each missing model in that unit, roll a d10, on a 1, another model is removed from play.</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="Faction Rule: Self Repairing" id="9790-3a48-3321-98f6" hidden="true">
+      <comment>With lore</comment>
+      <description>“… There are rumors on board, spread by drunken sailors no doubt, of metal monsters that can rise from the dead, but how can a machine repair itself? I have ordered the crew to stop spreading such lies, and personally I do not believe a word of it.” - Cptn. Clancy, Last recorded log of the UHS Pillbug, recovered from fleet wreckage
+
+
+Some of the untended threat repair themselves by unknown and cryptic means. 
+
+
+If a model has this ability, then at the end of that units turn, roll a d10 for each missing wound for each roll of 10+, that wound is recovered.
+
+
+For units with downed models with multiple wounds, sum the entirety of the downed models wounds.</description>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="Faction Rule: Self Repairing" id="8f7a-d3d6-3c11-b2fa" hidden="false">
+      <comment>Without lore</comment>
+      <description>Some of the untended threat repair themselves by unknown and cryptic means. 
+
+
+If a model has this ability, then at the end of that units turn, roll a d10 for each missing wound for each roll of 10+, that wound is recovered.
+
+
+For units with downed models with multiple wounds, sum the entirety of the downed models wounds.</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="Reclamation" id="ef05-88aa-f4a8-bb01" hidden="false">
+      <description>When a model uses a weapon with this keyword, if any attack from that weapon destroyes a enemy model, the attacking model may roll 1d10, on a 6+ it may regain 1 wound</description>
+    </rule>
+    <rule name="Intra-Exile" id="c544-a92b-4bb4-71da" hidden="false">
+      <description>When firing a weapon with this special rule, a hit roll of 10 bypasses saves, a wound roll of 10 instantly kills the model that is being targeted by this weapon. Against vehicles, a penetrating roll of 10 always causes a penetrating hit, regardless of the targets armor value.</description>
+    </rule>
+  </sharedRules>
+  <entryLinks>
+    <entryLink import="true" name="Overseer" hidden="false" id="a0b4-152d-44f7-3d5d" type="selectionEntry" targetId="b4d3-3b14-50c2-de6c">
+      <categoryLinks>
+        <categoryLink targetId="60b7-3bbc-e392-6c6d" id="cfa0-17fe-c9d8-6f9d" primary="true" name="Commander"/>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="d2f5-e746-1b53-a9a7" primary="false" name="Infantry"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Fabricator" hidden="false" id="2641-9a96-9cf4-1375" type="selectionEntry" targetId="bd58-b979-156a-9aef"/>
+    <entryLink import="true" name="Berserker Drone" hidden="false" id="f9a7-6f97-47ed-daec" type="selectionEntry" targetId="0bdf-db8b-29de-6afd"/>
+    <entryLink import="true" name="Skirmish Drones" hidden="false" id="507f-e9f2-7b2c-9232" type="selectionEntry" targetId="e14b-4553-8df0-54e9"/>
+    <entryLink import="true" name="Skinner Drones" hidden="false" id="f84d-eed1-c4ee-b479" type="selectionEntry" targetId="80bb-a494-ccfa-7b0a"/>
+    <entryLink import="true" name="Flaying Wraiths" hidden="false" id="f6c2-7568-5c3d-5c0d" type="selectionEntry" targetId="a452-8985-b991-77c3"/>
+    <entryLink import="true" name="Buried Wraith Drones" hidden="false" id="ab0a-dc5e-0897-a6a2" type="selectionEntry" targetId="a39d-91f9-dbf5-fc01"/>
+    <entryLink import="true" name="Rampart Drone" hidden="false" id="c00c-d015-71e2-ae50" type="selectionEntry" targetId="bb4c-e1f0-be36-83ca"/>
+    <entryLink import="true" name="Guardian Drone" hidden="false" id="a13d-8dae-e0ef-532b" type="selectionEntry" targetId="b22d-eafe-b0ed-a5ad"/>
+  </entryLinks>
+</catalogue>
