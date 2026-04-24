@@ -3,54 +3,399 @@
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Faction Rule: Improvised Improvements" hidden="false" id="2ddd-9161-8eea-26ee">
       <rules>
-        <rule name="Improvised Improvements" id="618c-24bc-9c3e-7c45" hidden="false">
+        <rule name="Improvised Improvements " id="618c-24bc-9c3e-7c45" hidden="true">
+          <description>*Pirates are not known to follow much in the way of standards when it comes to doctrine and mechanized support loadouts. Many pirate vehicle crews have taken to addding or removing things from their crafts to make them more effective, atleast by their own judgement.*
+
+When creating a Pirate Army, some vehicles have access to “Improvised Improvements” these are listed in equipment options, each piece of equipment changes the vehicles in some way, usually dangerously…</description>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>w/ lore</comment>
+        </rule>
+        <rule name="Improvised Improvements " id="ab25-a0fc-7bf5-826a" hidden="false">
           <description>When creating a Pirate Army, some vehicles have access to “Improvised Improvements” these are listed in equipment options, each piece of equipment changes the vehicles in some way, usually dangerously…</description>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>w/o lore</comment>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="a3b2-f462-e2f2-0a9b" targetId="629c-c441-50b1-a5c9" primary="true"/>
+        <categoryLink targetId="629c-c441-50b1-a5c9" id="1212-ac6e-0087-590b" primary="true" name="Configuration"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Improvised Improvements Table" hidden="false" id="a943-b844-60d9-44b9">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="b329-ec1d-55f5-bdbb" targetId="629c-c441-50b1-a5c9" primary="true"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Reinforced Front" id="0762-1b59-318e-d54f" hidden="false" type="profile" targetId="71ad-9a37-71f1-67f7"/>
+        <infoLink name="Stripped Down" id="4e08-6588-76c4-cec8" hidden="false" type="profile" targetId="7518-6ccd-0df3-71e1"/>
+        <infoLink name="Up-Armored" id="407d-ec86-25d3-cd4a" hidden="false" type="profile" targetId="48f9-f7db-16e7-b225"/>
+        <infoLink name="Improvised Forcefield" id="ba58-6918-b39f-c305" hidden="false" type="profile" targetId="1154-adf2-887f-4cd1"/>
+        <infoLink name="Jet Boosters" id="5d0f-5339-1ee7-4e7b" hidden="false" type="profile" targetId="8541-7372-1cf8-8c19"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Faction rule: The Big One" hidden="false" id="578b-fe7a-42b0-605a">
+      <categoryLinks>
+        <categoryLink targetId="629c-c441-50b1-a5c9" id="b488-539e-7354-4eb7" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <rules>
+        <rule name="The Big One" id="d5c5-36f5-57c8-96db" hidden="true">
+          <description>*Pirates, at their core, love money, loot, and valuables. Which is why when a pirate lord happens to declare something as particularly valuable, pirates with froth at the mouth to take their share, even skimming a little of the top for themselves.*
+
+At the start of any round, you can declare The Big Score. While the Big Score is active pirate units from your army gain the following
+
+
+- Pirate units may declare a single charge move for 0 AP
+- Melee weapons equipped by pirate units in your army gain +1 to strength and attacks.
+- Pirate units in your army gain a 10+ legendary save.</description>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>w/ lore</comment>
+        </rule>
+        <rule name="The Big One" id="6df8-7fdc-09c1-9225" hidden="false">
+          <description>At the start of any round, you can declare The Big Score. While the Big Score is active pirate units from your army gain the following
+
+
+
+- Pirate units may declare a single charge move for 0 AP
+- Melee weapons equipped by pirate units in your army gain +1 to strength and attacks.
+- Pirate units in your army gain a 10+ legendary save.</description>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>w/o lore</comment>
+        </rule>
+      </rules>
     </selectionEntry>
   </selectionEntries>
   <profileTypes>
     <profileType name="Improvised Improvements" id="127b-fada-9a3e-ab3c" hidden="false">
       <characteristicTypes>
-        <characteristicType name="Name" id="a5ae-ca1e-7303-4091"/>
-        <characteristicType name="Effect" id="d05f-f8e6-424e-bba8"/>
-        <characteristicType name="Restriction" id="cf47-137a-3313-a79d"/>
+        <characteristicType name="Modification" id="d05f-f8e6-424e-bba8"/>
+        <characteristicType name="Restriction" id="cf47-137a-3313-a79d" kind="annotation"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Up-Armored" hidden="false" id="a1a9-eb6b-0a07-a99c">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="29a6-527d-f9af-bc2a" sortIndex="0">
+      <comment>1-10 Commander</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pirate Lord" hidden="false" id="9ece-b225-f4cc-8c5c" sortIndex="1">
+      <categoryLinks>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="e18f-8b01-61a8-d856" primary="false" name="Infantry"/>
+        <categoryLink targetId="60b7-3bbc-e392-6c6d" id="8beb-c0f9-90ea-9918" primary="true" name="Commander"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="3513-57f3-6212-3f59" value="90"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Right Arm" id="3acd-a3e9-349c-8fd3" hidden="false" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7132-4f92-2563-fb2d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e1e-3a51-e353-1e11" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="c111-f830-8de9-b103" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Mecha Gauntlet" hidden="false" id="4923-8f49-4742-3eef" type="selectionEntry" targetId="ac2f-c41d-1d1e-ba0e" defaultAmount="" sortIndex="3">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combo Cutlass" hidden="false" id="e454-e726-8f8e-98b7" type="selectionEntry" targetId="6cc4-8c2d-04ca-9e9f" defaultAmount="" sortIndex="2">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Cutlass" hidden="false" id="6fca-ab0d-9a03-5191" type="selectionEntry" targetId="e9c7-3d5b-1ddb-2e08" defaultAmount="0" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db16-9d9a-2688-fb39" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapons" id="1dc5-c0ec-3eb3-d1ae" hidden="false" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8ab-e810-b623-dd1b" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Boomstick" hidden="false" id="f037-89b0-9f15-0cb5" type="selectionEntry" targetId="0ef8-7e36-35c5-4659" defaultAmount="">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Stolen SMG" hidden="false" id="1902-5878-0499-f79a" type="selectionEntry" targetId="7a36-5e84-5e5a-4d1e" defaultAmount="1" sortIndex="1"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipment" id="56f9-6c2b-088a-d6ec" hidden="false"/>
+        <selectionEntryGroup name="Left Arm" id="e3b2-050f-943f-bd8d" hidden="false" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b35-945b-510c-2a2c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dbe1-441b-e689-dc50" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="1990-1e0d-5a09-527e" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Mecha Gauntlet" hidden="false" id="f631-583c-5dc7-9099" type="selectionEntry" targetId="ac2f-c41d-1d1e-ba0e" defaultAmount="" sortIndex="3">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combo Cutlass" hidden="false" id="6554-6222-35b0-0cf0" type="selectionEntry" targetId="6cc4-8c2d-04ca-9e9f" defaultAmount="" sortIndex="2">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Cutlass" hidden="false" id="8f43-9cab-0c99-1814" type="selectionEntry" targetId="e9c7-3d5b-1ddb-2e08" defaultAmount="1" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fab-20f5-6733-492c" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapons" id="b016-355c-f3ec-4fe9" hidden="false" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09e6-6cec-c97b-2321" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Boomstick" hidden="false" id="5b88-0c9e-d8eb-c6b2" type="selectionEntry" targetId="0ef8-7e36-35c5-4659" defaultAmount="">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Stolen SMG" hidden="false" id="0fa3-2296-c49e-723f" type="selectionEntry" targetId="7a36-5e84-5e5a-4d1e" defaultAmount="0" sortIndex="1"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <profiles>
-        <profile name="Up-Armored" typeId="127b-fada-9a3e-ab3c" typeName="Improvised Improvements" hidden="false" id="b3f6-2b99-76d8-e7db">
+        <profile name="Pirate Lord" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="990b-23cf-855a-d483">
           <characteristics>
-            <characteristic name="Name" typeId="a5ae-ca1e-7303-4091">Up-Armored</characteristic>
-            <characteristic name="Effect" typeId="d05f-f8e6-424e-bba8">Add +2 to all Armor Facings
-subtract -1 to movement</characteristic>
-            <characteristic name="Restriction" typeId="cf47-137a-3313-a79d">Cannot be taken with &quot;Reinforced Front&quot; or &quot;Stripped Down&quot;</characteristic>
+            <characteristic name="AP" typeId="43a8-4786-0175-dcd0">5</characteristic>
+            <characteristic name="M" typeId="ed74-71b7-9404-c409">3</characteristic>
+            <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">4+</characteristic>
+            <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">4+</characteristic>
+            <characteristic name="Save" typeId="cd53-7d25-3999-ff79">6+</characteristic>
+            <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">5</characteristic>
+            <characteristic name="HP" typeId="0638-f061-dc89-fc79">5</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Reinforced Front" hidden="false" id="c581-31db-3c40-95f0">
+    <selectionEntry type="upgrade" import="true" name="Cutlass" hidden="false" id="e9c7-3d5b-1ddb-2e08" sortIndex="101">
       <profiles>
-        <profile name="Reinforced Front" typeId="127b-fada-9a3e-ab3c" typeName="Improvised Improvements" hidden="false" id="8796-593b-a0ac-e43b">
+        <profile name="Cutlass" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="ac7e-a844-5d89-29cc">
           <characteristics>
-            <characteristic name="Name" typeId="a5ae-ca1e-7303-4091">Reinforced Front</characteristic>
-            <characteristic name="Effect" typeId="d05f-f8e6-424e-bba8">Add +2 to the front armor facing
-Add +1 to the side armor facings
-subtract -2 from the rear armor facing</characteristic>
-            <characteristic name="Restriction" typeId="cf47-137a-3313-a79d">Cannot be taken with &quot;Up-Armored&quot; or &quot;Stripped Down&quot;</characteristic>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">1</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">4</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">5</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">0</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af"/>
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="5bbf-e9f1-338b-c996" id="3658-f239-7593-e055" primary="true" name="Melee Weapon"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" hidden="false" id="acb3-d0ab-c8c6-3572" sortIndex="101">
+      <comment>101-120 Melee Weapons</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Combo Cutlass" hidden="false" id="6cc4-8c2d-04ca-9e9f" sortIndex="102">
+      <profiles>
+        <profile name="Combo Cutlass" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="55a5-7e49-18a4-5648">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">1</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">3</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">5</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">0</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Combo Weapon Choice" id="36cb-742f-57f2-1334" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a0ff-378d-a426-6d26" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74de-5dfd-e555-4a11" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Attached Boomstick" hidden="false" id="4166-7c48-ac73-3c92" type="selectionEntry" targetId="8b03-0b25-3ce4-202a">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Attached Flame Spitter" hidden="false" id="5b1a-f0ad-5727-df58" type="selectionEntry" targetId="b696-b719-a17b-c630">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="5bbf-e9f1-338b-c996" id="5d76-9e1a-69c6-e6af" primary="true" name="Melee Weapon"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" hidden="false" id="f2c7-add3-ebff-397f" sortIndex="121">
+      <comment>121-140 Ranged Weapons</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" hidden="false" id="a0b3-5a39-4b33-6494" sortIndex="141">
+      <comment>141-150 Attached Weapons</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Attached Flame Spitter" hidden="false" id="b696-b719-a17b-c630" sortIndex="141">
+      <profiles>
+        <profile name="Attached Flame Spitter" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="920a-dcb0-d182-17f8">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">6&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">1</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">D5+1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">0</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Auto-Hit</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Attached Boomstick" hidden="false" id="8b03-0b25-3ce4-202a" sortIndex="142">
+      <profiles>
+        <profile name="Attached Boomstick" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="7de3-8e68-0fac-03b6">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">10&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">1</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">2</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">3</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Assault, Shred, Pistol</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mecha Gauntlet" hidden="false" id="ac2f-c41d-1d1e-ba0e" sortIndex="103">
+      <profiles>
+        <profile name="Mecha Gauntlet" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="0758-5688-e9c2-82e6">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">1</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">2</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">8</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">-3</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">3</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="5bbf-e9f1-338b-c996" id="a756-5268-dfe1-9f83" primary="true" name="Melee Weapon"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Stolen SMG" hidden="false" id="7a36-5e84-5e5a-4d1e" sortIndex="121">
+      <profiles>
+        <profile name="Stolen SMG" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="5e1c-379a-c4ec-cc94">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">18&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">2</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">0</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="4f8f-e83d-8d24-eab5" id="036f-646a-5ca3-6661" primary="true" name="Ranged Weapon"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Boomstick" hidden="false" id="0ef8-7e36-35c5-4659" sortIndex="122">
+      <profiles>
+        <profile name="Boomstick" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="365f-ae49-fce7-af96">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">18&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">2</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Assault, Shred</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="19d7-3b92-a41b-df59" id="ef25-437f-dbe7-5f4b" primary="true" name="Troops"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile name="Up-Armored" typeId="127b-fada-9a3e-ab3c" typeName="Improvised Improvements" hidden="false" id="48f9-f7db-16e7-b225">
+      <characteristics>
+        <characteristic name="Modification" typeId="d05f-f8e6-424e-bba8">+2 to all Armor
+-1 to Movement</characteristic>
+        <characteristic name="Restriction" typeId="cf47-137a-3313-a79d">Cannot be taken with &quot;Reinforced Front&quot; or &quot;Stripped Down&quot;</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Stripped Down" typeId="127b-fada-9a3e-ab3c" typeName="Improvised Improvements" hidden="false" id="7518-6ccd-0df3-71e1">
+      <characteristics>
+        <characteristic name="Modification" typeId="d05f-f8e6-424e-bba8">+2 to Movement
+-2 to all Armor</characteristic>
+        <characteristic name="Restriction" typeId="cf47-137a-3313-a79d">Cannot be taken with  &quot;Reinforced Front&quot; or &quot;Up-Armored&quot;</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Reinforced Front" typeId="127b-fada-9a3e-ab3c" typeName="Improvised Improvements" hidden="false" id="71ad-9a37-71f1-67f7">
+      <characteristics>
+        <characteristic name="Modification" typeId="d05f-f8e6-424e-bba8">+2 to Front Armor 
++1 to Side Armor 
+-2 to Rear Armor</characteristic>
+        <characteristic name="Restriction" typeId="cf47-137a-3313-a79d">Cannot be taken with &quot;Up-Armored&quot; or &quot;Stripped Down&quot;</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Improvised Forcefield" typeId="127b-fada-9a3e-ab3c" typeName="Improvised Improvements" hidden="false" id="1154-adf2-887f-4cd1">
+      <characteristics>
+        <characteristic name="Modification" typeId="d05f-f8e6-424e-bba8">all Friendly Models within 6&quot; gain a 9+ Legend Save against ranged attacks.</characteristic>
+        <characteristic name="Restriction" typeId="cf47-137a-3313-a79d"/>
+      </characteristics>
+    </profile>
+    <profile name="Turbo Charged Engines" typeId="127b-fada-9a3e-ab3c" typeName="Improvised Improvements" hidden="false" id="6e18-c98e-3697-4b8f">
+      <characteristics>
+        <characteristic name="Modification" typeId="d05f-f8e6-424e-bba8">+1 to Movement</characteristic>
+        <characteristic name="Restriction" typeId="cf47-137a-3313-a79d"/>
+      </characteristics>
+    </profile>
+    <profile name="Jet Boosters" typeId="127b-fada-9a3e-ab3c" typeName="Improvised Improvements" hidden="false" id="8541-7372-1cf8-8c19">
+      <characteristics>
+        <characteristic name="Modification" typeId="d05f-f8e6-424e-bba8">Gain the following ability
+Boost (2 AP): Move 2d5&quot; in a straight line</characteristic>
+        <characteristic name="Restriction" typeId="cf47-137a-3313-a79d"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <entryLinks>
+    <entryLink import="true" name="Pirate Lord" hidden="false" id="9689-f293-544f-204d" type="selectionEntry" targetId="9ece-b225-f4cc-8c5c"/>
+  </entryLinks>
 </catalogue>

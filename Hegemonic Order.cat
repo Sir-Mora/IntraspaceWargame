@@ -1298,41 +1298,40 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="b7cf-c491-b0e6-a3be" sortIndex="1">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="b7cf-c491-b0e6-a3be" sortIndex="1">
       <comment>1-10 Melee Weapons</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="b6d2-2bad-6d37-e7a7" sortIndex="21">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="b6d2-2bad-6d37-e7a7" sortIndex="21">
       <comment>21-30 Automatik Weapons</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="9554-350d-98d3-cced" sortIndex="31">
-      <comment>31-40 Laz Weaons
-</comment>
+    <selectionEntry type="upgrade" import="true" hidden="false" id="9554-350d-98d3-cced" sortIndex="31">
+      <comment>31-40 Laz Weaons</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="10ec-b91a-4ce9-3e93" sortIndex="41">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="10ec-b91a-4ce9-3e93" sortIndex="41">
       <comment>41 - 50 Explosive Weapons</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="8b31-0889-95ff-4971" sortIndex="11">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="8b31-0889-95ff-4971" sortIndex="11">
       <comment>11-20 Conventional Weapons</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="8c8f-7ed5-fd61-36d6" sortIndex="51">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="8c8f-7ed5-fd61-36d6" sortIndex="51">
       <comment>51-60 Exotics</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="a812-8437-8fcf-68db" sortIndex="61">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="a812-8437-8fcf-68db" sortIndex="61">
       <comment>61-70 Grenades</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="f758-f5c3-2564-b2c8" sortIndex="81">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="f758-f5c3-2564-b2c8" sortIndex="81">
       <comment>81-100 Equipment</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="5504-5d9d-4b6f-593a" sortIndex="101">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="5504-5d9d-4b6f-593a" sortIndex="101">
       <comment>101-120 Commanders</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="91f4-6953-d3f6-849b" sortIndex="121">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="91f4-6953-d3f6-849b" sortIndex="121">
       <comment>121-150 Troops</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="9d1c-eddf-cfb2-a8e1" sortIndex="151">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="9d1c-eddf-cfb2-a8e1" sortIndex="151">
       <comment>151-160 Elites</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="ebe0-89d2-62fb-47ea" sortIndex="161">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="ebe0-89d2-62fb-47ea" sortIndex="161">
       <comment>161-170 Heavy Support</comment>
     </selectionEntry>
   </sharedSelectionEntries>
