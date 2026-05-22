@@ -120,9 +120,11 @@ When shooting at a vehicle with a weapon with the anti-vehicle keyword or simila
 
 Step 1: Roll a scatter die to determine direction. On a direct hit, skip to step 3. Otherwise, keep the scatter dice on the table and proceed
 
-Step 2: Roll 2d5, subtracting the value after the barrage keyword, then move the point that many inches in the direction of the scatter die. 
+Step 2: Roll a d10, then subtract the X value from the roll, then move the point that many inches in the direction of the scatter die. 
 
-Step 3: Each model within Y inches of that point is automatically hit by the weapons profile.</description>
+Step 3: Place down a circular template Y&quot; in diameter (or just measure each model within 1/2 Y inches of the point)
+
+Step 4: all models underneath that template are automatically hit by the weapon</description>
     </rule>
     <rule name="Limited X" id="ecb2-8de1-e144-7d74" hidden="false">
       <description>Limited X: Limited weapons may only be used X number of times. Afterwards the model with the weapon cannot use them.</description>

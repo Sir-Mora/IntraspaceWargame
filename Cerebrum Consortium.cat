@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="4e5e-1b18-fe7a-a2ca" name="Cerebrum Consortium" gameSystemId="sys-61df-4102-3143-2eae" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Faction Rule: Relic Tech" hidden="false" id="dc35-3904-6cd2-67d5" sortIndex="1">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="b0bb-8d4a-1000-aaf9" targetId="629c-c441-50b1-a5c9" primary="true"/>
+      </categoryLinks>
+      <rules>
+        <rule name="Faction Rule: Relic Tech" id="9e2f-14ec-af2d-7b77" hidden="true">
+          <comment>With lore</comment>
+          <description>*Relic Technology are machines and devices so advanced that production of new ones is impossible, either because of the object using materials that are impossible to create or by the sheer complexity of the object. Using these machines and weapons requires extermely fine attunment of the user, to make matters more complicated, these machines have been modified and mantained in accordance with the previous owners whims, and the owner before them, and so on and so forth.*
+
+
+Some Info Cards will have Relic Tech abilties or weapons, they will be formated like so
+
+
+Matter Removal Engine (2 AP) (13+): Select one enemy unit within 12 inches, on a success one model in that unit takes 2D5 unavoidable wounds
+
+
+Complexity Tests
+When using a Relic Tech ability, you must make a “Complexity test”, to do this you must roll either 2d10 or 3d10, if the total of those d10 is greater than the number after the AP cost, that being the Complexity Value, then the effect happens, otherwise the effect does not happen and the AP is still spent.
+
+
+When Using a Relic Tech Weapon, the Complexity Test is preformed and resolved after selecting targets for that weapon, and is preformed for each weapon firing, but not for each attack that weapon makes.
+
+
+If the model making the Complexity Test dies as a result, the ability is not resovled
+
+
+Tech Failures
+Regardless of the effect happening or not, if any of the d10 match each other, I.E rolling 2 1’s or 2 10’s, the user of the relic tech takes 2 unavoidable wounds for each matching number (E.X rolling 2 and 2 would make them take 2, while rolling 3, 3, and 3 would make them take 4)</description>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </rule>
+        <rule name="Faction Rule: Relic Tech" id="a87f-1cf0-7160-00a5" hidden="false">
+          <comment>Without lore</comment>
+          <description>Some Info Cards will have Relic Tech abilties or weapons, they will be formated like so
+
+
+
+Matter Removal Engine (2 AP) (13+): Select one enemy unit within 12 inches, on a success one model in that unit takes 2D5 unavoidable wounds
+
+
+Complexity Tests
+When using a Relic Tech ability, you must make a “Complexity test”, to do this you must roll either 2d10 or 3d10, if the total of those d10 is greater than the number after the AP cost, that being the Complexity Value, then the effect happens, otherwise the effect does not happen and the AP is still spent.
+
+
+When Using a Relic Tech Weapon, the Complexity Test is preformed and resolved after selecting targets for that weapon, and is preformed for each weapon firing, but not for each attack that weapon makes.
+
+
+If the model making the Complexity Test dies as a result, the ability is not resovled
+
+
+Tech Failures
+Regardless of the effect happening or not, if any of the d10 match each other, I.E rolling 2 1’s or 2 10’s, the user of the relic tech takes 2 unavoidable wounds for each matching number (E.X rolling 2 and 2 would make them take 2, while rolling 3, 3, and 3 would make them take 4)</description>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Faction Rule: Drones" hidden="false" id="c988-3428-1133-eed4" sortIndex="2">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="0d81-1b06-96fb-d8b6" targetId="629c-c441-50b1-a5c9" primary="true"/>
+      </categoryLinks>
+      <rules>
+        <rule name="Faction Rule: Relic Tech" id="8329-b154-5a91-b4bb" hidden="true">
+          <comment>With lore</comment>
+          <description>*Few of the consortiums higher ranking members are seen without them, as ubiquitous as profit and growth of the company, as cheap as the average workers salaries, they exist only to serve.*
+
+Drones are models that accompany other units into battle, henceforth known as “Controller units”, when a controller unit is activated, all the drones are activated as well, they are treated as one unit for doing actions. However, when a unit with drones targeted by attacks or abilities, the attacker may choose to target the drones or the controller unit.
+
+Models with the Drone keyword do not count for controlling objectives, if all non-drone models in a unit are destroyed then the Drones are counted as destroyed as well.</description>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </rule>
+        <rule name="Faction Rule: Relic Tech" id="d2a7-caf2-c7db-2b0c" hidden="false">
+          <comment>Without lore</comment>
+          <description>Drones are models that accompany other units into battle, henceforth known as “Controller units”, when a controller unit is activated, all the drones are activated as well, they are treated as one unit for doing actions. However, when a unit with drones targeted by attacks or abilities, the attacker may choose to target the drones or the controller unit.
+
+
+Models with the Drone keyword do not count for controlling objectives, if all non-drone models in a unit are destroyed then the Drones are counted as destroyed as well.</description>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </rule>
+      </rules>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Gun Drone" hidden="false" id="e472-f1e4-e48f-ffb9">
+      <profiles>
+        <profile name="Gun Drone (⌀32 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="d45a-0608-eaba-ee56">
+          <characteristics>
+            <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+            <characteristic name="M" typeId="ed74-71b7-9404-c409">4&quot;</characteristic>
+            <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">8+</characteristic>
+            <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">8+</characteristic>
+            <characteristic name="Save" typeId="cd53-7d25-3999-ff79">6+</characteristic>
+            <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">3</characteristic>
+            <characteristic name="HP" typeId="0638-f061-dc89-fc79">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="50c3-90cb-43ee-f5ca" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Twin Coil Gun" hidden="false" id="2b9a-dc93-0832-355f" type="selectionEntry" targetId="e207-bd77-465d-2337"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbb6-142e-c7df-28a8" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3bb9-f42d-120d-71de" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="2472-ab87-d146-a67e" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Twin Coil Gun" hidden="false" id="a76d-9542-d98d-7775" type="selectionEntry" targetId="e207-bd77-465d-2337"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="341d-212a-7614-f110" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afda-9b5e-7e7e-0daa" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin Coil Gun" hidden="false" id="e207-bd77-465d-2337">
+      <profiles>
+        <profile name="Twin Coil Gun" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="f687-8b39-80f7-cfb1">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">20&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">4</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">5</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">0</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shield Drone" hidden="false" id="fae5-5ad3-7256-9a65">
+      <profiles>
+        <profile name="Shield Drone (⌀32 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="3964-2929-2ffe-b4e8">
+          <characteristics>
+            <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+            <characteristic name="M" typeId="ed74-71b7-9404-c409">4&quot;</characteristic>
+            <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">8+</characteristic>
+            <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">8+</characteristic>
+            <characteristic name="Save" typeId="cd53-7d25-3999-ff79">6+(6+)</characteristic>
+            <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">3</characteristic>
+            <characteristic name="HP" typeId="0638-f061-dc89-fc79">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Protection Protocol" id="5238-a9b0-64ef-b7fd" hidden="false" type="profile" targetId="604a-dc5a-c0c1-1394"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shielded Missile Drone" hidden="false" id="d59b-614c-6bee-ce87">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="0d1b-8992-6017-3d3b" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Missile Pod" hidden="false" id="dba9-5fb6-6129-65c0" type="selectionEntry" targetId="ba9d-537b-92a8-5acc"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="708b-d605-22ef-675f" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aeac-e14a-afea-d73f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Shielded Missile Drone" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="082a-0ad0-3156-99c8">
+          <characteristics>
+            <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+            <characteristic name="M" typeId="ed74-71b7-9404-c409">4&quot;</characteristic>
+            <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">9+</characteristic>
+            <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">9+</characteristic>
+            <characteristic name="Save" typeId="cd53-7d25-3999-ff79">3</characteristic>
+            <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">6+(6+)</characteristic>
+            <characteristic name="HP" typeId="0638-f061-dc89-fc79">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Protection Protocol" id="c5f5-1e2b-6702-2071" hidden="false" type="profile" targetId="604a-dc5a-c0c1-1394"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Missile Pod" hidden="false" id="ba9d-537b-92a8-5acc">
+      <profiles>
+        <profile name="Missile Pod" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="9eca-ae96-294e-bc83">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">36&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">2</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">7</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">2</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile name="Protection Protocol" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="604a-dc5a-c0c1-1394">
+      <characteristics>
+        <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">Whenever the Controller unit that this model is in is wounded by a attack, its controller may choose for the attack to wound the shield drone instead. replacing this drones save with 11+(10+) until that attack is resolved.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>

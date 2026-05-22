@@ -188,7 +188,7 @@
             <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">6+</characteristic>
             <characteristic name="Save" typeId="cd53-7d25-3999-ff79">5+</characteristic>
             <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">8</characteristic>
-            <characteristic name="HP" typeId="0638-f061-dc89-fc79">8</characteristic>
+            <characteristic name="HP" typeId="0638-f061-dc89-fc79">9</characteristic>
           </characteristics>
         </profile>
         <profile name="Construction Swarms (1 AP)" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="5429-0a17-d2b7-3fe6">
@@ -509,7 +509,7 @@
                   </conditions>
                 </modifier>
               </modifiers>
-              <description> &quot;I swear I&apos;ve seen them, I&apos;ve even heard &apos;em too. chittering, clattering, clawing, and then came the screaming... the screaming...&quot; - Deckhand Calloway, interview for &quot;Tall tales of deep space vol. 5&quot;.</description>
+              <description>&quot;I swear I&apos;ve seen them, I&apos;ve even heard &apos;em too. chittering, clattering, clawing, and then came the screaming... the screaming...&quot; - Deckhand Calloway, interview for &quot;Tall tales of deep space vol. 5&quot;.</description>
             </rule>
           </rules>
         </selectionEntryGroup>
@@ -780,7 +780,7 @@ If multiple units have this ability, more than 1 unit may not be assigned to eac
               <selectionEntryGroups>
                 <selectionEntryGroup name="Melee Weapons" id="4006-b6f8-3984-d2ca" hidden="false" sortIndex="2">
                   <entryLinks>
-                    <entryLink import="true" name="Vicious Claws" hidden="false" id="8a69-bf85-78b7-bb5a" type="selectionEntry" targetId="057c-2d27-6871-e525" defaultAmount="">
+                    <entryLink import="true" name="Vicious Claws" hidden="false" id="8a69-bf85-78b7-bb5a" type="selectionEntry" targetId="057c-2d27-6871-e525">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f080-3723-ffb9-f671" includeChildSelections="false"/>
                       </constraints>
@@ -853,8 +853,7 @@ If multiple units have this ability, more than 1 unit may not be assigned to eac
               <profiles>
                 <profile name="Rampart Shielding" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="db92-4ffe-87a4-8627">
                   <characteristics>
-                    <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">If a model with this ability takes no movement actions during its turn. Then it gains Intravoid Shields.
-</characteristic>
+                    <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">If a model with this ability takes no movement actions during its turn. Then it gains Intravoid Shields.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Rampart Drone (⌀90 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="4dd7-e38e-7a0c-cbbb">
@@ -928,41 +927,41 @@ If multiple units have this ability, more than 1 unit may not be assigned to eac
             <characteristic name="Cost" typeId="f046-bdab-8918-0f81">4</characteristic>
             <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
             <characteristic name="Str" typeId="d965-bd05-5d27-6d68">10</characteristic>
-            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-4 </characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-4</characteristic>
             <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">D2+4</characteristic>
             <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Heavy, Barrage 4 6</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="42db-dec1-5472-b5c4" sortIndex="0">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="42db-dec1-5472-b5c4" sortIndex="0">
       <comment>1-100 Weapons, 100-200 Units, 200+ lore</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="abca-c575-959f-9429" sortIndex="1">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="abca-c575-959f-9429" sortIndex="1">
       <comment>1-20 Melee Weaons</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="5629-9210-c63d-9a4d" sortIndex="21">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="5629-9210-c63d-9a4d" sortIndex="21">
       <comment>21-40 Ranged Weaons</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="8382-a9ad-8e91-368c" sortIndex="41">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="8382-a9ad-8e91-368c" sortIndex="41">
       <comment>41-50 Swarm Weapons</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="63d6-4d45-2882-5179" sortIndex="51">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="63d6-4d45-2882-5179" sortIndex="51">
       <comment>51-60 Equipment</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="16a8-ecaa-4767-b10e" sortIndex="101">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="16a8-ecaa-4767-b10e" sortIndex="101">
       <comment>101-110 Commanders</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="6424-1f2a-f2b0-98a3" sortIndex="111">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="6424-1f2a-f2b0-98a3" sortIndex="111">
       <comment>111-120 Troops</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="ae36-02f3-4843-6dc5" sortIndex="121">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="ae36-02f3-4843-6dc5" sortIndex="121">
       <comment>121-130 Elites</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="8446-05a2-5095-4b12" sortIndex="131">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="8446-05a2-5095-4b12" sortIndex="131">
       <comment>131-140 Heavy Support</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="d68f-ee67-d3e8-d3f8" sortIndex="200">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="d68f-ee67-d3e8-d3f8" sortIndex="200">
       <comment>200+ Lore</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Guardian Drone" hidden="false" id="b22d-eafe-b0ed-a5ad" sortIndex="132">
@@ -1174,7 +1173,7 @@ at the end of the round, for each missing model in that unit, roll a d10, on a 1
 Some of the untended threat repair themselves by unknown and cryptic means. 
 
 
-If a model has this ability, then at the end of that units turn, roll a d10 for each missing wound for each roll of 10+, that wound is recovered.
+If a model has this ability, then at the end of the turn, roll a d10 for each missing wound for each roll of 10+, that wound is recovered.
 
 
 For units with downed models with multiple wounds, sum the entirety of the downed models wounds.</description>
@@ -1191,10 +1190,11 @@ For units with downed models with multiple wounds, sum the entirety of the downe
       <description>Some of the untended threat repair themselves by unknown and cryptic means. 
 
 
-If a model has this ability, then at the end of that units turn, roll a d10 for each missing wound for each roll of 10+, that wound is recovered.
+If a model has this ability, then at the end of the turn, roll a d10 for each missing Health Point for each roll of 10+, that Health Point is recovered.
 
+if a model did not revive at the end of a turn, it is permenantly removed from play and cannot be revived later
 
-For units with downed models with multiple wounds, sum the entirety of the downed models wounds.</description>
+For units with downed models with multiple Health Point, sum the entirety of the downed models wounds.</description>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -1221,7 +1221,7 @@ For units with downed models with multiple wounds, sum the entirety of the downe
     <entryLink import="true" name="Berserker Drone" hidden="false" id="f9a7-6f97-47ed-daec" type="selectionEntry" targetId="0bdf-db8b-29de-6afd"/>
     <entryLink import="true" name="Skirmish Drones" hidden="false" id="507f-e9f2-7b2c-9232" type="selectionEntry" targetId="e14b-4553-8df0-54e9"/>
     <entryLink import="true" name="Skinner Drones" hidden="false" id="f84d-eed1-c4ee-b479" type="selectionEntry" targetId="80bb-a494-ccfa-7b0a"/>
-    <entryLink import="true" name="Flaying Wraiths" hidden="false" id="f6c2-7568-5c3d-5c0d" type="selectionEntry" targetId="a452-8985-b991-77c3"/>
+    <entryLink import="true" name="Flaying Wraith Drones" hidden="false" id="f6c2-7568-5c3d-5c0d" type="selectionEntry" targetId="a452-8985-b991-77c3"/>
     <entryLink import="true" name="Buried Wraith Drones" hidden="false" id="ab0a-dc5e-0897-a6a2" type="selectionEntry" targetId="a39d-91f9-dbf5-fc01"/>
     <entryLink import="true" name="Rampart Drone" hidden="false" id="c00c-d015-71e2-ae50" type="selectionEntry" targetId="bb4c-e1f0-be36-83ca"/>
     <entryLink import="true" name="Guardian Drone" hidden="false" id="a13d-8dae-e0ef-532b" type="selectionEntry" targetId="b22d-eafe-b0ed-a5ad"/>

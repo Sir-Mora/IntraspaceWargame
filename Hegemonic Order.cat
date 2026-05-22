@@ -1136,7 +1136,7 @@
             <characteristic name="Str" typeId="d965-bd05-5d27-6d68">6</characteristic>
             <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
             <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">D2+1</characteristic>
-            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Barrage 3 3</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Barrage 3 4</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1248,7 +1248,7 @@
             <characteristic name="Str" typeId="d965-bd05-5d27-6d68">8</characteristic>
             <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-2</characteristic>
             <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">2</characteristic>
-            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Heavy, Barrage 3 3</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Heavy, Barrage 3 6</characteristic>
           </characteristics>
         </profile>
       </profiles>
