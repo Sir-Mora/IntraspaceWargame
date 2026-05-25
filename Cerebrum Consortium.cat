@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4e5e-1b18-fe7a-a2ca" name="Cerebrum Consortium" gameSystemId="sys-61df-4102-3143-2eae" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4e5e-1b18-fe7a-a2ca" name="Cerebrum Consortium" gameSystemId="sys-61df-4102-3143-2eae" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Faction Rule: Relic Tech" hidden="false" id="dc35-3904-6cd2-67d5" sortIndex="1">
       <categoryLinks>
@@ -106,7 +106,7 @@ Models with the Drone keyword do not count for controlling objectives, if all no
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Gun Drone" hidden="false" id="e472-f1e4-e48f-ffb9">
+    <selectionEntry type="model" import="true" name="Gun Drone" hidden="false" id="e472-f1e4-e48f-ffb9" sortIndex="21">
       <profiles>
         <profile name="Gun Drone (⌀32 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="d45a-0608-eaba-ee56">
           <characteristics>
@@ -129,21 +129,13 @@ Models with the Drone keyword do not count for controlling objectives, if all no
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbb6-142e-c7df-28a8" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3bb9-f42d-120d-71de" includeChildSelections="false"/>
           </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Weapons" id="2472-ab87-d146-a67e" hidden="false">
-              <entryLinks>
-                <entryLink import="true" name="Twin Coil Gun" hidden="false" id="a76d-9542-d98d-7775" type="selectionEntry" targetId="e207-bd77-465d-2337"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="341d-212a-7614-f110" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afda-9b5e-7e7e-0daa" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="b88d-3713-1b76-e33b" id="618d-4578-7316-20ae" primary="true" name="Drone"/>
+      </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Twin Coil Gun" hidden="false" id="e207-bd77-465d-2337">
+    <selectionEntry type="upgrade" import="true" name="Twin Coil Gun" hidden="false" id="e207-bd77-465d-2337" sortIndex="2">
       <profiles>
         <profile name="Twin Coil Gun" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="f687-8b39-80f7-cfb1">
           <characteristics>
@@ -157,8 +149,12 @@ Models with the Drone keyword do not count for controlling objectives, if all no
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fb7-f25c-2835-d4e1" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a918-bb7d-4543-2c50" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Shield Drone" hidden="false" id="fae5-5ad3-7256-9a65">
+    <selectionEntry type="model" import="true" name="Shield Drone" hidden="false" id="fae5-5ad3-7256-9a65" sortIndex="22">
       <profiles>
         <profile name="Shield Drone (⌀32 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="3964-2929-2ffe-b4e8">
           <characteristics>
@@ -172,13 +168,24 @@ Models with the Drone keyword do not count for controlling objectives, if all no
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink name="Protection Protocol" id="5238-a9b0-64ef-b7fd" hidden="false" type="profile" targetId="604a-dc5a-c0c1-1394"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Shielded Missile Drone" hidden="false" id="d59b-614c-6bee-ce87">
+      <categoryLinks>
+        <categoryLink targetId="b88d-3713-1b76-e33b" id="7370-4b0e-f14e-3bf5" primary="true" name="Drone"/>
+      </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="0d1b-8992-6017-3d3b" hidden="false">
+        <selectionEntryGroup name="Equipment" id="a627-65a4-be88-c0a3" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="696e-7988-c8d3-564f" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e0f-8c0a-5cbf-fcf6" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Protection Protocol" hidden="false" id="ef99-3fa3-9606-5e40" type="selectionEntry" targetId="47cd-6064-b92a-9d29"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Shielded Missile Drone" hidden="false" id="d59b-614c-6bee-ce87" sortIndex="27">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="0d1b-8992-6017-3d3b" hidden="false" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Missile Pod" hidden="false" id="dba9-5fb6-6129-65c0" type="selectionEntry" targetId="ba9d-537b-92a8-5acc"/>
           </entryLinks>
@@ -187,25 +194,34 @@ Models with the Drone keyword do not count for controlling objectives, if all no
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aeac-e14a-afea-d73f" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Equipment" id="6b0d-1298-b62a-7209" hidden="false" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ed5-c8b3-7718-ceaa" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4f58-c3f6-58c6-5fd7" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Protection Protocol" hidden="false" id="6dac-731c-d272-b425" type="selectionEntry" targetId="47cd-6064-b92a-9d29"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <profiles>
-        <profile name="Shielded Missile Drone" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="082a-0ad0-3156-99c8">
+        <profile name="Shielded Missile Drone  (⌀32 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="082a-0ad0-3156-99c8">
           <characteristics>
             <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
             <characteristic name="M" typeId="ed74-71b7-9404-c409">4&quot;</characteristic>
             <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">9+</characteristic>
             <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">9+</characteristic>
-            <characteristic name="Save" typeId="cd53-7d25-3999-ff79">3</characteristic>
-            <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">6+(6+)</characteristic>
+            <characteristic name="Save" typeId="cd53-7d25-3999-ff79">6+(6+)</characteristic>
+            <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">3</characteristic>
             <characteristic name="HP" typeId="0638-f061-dc89-fc79">2</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink name="Protection Protocol" id="c5f5-1e2b-6702-2071" hidden="false" type="profile" targetId="604a-dc5a-c0c1-1394"/>
-      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="b88d-3713-1b76-e33b" id="3ccd-b91f-017e-0f13" primary="true" name="Drone"/>
+      </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Missile Pod" hidden="false" id="ba9d-537b-92a8-5acc">
+    <selectionEntry type="upgrade" import="true" name="Missile Pod" hidden="false" id="ba9d-537b-92a8-5acc" sortIndex="1">
       <profiles>
         <profile name="Missile Pod" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="9eca-ae96-294e-bc83">
           <characteristics>
@@ -219,6 +235,605 @@ Models with the Drone keyword do not count for controlling objectives, if all no
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b9f-2cab-8872-3d7c" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98b1-270d-ab10-fde5" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Guardian Drone" hidden="false" id="0807-6c82-dc2d-0bb3" sortIndex="23">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipment" id="0c7d-8da5-cb44-969c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Localized Shield Field" hidden="false" id="2bf5-61e5-b0e8-8434">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c1c-7140-327d-d343" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="731b-8a24-1c75-a3c3" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Localized Shield Field" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="b224-c971-867e-cd45">
+                  <characteristics>
+                    <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">Whenever this drone would lose a HP, roll one d10 , on a 10+ that HP is not lost.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Protection Protocol" hidden="false" id="0e7e-5f2e-8684-4576" type="selectionEntry" targetId="47cd-6064-b92a-9d29"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Guardian Drone  (⌀32 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="cb84-d6ad-1c59-731f">
+          <characteristics>
+            <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+            <characteristic name="M" typeId="ed74-71b7-9404-c409">4&quot;</characteristic>
+            <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">9+</characteristic>
+            <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">9+</characteristic>
+            <characteristic name="Save" typeId="cd53-7d25-3999-ff79">6+(6+)</characteristic>
+            <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">3</characteristic>
+            <characteristic name="HP" typeId="0638-f061-dc89-fc79">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="b88d-3713-1b76-e33b" id="3be0-5770-0388-b41b" primary="true" name="Drone"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Sniper Drone" hidden="false" id="0009-6574-4a91-bc30" sortIndex="24">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="a237-8425-e2f3-f290" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Coil Sniper Rifle" hidden="false" id="c41b-deb1-710e-89be" type="selectionEntry" targetId="b048-b081-f1cb-a397"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a56-642c-44ac-1dce" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="802d-71b3-320d-6c3b" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Sniper Drone (⌀32 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="01f1-fc5b-bc6b-b507">
+          <characteristics>
+            <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+            <characteristic name="M" typeId="ed74-71b7-9404-c409">4&quot;</characteristic>
+            <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">7+</characteristic>
+            <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">9+</characteristic>
+            <characteristic name="Save" typeId="cd53-7d25-3999-ff79">6+</characteristic>
+            <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">3</characteristic>
+            <characteristic name="HP" typeId="0638-f061-dc89-fc79">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="b88d-3713-1b76-e33b" id="74bf-1ce0-87c7-028f" primary="true" name="Drone"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Coil Sniper Rifle" hidden="false" id="b048-b081-f1cb-a397" sortIndex="3">
+      <profiles>
+        <profile name="Coil Sniper Rifle" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="a1f7-2a42-51bc-c20e">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">48&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">5</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-2</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Precise, Heavy, Rapid Fire 1, Devastating 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9969-87d9-1d2d-50f4" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6aa4-adb1-3fb3-8a91" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Coil Field Drone" hidden="false" id="0a2d-64cc-a646-6073" sortIndex="25">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipment" id="e38d-e380-2d82-971d" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Coil Field Accelerator" hidden="false" id="ee28-926b-24e3-e4f9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd90-1027-6dba-1144" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1041-69e8-08dd-14e8" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Coil Field Accelerator" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="f6f4-66a9-0b65-212e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">this unit gains +1 Rend to Coil weapons</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Protection Protocol" hidden="false" id="c941-9de2-8251-3866" type="selectionEntry" targetId="47cd-6064-b92a-9d29"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Coil Field Drone (⌀32 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="4050-4c0c-7bc1-ce31">
+          <characteristics>
+            <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+            <characteristic name="M" typeId="ed74-71b7-9404-c409">4&quot;</characteristic>
+            <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">9+</characteristic>
+            <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">9+</characteristic>
+            <characteristic name="Save" typeId="cd53-7d25-3999-ff79">6+</characteristic>
+            <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">3</characteristic>
+            <characteristic name="HP" typeId="0638-f061-dc89-fc79">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="b88d-3713-1b76-e33b" id="c31b-57dd-28b7-242a" primary="true" name="Drone"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Stabilization Drone" hidden="false" id="301c-9627-031e-86bc" sortIndex="26">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipment" id="2eed-48fe-9094-75eb" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Relic Protection field" hidden="false" id="d337-5cf9-4ce5-4060">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bde-09d8-0e93-74fb" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5b3-8e8c-8e9a-c188" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Relic Protection field" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="f95a-b461-c7f0-d0ca">
+                  <characteristics>
+                    <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">If this drones unit would take damage from a Tech Failure roll, that units controller may instead assign that damage to the Stabilization Drone</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Protection Protocol" hidden="false" id="9236-f748-8f17-91b5" type="selectionEntry" targetId="47cd-6064-b92a-9d29"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Coil Field Drone (⌀32 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="869d-e63c-5301-b309">
+          <characteristics>
+            <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+            <characteristic name="M" typeId="ed74-71b7-9404-c409">4&quot;</characteristic>
+            <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">9+</characteristic>
+            <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">9+</characteristic>
+            <characteristic name="Save" typeId="cd53-7d25-3999-ff79">6+</characteristic>
+            <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">3</characteristic>
+            <characteristic name="HP" typeId="0638-f061-dc89-fc79">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="b88d-3713-1b76-e33b" id="7f04-92b1-4310-e95f" primary="true" name="Drone"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Gyrus Drone Cortex" hidden="false" id="1c63-9a4a-4b9b-4e58" sortIndex="31">
+      <categoryLinks>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="0f52-0b22-8c24-1829" primary="false" name="Infantry"/>
+        <categoryLink targetId="60b7-3bbc-e392-6c6d" id="e25d-9d7b-6db6-9aa1" primary="true" name="Commander"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Drones" id="0a9e-9949-f575-cdb0" hidden="false" sortIndex="3">
+          <constraints>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ae87-457b-c82d-e85d" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Gun Drone" hidden="false" id="d35a-203f-125f-1736" type="selectionEntry" targetId="e472-f1e4-e48f-ffb9" sortIndex="1">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="8"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="3c54-2b21-6ab3-9741" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield Drone" hidden="false" id="7d23-2a0b-6634-124a" type="selectionEntry" targetId="fae5-5ad3-7256-9a65" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="8"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ab94-20d6-43b4-92db" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Sniper Drone" hidden="false" id="4816-70fb-5412-8bbe" type="selectionEntry" targetId="0009-6574-4a91-bc30" sortIndex="3">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="12"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="9116-2fc1-0ddf-7125" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shielded Missile Drone" hidden="false" id="672a-4289-7f16-d1a3" type="selectionEntry" targetId="d59b-614c-6bee-ce87">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4151-5eba-dc4b-1755" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="16"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Gyrus Drone Master" hidden="false" id="b3b7-4cd0-84db-6d48" sortIndex="1" defaultAmount="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="397f-02a0-8ce2-873a" hidden="false" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a19-4531-c644-80b3" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dfdf-7ea5-6c3b-4da2" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Coil Pistol" hidden="false" id="3877-04c3-7a85-048b" type="selectionEntry" targetId="dbdb-1887-f602-950a"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Equipment" id="29b6-6b0d-9940-73af" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Drone Uplink" hidden="false" id="8c3e-4760-1ac8-8489" type="selectionEntry" targetId="365d-5d1a-35e5-485e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="527b-ef3f-9920-2951" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <profiles>
+            <profile name="Gyrus Drone Master (⌀32 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="272e-48b5-e65d-37f0">
+              <characteristics>
+                <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+                <characteristic name="M" typeId="ed74-71b7-9404-c409">3&quot;</characteristic>
+                <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">4+</characteristic>
+                <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">6+</characteristic>
+                <characteristic name="Save" typeId="cd53-7d25-3999-ff79">4+</characteristic>
+                <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">5</characteristic>
+                <characteristic name="HP" typeId="0638-f061-dc89-fc79">5</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="3513-57f3-6212-3f59" value="20"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5cf2-3425-0c73-c209" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a141-850e-eb7e-66ad" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Coil Pistol" hidden="false" id="dbdb-1887-f602-950a" sortIndex="4">
+      <profiles>
+        <profile name="Coil Pistol" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="0e6a-d9f6-f2da-a337">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">12&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">1</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">5</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">0</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Pistol</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b576-50cf-53ac-4ed8" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a7b-dea9-5590-d823" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Protection Protocol" hidden="false" id="47cd-6064-b92a-9d29" sortIndex="-1">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a7d-c232-62f5-1d73" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da33-10f4-d7a3-4aa9" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Protection Protocol" id="c65a-3086-d3ac-1017" hidden="false" type="profile" targetId="604a-dc5a-c0c1-1394"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vagus Rangers" hidden="false" id="1fb0-9a19-512e-b94a" sortIndex="41">
+      <comment>5-10</comment>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="5-10 Vagus Rangers" id="acfb-203a-5c07-c6e5" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Vagus Ranger" hidden="false" id="0fcb-42e2-36b0-9fb6" defaultAmount="5">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="7"/>
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapons" id="7ea3-05af-1a9e-1994" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Coil Rifle" hidden="false" id="d17b-3778-fbb7-a87e" type="selectionEntry" targetId="d086-8ed5-e2ce-50f2"/>
+                    <entryLink import="true" name="Glitch Grenade" hidden="false" id="b464-b8b0-7afb-9033" type="selectionEntry" targetId="9c69-3f17-c336-730c" defaultAmount="">
+                      <costs>
+                        <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Vagus Ranger (⌀30 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="9267-6779-d9d0-9a24">
+                  <characteristics>
+                    <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+                    <characteristic name="M" typeId="ed74-71b7-9404-c409">3&quot;</characteristic>
+                    <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">6+</characteristic>
+                    <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">6+</characteristic>
+                    <characteristic name="Save" typeId="cd53-7d25-3999-ff79">6+</characteristic>
+                    <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">3</characteristic>
+                    <characteristic name="HP" typeId="0638-f061-dc89-fc79">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="9ddc-abb4-953d-1741" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="8a73-275b-5360-3d35" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Drones" id="267c-bd26-ab6c-3fdb" hidden="false" sortIndex="2">
+          <comment>for every 5 models, get 2 drones</comment>
+          <entryLinks>
+            <entryLink import="true" name="Gun Drone" hidden="false" id="f932-0639-7557-141b" type="selectionEntry" targetId="e472-f1e4-e48f-ffb9" sortIndex="1">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="8"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="4" field="4810-718f-2871-d013">
+                  <conditions>
+                    <condition type="atLeast" value="10" field="selections" scope="1fb0-9a19-512e-b94a" childId="acfb-203a-5c07-c6e5" shared="true" includeChildSelections="true" childName="5-10 Vagus Rangers"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4810-718f-2871-d013" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield Drone" hidden="false" id="b6f1-6550-edc5-6100" type="selectionEntry" targetId="fae5-5ad3-7256-9a65" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="8"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="4" field="ad8c-fbe3-6649-6680">
+                  <conditions>
+                    <condition type="atLeast" value="10" field="selections" scope="1fb0-9a19-512e-b94a" childId="acfb-203a-5c07-c6e5" shared="true" includeChildSelections="true" childName="5-10 Vagus Rangers"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ad8c-fbe3-6649-6680" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Coil Field Drone" hidden="false" id="549e-e648-68d5-f2a3" type="selectionEntry" targetId="0a2d-64cc-a646-6073">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="30"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="387f-a6a4-3962-5e43" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="387f-a6a4-3962-5e43">
+                  <conditions>
+                    <condition type="atLeast" value="10" field="selections" scope="1fb0-9a19-512e-b94a" childId="acfb-203a-5c07-c6e5" shared="true" includeChildSelections="true" childName="5-10 Vagus Rangers"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cb22-896e-4c63-3e99" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="4" field="cb22-896e-4c63-3e99">
+              <conditions>
+                <condition type="atLeast" value="10" field="selections" scope="1fb0-9a19-512e-b94a" childId="acfb-203a-5c07-c6e5" shared="true" includeChildSelections="true" childName="5-10 Vagus Rangers"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="47fa-3aab-2f89-6491" primary="false" name="Infantry"/>
+        <categoryLink targetId="19d7-3b92-a41b-df59" id="e3fa-0e29-a293-f606" primary="true" name="Troops"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="ba33-ff3e-6e0f-9cf1" sortIndex="31">
+      <comment>Commanders</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="2cd7-9c0a-17aa-1919" sortIndex="41">
+      <comment>Troops</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="d90d-fa8a-a476-7772" sortIndex="21">
+      <comment>Drones</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Coil Rifle" hidden="false" id="d086-8ed5-e2ce-50f2" sortIndex="5">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbe1-3026-cc41-7158" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3383-d9e9-6888-135e" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Coil Rifle" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="5e8a-f312-b64f-7507">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">30&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">5</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">0</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Glitch Grenade" hidden="false" id="9c69-3f17-c336-730c" sortIndex="8">
+      <profiles>
+        <profile name="Glitch Grenade" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="0880-6d60-5c6c-b47f">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">12&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2 AP</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">-</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">-</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Barrage 8 2, Grenade, Limited 1, Glitch</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d60-d86e-5fcf-9168" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Particle Beam Blaster" hidden="false" id="d386-2677-c3be-9ac3" sortIndex="9">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c023-b13f-4c99-b256" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="➤ Particle Beam Blaster - 1: Close Range" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="3c18-c42f-cdcb-896f">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">7&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">2</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">6</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-2</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83"/>
+          </characteristics>
+        </profile>
+        <profile name="➤ Particle Beam Blaster - 3: Long Range" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="d5bb-5c94-4c68-a3f4">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">14&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">2</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">0</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vagus Vanguard" hidden="false" id="3314-6845-df74-d78b" sortIndex="42">
+      <comment>5-10</comment>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Drones" id="274a-ba01-59a8-580f" hidden="false">
+          <comment>for every 5 models, get 2 drones</comment>
+          <entryLinks>
+            <entryLink import="true" name="Gun Drone" hidden="false" id="b22d-35ed-a1e7-bd17" type="selectionEntry" targetId="e472-f1e4-e48f-ffb9" sortIndex="1">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="8"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="4" field="4999-67ba-2d59-3eec">
+                  <conditions>
+                    <condition type="atLeast" value="10" field="selections" scope="3314-6845-df74-d78b" childId="adba-f2f2-162c-96cb" shared="true" includeChildSelections="true" childName="5-10 Vagus Vanguard"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4999-67ba-2d59-3eec" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield Drone" hidden="false" id="fad7-21cf-6c95-fc8d" type="selectionEntry" targetId="fae5-5ad3-7256-9a65" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="8"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="4" field="84c1-d5c7-7422-fba6">
+                  <conditions>
+                    <condition type="atLeast" value="10" field="selections" scope="3314-6845-df74-d78b" childId="adba-f2f2-162c-96cb" shared="true" includeChildSelections="true" childName="5-10 Vagus Vanguard"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="84c1-d5c7-7422-fba6" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Guardian Drone" hidden="false" id="06f1-48ea-2c56-3f39" type="selectionEntry" targetId="0807-6c82-dc2d-0bb3">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="15"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b080-0ddb-2dfd-743e" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="b080-0ddb-2dfd-743e">
+                  <conditions>
+                    <condition type="atLeast" value="10" field="selections" scope="3314-6845-df74-d78b" childId="adba-f2f2-162c-96cb" shared="true" includeChildSelections="true" childName="5-10 Vagus Vanguard"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ad39-d3c2-105c-859c" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="4" field="ad39-d3c2-105c-859c">
+              <conditions>
+                <condition type="atLeast" value="10" field="selections" scope="3314-6845-df74-d78b" childId="adba-f2f2-162c-96cb" shared="true" includeChildSelections="true" childName="5-10 Vagus Vanguard"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="5-10 Vagus Vanguard" id="adba-f2f2-162c-96cb" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Vagus Ranger" hidden="false" id="fdc2-1626-dcd0-82d0" defaultAmount="5">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="10"/>
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapons" id="cc8d-d53f-1f5a-f16c" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Glitch Grenade" hidden="false" id="e99e-1d96-cf33-c0eb" type="selectionEntry" targetId="9c69-3f17-c336-730c" defaultAmount="" sortIndex="2">
+                      <costs>
+                        <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Particle Beam Blaster" hidden="false" id="b57c-3b94-694e-6d7a" type="selectionEntry" targetId="d386-2677-c3be-9ac3">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b354-fd3d-c853-7cb9" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Vagus Vanguard (⌀30 mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="bb5b-e976-0f0f-0600">
+                  <characteristics>
+                    <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+                    <characteristic name="M" typeId="ed74-71b7-9404-c409">3&quot;</characteristic>
+                    <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">6+</characteristic>
+                    <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">6+</characteristic>
+                    <characteristic name="Save" typeId="cd53-7d25-3999-ff79">6+</characteristic>
+                    <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">3</characteristic>
+                    <characteristic name="HP" typeId="0638-f061-dc89-fc79">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="b39f-28c4-b7cd-ad82" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="70e1-e50b-9c66-55b0" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="56e9-9f72-1ce3-874f" targetId="bc8a-1751-58b3-bcce" primary="false"/>
+        <categoryLink name="Troops" hidden="false" id="bd75-d9b2-4c48-0fae" targetId="19d7-3b92-a41b-df59" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Drone Uplink" hidden="false" id="365d-5d1a-35e5-485e" sortIndex="-2">
+      <profiles>
+        <profile name="Drone Uplink" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="56da-9bdc-d97e-9e2c">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">Drone models in this models unit use this models Ranged Skill when attacking rather than their own.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8de3-b871-f63d-3cbc" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="8609-8e4c-7caa-2d5a" sortIndex="32">
+      <comment>battlesuit commander wip</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -228,4 +843,9 @@ Models with the Drone keyword do not count for controlling objectives, if all no
       </characteristics>
     </profile>
   </sharedProfiles>
+  <entryLinks>
+    <entryLink import="true" name="Gyrus Drone Master" hidden="false" id="ccd4-8f01-353d-d2de" type="selectionEntry" targetId="1c63-9a4a-4b9b-4e58"/>
+    <entryLink import="true" name="Vagus Rangers" hidden="false" id="5855-2fbd-1cd1-9b4c" type="selectionEntry" targetId="1fb0-9a19-512e-b94a"/>
+    <entryLink import="true" name="Vagus Vanguard" hidden="false" id="5d84-277e-7fb1-0a4b" type="selectionEntry" targetId="3314-6845-df74-d78b"/>
+  </entryLinks>
 </catalogue>

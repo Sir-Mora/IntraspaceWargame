@@ -12,6 +12,7 @@
     <categoryEntry name="Vehicle" id="1783-40df-349b-4bdd" hidden="false"/>
     <categoryEntry name="Monster" id="6695-a701-809a-0f15" hidden="false"/>
     <categoryEntry name="Additional Lore" id="c308-79ff-6084-3b62" hidden="false"/>
+    <categoryEntry name="Drone" id="b88d-3713-1b76-e33b" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="New Force" id="a90e-7e45-ab7e-f24c" hidden="false">
@@ -148,6 +149,13 @@ Step 4: all models underneath that template are automatically hit by the weapon<
     </rule>
     <rule name="Infiltrating" id="552c-93b0-76c6-01e9" hidden="false">
       <description>During deployment, if every model in a unit has this ability, then when you set it up, it can be set up anywhere on the battlefield that is more than 9&quot; horizontally away from the enemy deployment zone and all enemy models.</description>
+    </rule>
+    <rule name="Devastating X" id="d2a9-3898-8008-09a5" hidden="false">
+      <description>A critical hit causes X unavoidable damage</description>
+      <alias>Devastating</alias>
+    </rule>
+    <rule name="Glitch" id="73d0-6251-474a-73f2" hidden="false">
+      <description>This weapon does not inflict damage, your opponent subtracts 1 from any hit rolls made for units hit by a this weapon until the end of the round</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
