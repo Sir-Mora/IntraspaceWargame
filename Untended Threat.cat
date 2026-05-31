@@ -593,11 +593,11 @@
                   <characteristics>
                     <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
                     <characteristic name="M" typeId="ed74-71b7-9404-c409">3&quot;</characteristic>
-                    <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">8+</characteristic>
-                    <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">5+</characteristic>
+                    <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">6+</characteristic>
+                    <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">6+</characteristic>
                     <characteristic name="Save" typeId="cd53-7d25-3999-ff79">6+</characteristic>
-                    <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">5</characteristic>
-                    <characteristic name="HP" typeId="0638-f061-dc89-fc79">2</characteristic>
+                    <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">4</characteristic>
+                    <characteristic name="HP" typeId="0638-f061-dc89-fc79">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>

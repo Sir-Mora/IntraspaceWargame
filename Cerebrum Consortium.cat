@@ -187,7 +187,12 @@ Models with the Drone keyword do not count for controlling objectives, if all no
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="0d1b-8992-6017-3d3b" hidden="false" sortIndex="1">
           <entryLinks>
-            <entryLink import="true" name="Missile Pod" hidden="false" id="dba9-5fb6-6129-65c0" type="selectionEntry" targetId="ba9d-537b-92a8-5acc"/>
+            <entryLink import="true" name="Missile Pod" hidden="false" id="dba9-5fb6-6129-65c0" type="selectionEntry" targetId="ba9d-537b-92a8-5acc" defaultAmount="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10d9-79af-4138-c5d7" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bef0-adcb-501c-08ce" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="708b-d605-22ef-675f" includeChildSelections="false"/>
@@ -235,10 +240,6 @@ Models with the Drone keyword do not count for controlling objectives, if all no
           </characteristics>
         </profile>
       </profiles>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b9f-2cab-8872-3d7c" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98b1-270d-ab10-fde5" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Guardian Drone" hidden="false" id="0807-6c82-dc2d-0bb3" sortIndex="23">
       <selectionEntryGroups>
@@ -470,7 +471,7 @@ Models with the Drone keyword do not count for controlling objectives, if all no
               <entryLinks>
                 <entryLink import="true" name="Drone Uplink" hidden="false" id="8c3e-4760-1ac8-8489" type="selectionEntry" targetId="365d-5d1a-35e5-485e">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="527b-ef3f-9920-2951" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be7a-113c-a9bb-9537" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -540,7 +541,7 @@ Models with the Drone keyword do not count for controlling objectives, if all no
                 <selectionEntryGroup name="Weapons" id="7ea3-05af-1a9e-1994" hidden="false">
                   <entryLinks>
                     <entryLink import="true" name="Coil Rifle" hidden="false" id="d17b-3778-fbb7-a87e" type="selectionEntry" targetId="d086-8ed5-e2ce-50f2"/>
-                    <entryLink import="true" name="Glitch Grenade" hidden="false" id="b464-b8b0-7afb-9033" type="selectionEntry" targetId="9c69-3f17-c336-730c" defaultAmount="">
+                    <entryLink import="true" name="Glitch Grenade" hidden="false" id="b464-b8b0-7afb-9033" type="selectionEntry" targetId="9c69-3f17-c336-730c">
                       <costs>
                         <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
                       </costs>
@@ -634,13 +635,13 @@ Models with the Drone keyword do not count for controlling objectives, if all no
         <categoryLink targetId="19d7-3b92-a41b-df59" id="e3fa-0e29-a293-f606" primary="true" name="Troops"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="ba33-ff3e-6e0f-9cf1" sortIndex="31">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="ba33-ff3e-6e0f-9cf1" sortIndex="31">
       <comment>Commanders</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="2cd7-9c0a-17aa-1919" sortIndex="41">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="2cd7-9c0a-17aa-1919" sortIndex="41">
       <comment>Troops</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="d90d-fa8a-a476-7772" sortIndex="21">
+    <selectionEntry type="upgrade" import="true" hidden="false" id="d90d-fa8a-a476-7772" sortIndex="21">
       <comment>Drones</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Coil Rifle" hidden="false" id="d086-8ed5-e2ce-50f2" sortIndex="5">
@@ -781,7 +782,7 @@ Models with the Drone keyword do not count for controlling objectives, if all no
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapons" id="cc8d-d53f-1f5a-f16c" hidden="false">
                   <entryLinks>
-                    <entryLink import="true" name="Glitch Grenade" hidden="false" id="e99e-1d96-cf33-c0eb" type="selectionEntry" targetId="9c69-3f17-c336-730c" defaultAmount="" sortIndex="2">
+                    <entryLink import="true" name="Glitch Grenade" hidden="false" id="e99e-1d96-cf33-c0eb" type="selectionEntry" targetId="9c69-3f17-c336-730c" sortIndex="2">
                       <costs>
                         <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
                       </costs>
@@ -829,11 +830,179 @@ Models with the Drone keyword do not count for controlling objectives, if all no
         </profile>
       </profiles>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8de3-b871-f63d-3cbc" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a05-ab32-3908-1409" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="8609-8e4c-7caa-2d5a" sortIndex="32">
+    <selectionEntry type="unit" import="true" name="L1 Plexus Rigsuit Veteran" hidden="false" id="8609-8e4c-7caa-2d5a" sortIndex="32">
       <comment>battlesuit commander wip</comment>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="L1 Plexus Rigsuit Veteran" hidden="false" id="9017-f706-0e94-7147">
+          <costs>
+            <cost name="Points" typeId="3513-57f3-6212-3f59" value="80"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b41c-eeee-1ba9-e073" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6fe5-037a-c800-c227" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="L1 Plexus Rigsuit Veteran (⌀60mm)" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="95ca-ec25-dae3-419b">
+              <characteristics>
+                <characteristic name="AP" typeId="43a8-4786-0175-dcd0">5</characteristic>
+                <characteristic name="M" typeId="ed74-71b7-9404-c409">6&quot;</characteristic>
+                <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">4+</characteristic>
+                <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">8+</characteristic>
+                <characteristic name="Save" typeId="cd53-7d25-3999-ff79">4+</characteristic>
+                <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">5</characteristic>
+                <characteristic name="HP" typeId="0638-f061-dc89-fc79">5</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons and Equipment" id="d360-1068-cea9-151c" hidden="false" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e9f5-f4cf-05ec-1908" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5af2-1742-483e-265c" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapons" id="7a6e-d934-748b-3433" hidden="false" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Missile Pod" hidden="false" id="505d-5590-ac67-493b" type="selectionEntry" targetId="ba9d-537b-92a8-5acc">
+                      <costs>
+                        <cost name="Points" typeId="3513-57f3-6212-3f59" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="High Output Coilgun" hidden="false" id="afd8-3b15-c504-6164" type="selectionEntry" targetId="00f4-f4af-014a-75ff" defaultAmount="1">
+                      <costs>
+                        <cost name="Points" typeId="3513-57f3-6212-3f59" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Equipment" id="fdc5-5178-c883-b2dd" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Drone Uplink" hidden="false" id="15f2-8647-2851-71fe" type="selectionEntry" targetId="365d-5d1a-35e5-485e">
+                      <costs>
+                        <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cc9-82c6-6843-58ba" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Tibia T-5 Energy Shield" hidden="false" id="2bcd-4268-9eec-a8fc" type="selectionEntry" targetId="3bc2-eb0d-da48-bb0d">
+                      <costs>
+                        <cost name="Points" typeId="3513-57f3-6212-3f59" value="8"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Multi Tracker" hidden="false" id="8835-317e-cbdc-a335" type="selectionEntry" targetId="fbd9-2629-5567-51f5">
+                      <costs>
+                        <cost name="Points" typeId="3513-57f3-6212-3f59" value="8"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Advanced Targeting System" hidden="false" id="98e5-aa9d-2df9-ddd2" type="selectionEntry" targetId="3f56-5a42-35f8-8da3">
+                      <costs>
+                        <cost name="Points" typeId="3513-57f3-6212-3f59" value="6"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Drones" id="dfee-aaac-8f40-1990" hidden="false" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Gun Drone" hidden="false" id="078d-dd2d-4c08-f9b3" type="selectionEntry" targetId="e472-f1e4-e48f-ffb9">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="8"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Shield Drone" hidden="false" id="2c6f-f0b4-d45b-c4e1" type="selectionEntry" targetId="fae5-5ad3-7256-9a65">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="8"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="11cd-cd45-9f75-55e7" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="L2 rigsuit upgrade" hidden="false" id="9cfb-170b-5079-d75c" sortIndex="1">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="L2 Rigsuit upgrade" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="aebc-7b72-e15a-9d69">
+                  <characteristics>
+                    <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">Improve the toughness value by 1 and the save value to a 3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="6" field="0638-f061-dc89-fc79" scope="parent" affects="profiles.Unit"/>
+                <modifier type="set" value="3+" field="cd53-7d25-3999-ff79" scope="parent" affects="profiles.Unit"/>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6aa4-d070-38ba-3629" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="60b7-3bbc-e392-6c6d" id="498b-2799-d0ed-c4bd" primary="true" name="Commander"/>
+        <categoryLink targetId="6695-a701-809a-0f15" id="475f-ae6e-236f-d668" primary="false" name="Monster"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gaelbhan Rifle" hidden="false" id="00f4-f4af-014a-75ff" sortIndex="10">
+      <profiles>
+        <profile name="Gaelbhan Rifle" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="9668-4347-7923-bc18">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">18&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">6</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">5</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">0</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Multi Tracker" hidden="false" id="fbd9-2629-5567-51f5" sortIndex="-3">
+      <profiles>
+        <profile name="Multi Tracker" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="5314-01ef-37ee-b4e0">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">When shooting all of this units weapons at a target unit with 5 or more models: Gain a reroll ranged skill of 10+.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0af-e52e-fe0b-efad" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tibia T-5 Energy Shield" hidden="false" id="3bc2-eb0d-da48-bb0d" sortIndex="11">
+      <profiles>
+        <profile name="Tibia T-5 Energy Shield" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="fdd7-1709-5915-23b6">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">The bearer has a 6+ Legendary Save</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de73-9710-5fc3-3026" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Advanced Targeting System" hidden="false" id="3f56-5a42-35f8-8da3" sortIndex="-4">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ade6-f1e3-4185-8fa7" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Advanced Targeting System" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="03ce-2174-38cd-a8eb">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">The bearer of this equipment adds +1 to the rend of all equipped weapons.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -844,8 +1013,9 @@ Models with the Drone keyword do not count for controlling objectives, if all no
     </profile>
   </sharedProfiles>
   <entryLinks>
-    <entryLink import="true" name="Gyrus Drone Master" hidden="false" id="ccd4-8f01-353d-d2de" type="selectionEntry" targetId="1c63-9a4a-4b9b-4e58"/>
+    <entryLink import="true" name="Gyrus Drone Cortex" hidden="false" id="ccd4-8f01-353d-d2de" type="selectionEntry" targetId="1c63-9a4a-4b9b-4e58"/>
     <entryLink import="true" name="Vagus Rangers" hidden="false" id="5855-2fbd-1cd1-9b4c" type="selectionEntry" targetId="1fb0-9a19-512e-b94a"/>
     <entryLink import="true" name="Vagus Vanguard" hidden="false" id="5d84-277e-7fb1-0a4b" type="selectionEntry" targetId="3314-6845-df74-d78b"/>
+    <entryLink import="true" name="L2 Sacral Rigsuit Veteran" hidden="false" id="b5e9-ee2e-6142-ed85" type="selectionEntry" targetId="8609-8e4c-7caa-2d5a"/>
   </entryLinks>
 </catalogue>
