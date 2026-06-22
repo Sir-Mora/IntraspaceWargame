@@ -99,7 +99,7 @@ At the start of any round, you can declare The Big Score. While the Big Score is
     <selectionEntry type="upgrade" import="true" hidden="false" id="29a6-527d-f9af-bc2a" sortIndex="0">
       <comment>1-10 Commander</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pirate Lord" hidden="false" id="9ece-b225-f4cc-8c5c" sortIndex="1">
+    <selectionEntry type="unit" import="true" name="Pirate Lord" hidden="false" id="9ece-b225-f4cc-8c5c" sortIndex="1">
       <categoryLinks>
         <categoryLink targetId="bc8a-1751-58b3-bcce" id="e18f-8b01-61a8-d856" primary="false" name="Infantry"/>
         <categoryLink targetId="60b7-3bbc-e392-6c6d" id="8beb-c0f9-90ea-9918" primary="true" name="Commander"/>
@@ -116,12 +116,12 @@ At the start of any round, you can declare The Big Score. While the Big Score is
           <selectionEntryGroups>
             <selectionEntryGroup name="Melee Weapons" id="c111-f830-8de9-b103" hidden="false" sortIndex="2">
               <entryLinks>
-                <entryLink import="true" name="Mecha Gauntlet" hidden="false" id="4923-8f49-4742-3eef" type="selectionEntry" targetId="ac2f-c41d-1d1e-ba0e" defaultAmount="" sortIndex="3">
+                <entryLink import="true" name="Mecha Gauntlet" hidden="false" id="4923-8f49-4742-3eef" type="selectionEntry" targetId="ac2f-c41d-1d1e-ba0e" sortIndex="3">
                   <costs>
                     <cost name="Points" typeId="3513-57f3-6212-3f59" value="15"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Combo Cutlass" hidden="false" id="e454-e726-8f8e-98b7" type="selectionEntry" targetId="6cc4-8c2d-04ca-9e9f" defaultAmount="" sortIndex="2">
+                <entryLink import="true" name="Combo Cutlass" hidden="false" id="e454-e726-8f8e-98b7" type="selectionEntry" targetId="6cc4-8c2d-04ca-9e9f" sortIndex="2">
                   <costs>
                     <cost name="Points" typeId="3513-57f3-6212-3f59" value="2"/>
                   </costs>
@@ -137,7 +137,7 @@ At the start of any round, you can declare The Big Score. While the Big Score is
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8ab-e810-b623-dd1b" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Boomstick" hidden="false" id="f037-89b0-9f15-0cb5" type="selectionEntry" targetId="0ef8-7e36-35c5-4659" defaultAmount="">
+                <entryLink import="true" name="Boomstick" hidden="false" id="f037-89b0-9f15-0cb5" type="selectionEntry" targetId="0ef8-7e36-35c5-4659">
                   <costs>
                     <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
                   </costs>
@@ -156,12 +156,12 @@ At the start of any round, you can declare The Big Score. While the Big Score is
           <selectionEntryGroups>
             <selectionEntryGroup name="Melee Weapons" id="1990-1e0d-5a09-527e" hidden="false" sortIndex="2">
               <entryLinks>
-                <entryLink import="true" name="Mecha Gauntlet" hidden="false" id="f631-583c-5dc7-9099" type="selectionEntry" targetId="ac2f-c41d-1d1e-ba0e" defaultAmount="" sortIndex="3">
+                <entryLink import="true" name="Mecha Gauntlet" hidden="false" id="f631-583c-5dc7-9099" type="selectionEntry" targetId="ac2f-c41d-1d1e-ba0e" sortIndex="3">
                   <costs>
                     <cost name="Points" typeId="3513-57f3-6212-3f59" value="15"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Combo Cutlass" hidden="false" id="6554-6222-35b0-0cf0" type="selectionEntry" targetId="6cc4-8c2d-04ca-9e9f" defaultAmount="" sortIndex="2">
+                <entryLink import="true" name="Combo Cutlass" hidden="false" id="6554-6222-35b0-0cf0" type="selectionEntry" targetId="6cc4-8c2d-04ca-9e9f" sortIndex="2">
                   <costs>
                     <cost name="Points" typeId="3513-57f3-6212-3f59" value="2"/>
                   </costs>
@@ -177,7 +177,7 @@ At the start of any round, you can declare The Big Score. While the Big Score is
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09e6-6cec-c97b-2321" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Boomstick" hidden="false" id="5b88-0c9e-d8eb-c6b2" type="selectionEntry" targetId="0ef8-7e36-35c5-4659" defaultAmount="">
+                <entryLink import="true" name="Boomstick" hidden="false" id="5b88-0c9e-d8eb-c6b2" type="selectionEntry" targetId="0ef8-7e36-35c5-4659">
                   <costs>
                     <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
                   </costs>
@@ -297,7 +297,7 @@ At the start of any round, you can declare The Big Score. While the Big Score is
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mecha Gauntlet" hidden="false" id="ac2f-c41d-1d1e-ba0e" sortIndex="103">
+    <selectionEntry type="upgrade" import="true" name="Mecha Gauntlet" hidden="false" id="ac2f-c41d-1d1e-ba0e" sortIndex="110">
       <profiles>
         <profile name="Mecha Gauntlet" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="0758-5688-e9c2-82e6">
           <characteristics>
@@ -351,6 +351,261 @@ At the start of any round, you can declare The Big Score. While the Big Score is
         <categoryLink targetId="19d7-3b92-a41b-df59" id="ef25-437f-dbe7-5f4b" primary="true" name="Troops"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mechanic" hidden="false" id="571d-fd64-cfad-8e2b" sortIndex="3">
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="763e-be2d-5319-63cf" targetId="bc8a-1751-58b3-bcce" primary="false"/>
+        <categoryLink name="Commander" hidden="false" id="e61c-0daa-3f51-7ae8" targetId="60b7-3bbc-e392-6c6d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="3513-57f3-6212-3f59" value="70"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Right Arm" id="54b5-1906-0eef-ab0b" hidden="false" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a916-29b6-f131-3bf5" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="188b-68df-fd07-6604" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="333f-eb38-4ddf-e16b" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Mecha Gauntlet" hidden="false" id="d472-80e3-54e8-e6ea" type="selectionEntry" targetId="ac2f-c41d-1d1e-ba0e" sortIndex="3">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combo Cutlass" hidden="false" id="7088-13c4-6004-2040" type="selectionEntry" targetId="6cc4-8c2d-04ca-9e9f" sortIndex="2">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Cutlass" hidden="false" id="06b3-eb53-85ef-bdaa" type="selectionEntry" targetId="e9c7-3d5b-1ddb-2e08" defaultAmount="0" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78a1-9fd8-9818-68f1" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapons" id="8e74-c4cd-3478-2d02" hidden="false" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef39-db63-2566-5bf2" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Boomstick" hidden="false" id="21d5-7301-5748-995c" type="selectionEntry" targetId="0ef8-7e36-35c5-4659">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Stolen SMG" hidden="false" id="693b-0a16-3a3b-4243" type="selectionEntry" targetId="7a36-5e84-5e5a-4d1e" defaultAmount="1" sortIndex="1"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipment" id="3677-1d27-51b9-8766" hidden="false"/>
+        <selectionEntryGroup name="Left Arm" id="7022-801e-d396-76ac" hidden="false" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddb6-9d65-d0f5-59cb" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98d2-c566-8a63-e5d6" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="cce9-f44b-a765-d964" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Mecha Gauntlet" hidden="false" id="c3fa-5f16-db72-ad2f" type="selectionEntry" targetId="ac2f-c41d-1d1e-ba0e" sortIndex="3">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combo Cutlass" hidden="false" id="567b-3af3-9c44-83d4" type="selectionEntry" targetId="6cc4-8c2d-04ca-9e9f" sortIndex="2">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Auto-Tools" hidden="false" id="8825-570c-2623-a53c" type="selectionEntry" targetId="b631-3446-1513-4d90" sortIndex="1" defaultAmount="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7fb-8b68-2cd3-fab2" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Mechanic" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="ad36-591e-3778-e632">
+          <characteristics>
+            <characteristic name="AP" typeId="43a8-4786-0175-dcd0">5</characteristic>
+            <characteristic name="M" typeId="ed74-71b7-9404-c409">3</characteristic>
+            <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">7+</characteristic>
+            <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">4+</characteristic>
+            <characteristic name="Save" typeId="cd53-7d25-3999-ff79">6+</characteristic>
+            <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">5</characteristic>
+            <characteristic name="HP" typeId="0638-f061-dc89-fc79">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Armored Supporter" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="7882-71e7-3250-33ae">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">When this model is within 3 inches of a vehicle unit, it cannot be targeted</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Auto-Tools" hidden="false" id="b631-3446-1513-4d90" sortIndex="104">
+      <profiles>
+        <profile name="Auto-Tools" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="cc9b-ceae-1c18-ad74">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">1</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">2</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">4</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">0</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af"/>
+          </characteristics>
+        </profile>
+        <profile name="Fix it up (1 AP)" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="2c0c-e7f6-ddd9-2f2e">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">Select a friendly vehicle or monster unit within 3 inches, add 1d2+2 HP to a model in that unit. This is a complex action, this action cannot be used with other Fix it Up actions.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Melee Weapon" hidden="false" id="ad80-3e90-e675-1b64" targetId="5bbf-e9f1-338b-c996" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Pirate Lord in Powered Rig" hidden="false" id="8b5b-0ecd-27e3-458f" sortIndex="2">
+      <categoryLinks>
+        <categoryLink name="Commander" hidden="false" id="d61c-616b-32a4-4027" targetId="60b7-3bbc-e392-6c6d" primary="true"/>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="ef99-e3ad-7fb9-8669" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="3513-57f3-6212-3f59" value="90"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Right Arm" id="ddb5-b58d-f86b-0203" hidden="false" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="568e-9403-a0cd-5e42" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="901e-9eb5-f804-be56" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="7ca5-1f23-176f-f3f1" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Mecha Gauntlet" hidden="false" id="285a-9227-c41d-8780" type="selectionEntry" targetId="ac2f-c41d-1d1e-ba0e" sortIndex="1" defaultAmount="1">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Crusher Claw" hidden="false" id="219e-fc4e-eed8-6d90" type="selectionEntry" targetId="a580-ba0d-4175-bd88" sortIndex="2">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c480-84a9-336e-30af" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapons" id="a9fa-8013-9b82-8c9f" hidden="false" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6411-794e-3878-012b" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Boomstick" hidden="false" id="104f-92dc-1b89-32d6" type="selectionEntry" targetId="0ef8-7e36-35c5-4659">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Stolen SMG" hidden="false" id="4522-a8c3-1b65-bb37" type="selectionEntry" targetId="7a36-5e84-5e5a-4d1e" defaultAmount="1" sortIndex="1"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipment" id="2366-6ad1-84f1-ea06" hidden="false"/>
+        <selectionEntryGroup name="Left Arm" id="cf44-5a21-407c-ac14" hidden="false" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c96-37bf-14e4-7c3b" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36ce-46f0-0a08-b89d" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="b735-7302-1341-3c85" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Mecha Gauntlet" hidden="false" id="129b-89da-7e41-f0b0" type="selectionEntry" targetId="ac2f-c41d-1d1e-ba0e" defaultAmount="1" sortIndex="1">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Mecha Claw" hidden="false" id="b73d-e336-f330-8426" type="selectionEntry" targetId="a580-ba0d-4175-bd88" sortIndex="2">
+                  <costs>
+                    <cost name="Points" typeId="3513-57f3-6212-3f59" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9dc-3205-64f5-bada" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Pirate Lord in Powered Rig" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="365e-7539-7451-b8ed">
+          <characteristics>
+            <characteristic name="AP" typeId="43a8-4786-0175-dcd0">5</characteristic>
+            <characteristic name="M" typeId="ed74-71b7-9404-c409">2&quot;</characteristic>
+            <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">5+</characteristic>
+            <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">3+</characteristic>
+            <characteristic name="Save" typeId="cd53-7d25-3999-ff79">3+(6+)</characteristic>
+            <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">6</characteristic>
+            <characteristic name="HP" typeId="0638-f061-dc89-fc79">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mecha Claw" hidden="false" id="a580-ba0d-4175-bd88" sortIndex="111">
+      <profiles>
+        <profile name="Mecha Claw" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="8dd1-154b-e005-f204">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">1</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">4</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">12</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">-2</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">2</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af">Accurate -1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="7844-ee51-de80-2a16" sortIndex="11">
+      <comment>11-20 Troops</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="21db-f705-82ae-8be1" sortIndex="21">
+      <comment>21-30 Elites</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="5807-c8ec-16f9-a9b8" sortIndex="31">
+      <comment>31-40 Heavy Support</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pirate Technical Truck" hidden="false" id="2e5e-d085-d1d8-81d1" sortIndex="31">
+      <profiles>
+        <profile name="Pirate Technical Truck" typeId="0f74-e791-1423-bb47" typeName="Vehicle" hidden="false" id="d88e-00a1-8da5-7922">
+          <characteristics>
+            <characteristic name="AP" typeId="6f3e-0c10-951f-79a3">4</characteristic>
+            <characteristic name="M" typeId="6dcb-59ed-386f-0f47">6&quot;</characteristic>
+            <characteristic name="RS" typeId="f5ab-f47a-e83b-e93d">7+</characteristic>
+            <characteristic name="WS" typeId="8eac-d857-bc43-f54a">9+</characteristic>
+            <characteristic name="Front" typeId="e6cb-8d4c-6d1f-0b9f">13</characteristic>
+            <characteristic name="Side" typeId="47e8-d724-9e09-78a2">13</characteristic>
+            <characteristic name="Rear" typeId="a649-6921-b44c-55b6">13</characteristic>
+            <characteristic name="Save" typeId="9c7d-1809-8957-b7a8">7+</characteristic>
+            <characteristic name="HP" typeId="a87f-3cb8-5628-b9b5">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Pirate Technical Truck" typeId="a81b-e483-414f-3651" typeName="Transport" hidden="false" id="f566-e1cc-eb67-da50">
+          <characteristics>
+            <characteristic name="Capacity" typeId="9f77-0e18-c923-5769">This model has a transport capacity of 12 PIRATES INFANTRY models, it cannot transport models in POWERED RIGS.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="New Group" id="2710-56cf-7e7c-91d3" hidden="false"/>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Up-Armored" typeId="127b-fada-9a3e-ab3c" typeName="Improvised Improvements" hidden="false" id="48f9-f7db-16e7-b225">
@@ -397,5 +652,7 @@ Boost (2 AP): Move 2d5&quot; in a straight line</characteristic>
   </sharedProfiles>
   <entryLinks>
     <entryLink import="true" name="Pirate Lord" hidden="false" id="9689-f293-544f-204d" type="selectionEntry" targetId="9ece-b225-f4cc-8c5c"/>
+    <entryLink import="true" name="Pirate Lord in Powered Rig" hidden="false" id="00e3-6b14-e1d2-ddc3" type="selectionEntry" targetId="8b5b-0ecd-27e3-458f"/>
+    <entryLink import="true" name="Mechanic" hidden="false" id="ed3c-91cf-71f9-5240" type="selectionEntry" targetId="571d-fd64-cfad-8e2b"/>
   </entryLinks>
 </catalogue>

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="a0ff-9897-0c6f-8acd" name="Ascentic Way" gameSystemId="sys-61df-4102-3143-2eae" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Army Rule: Acts of Faith" hidden="false" id="8a37-9731-583d-1b69" sortIndex="1">
+      <categoryLinks>
+        <categoryLink targetId="629c-c441-50b1-a5c9" id="3871-ab1b-278d-4172" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <rules>
+        <rule name="Acts of Faith" id="a7b7-5a29-3395-c968" hidden="true">
+          <comment>Army rule With lore</comment>
+          <description>*&quot;Through jubilation, Swiftness. Through discipline, destruction. Through piety, Victory&quot; - Scroll of the Ascentic Warpath, line 288*
+
+Units with the Acts of Faith special rule gain the Act of Faith (0 AP) complex action. It works like so
+
+Act of Faith (0 AP): Select one of the units acts of faith that is has not used this battle. The unit takes a morale test if the morale test is passed, that unit gains the associated benefit of the act of faith. If it is failed, then the unit gains no benefit. Under either circumstance, the unit may not use that Act of Faith for the rest of the battle.</description>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </rule>
+        <rule name="Acts of Faith" id="7c9f-49a5-0e8d-f767" hidden="false">
+          <comment>Army rule Without lore</comment>
+          <description>Units with the Acts of Faith special rule gain the Act of Faith (0 AP) complex action. It works like so
+
+Act of Faith (0 AP): Select one of the units acts of faith that is has not used this battle. The unit takes a morale test if the morale test is passed, that unit gains the associated benefit of the act of faith. If it is failed, then the unit gains no benefit. Under either circumstance, the unit may not use that Act of Faith for the rest of the battle.</description>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Army Rule: Zealous" hidden="false" id="cdf5-97fc-01a2-e313" sortIndex="2">
+      <rules>
+        <rule name="Zealous" id="77ce-e4fa-d28b-6131" hidden="true">
+          <comment>Army rule With lore</comment>
+          <description>*&quot;Through faith, strength. Through conviction, loyalty. Through meditation, peace.&quot; - Scroll of the Ascentic Warpath, line 293*
+
+When a unit with the Zealous X special rule makes a morale test during their activation, they may instead choose to automatically pass that moral test, However, at the end of that units activation, that unit takes X unavoidable damage.</description>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </rule>
+        <rule name="Zealous" id="1cf4-9886-29ed-60b5" hidden="false">
+          <comment>Army rule Without lore</comment>
+          <description>When a unit with the Zealous X special rule makes a morale test during their activation, they may instead choose to automatically pass that moral test, However, at the end of that units activation, that unit takes X unavoidable damage.</description>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink targetId="629c-c441-50b1-a5c9" id="62ba-1c2c-7bd2-5b09" primary="true" name="Configuration"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Acts of Faith reference" hidden="false" id="03bf-a8a3-ca0e-fed9" sortIndex="-20">
+      <categoryLinks>
+        <categoryLink targetId="629c-c441-50b1-a5c9" id="c9cd-e4db-062a-30d1" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Divine Guidance" hidden="false" id="1c67-5d4c-3d03-1fdc" type="selectionEntry" targetId="79b1-14fd-c111-6c09" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="acd9-57ef-2c8c-c82d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0e3-6998-7c09-3ad9" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Endless Pilgrimage" hidden="false" id="9b45-d918-6e69-5e3c" type="selectionEntry" targetId="004c-9925-53e7-0600" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b34-8120-d22f-3ef2" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ba7-5fd8-afc1-f727" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Zealous Charge" hidden="false" id="341a-30e6-1b2b-4cb7" type="selectionEntry" targetId="53c4-52b9-012d-e857" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7126-5497-9772-425d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4bd-2eba-b41a-03e9" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Unbreakable Piety" hidden="false" id="059c-ba7b-f504-7a9d" type="selectionEntry" targetId="d945-17af-1c0d-0e86" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c14-ebb5-a23d-c59e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e45-c4e3-089e-3c82" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Divine Guidance" hidden="false" id="79b1-14fd-c111-6c09" sortIndex="-1">
+      <profiles>
+        <profile name="Divine Guidance" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="true" id="5372-ddd6-75cb-f45e">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">*&quot;Guided by the holy will of the path, its loyal servants will find their way&quot; - Scroll of the Ascentic Path line 18*
+All ranged weapons equipped by this unit gain devastating 1 for the rest of the turn.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>With lore</comment>
+        </profile>
+        <profile name="Divine Guidance" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="4d9c-90e1-9389-4118">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">All ranged weapons equipped by this unit gain Devastating 1 for the rest of the turn.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Without lore</comment>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Endless Pilgrimage" hidden="false" id="004c-9925-53e7-0600" sortIndex="-2">
+      <profiles>
+        <profile name="Endless Pilgrimage" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="true" id="d55a-ea4d-d71e-5c07">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">*&quot;The pilgrims limbs never tire when carried by the righteous refusal of technological ease&quot; - Scroll of the Ascentic Path line 27*
+This unit may reroll 1 dice from charge rolls, 1 dice from assault rolls, and may move through difficult terrain with no penalty.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>With lore</comment>
+        </profile>
+        <profile name="Endless Pilgrimage" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="5728-bc06-8b83-d925">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">This unit may reroll 1 dice from charge rolls, 1 dice from assault rolls, and may move through difficult terrain with no penalty.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Without lore</comment>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Zealous Charge" hidden="false" id="53c4-52b9-012d-e857" sortIndex="-3">
+      <profiles>
+        <profile name="Zealous Charge" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="true" id="19ad-47e9-5b36-2dc5">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">*&quot;Weariness is a test, overcome it with Zeal.&quot; - Scroll of the Ascentic Path line 42*
+This unit gains +1 Strength to their next melee attack after a successful charge that targets only one enemy unit.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>With lore</comment>
+        </profile>
+        <profile name="Zealous Charge" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="c0c7-118f-3eef-195b">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">This unit gains +1 Strength to their next melee attack after a successful charge that targets only one enemy unit.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Without lore</comment>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Unbreakable Piety" hidden="false" id="d945-17af-1c0d-0e86" sortIndex="-4">
+      <profiles>
+        <profile name="Unbreakable Piety" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="true" id="a538-3035-1da9-fcd3">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">*&quot;the pain is temporary, the path is eternal.&quot; - Scroll of the Ascentic Path line 78*
+This unit gains a 9+ Legendary save until their next activation.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>With lore</comment>
+        </profile>
+        <profile name="Unbreakable Piety" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="2e70-cfcd-350f-67ad">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">This unit gains a 9+ Legendary save until their next activation.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Without lore</comment>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spirit of the Martyr" hidden="false" id="06e7-5bf6-2bd9-28af" sortIndex="-5">
+      <profiles>
+        <profile name="Spirit of the Martyr" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="true" id="6a7f-e46e-46e2-e80a">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">*&quot;To die on the path is a failure, to suffer on the path is a success.&quot; - Scroll of the Ascentic Path line 96*
+This unit gains Grit 6+ until their next activation</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>With lore</comment>
+        </profile>
+        <profile name="Spirit of the Martyr" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="f445-c0d9-58fb-f371">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">This unit gains Grit 6+ until their next activation</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Without lore</comment>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scapegotic Knights" hidden="false" id="284f-44e4-a1a5-6877" sortIndex="51">
+      <categoryLinks>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="4266-ff35-c267-44e0" primary="false" name="Infantry"/>
+        <categoryLink targetId="ee70-a05d-9619-a81c" id="3b66-3906-06e2-2dbf" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Lore" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="true" id="9e26-27c4-871e-1c60">
+          <characteristics>
+            <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">*&quot;You have been chosen for your loyalty, piety, dedication. Chosen to bear the sin in holy name. Chosen to travel the path unredeemable. Chosen to be unforgiven. For you, we weep.&quot; - Inscription found upon spinal implant of heavily augmented soldier post skirmish.*</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b56-1ed1-7f7d-2738" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Spirit of the Martyr" hidden="false" id="08d9-b055-d04e-04ef" type="selectionEntry" targetId="06e7-5bf6-2bd9-28af" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d53-3349-fdf7-3e4e" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5871-297e-4267-9d81" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="1-3 Scapegotic Knights" id="6d11-47cb-969e-1983" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Scapegotic Knight" hidden="false" id="8ef4-9afe-e92d-24e2" sortIndex="" defaultAmount="1">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="80"/>
+              </costs>
+              <profiles>
+                <profile name="Scapegotic Knight" typeId="0f74-e791-1423-bb47" typeName="Vehicle" hidden="false" id="2d3e-9c7a-b47e-458c">
+                  <characteristics>
+                    <characteristic name="AP" typeId="6f3e-0c10-951f-79a3">4</characteristic>
+                    <characteristic name="M" typeId="6dcb-59ed-386f-0f47">4&quot;</characteristic>
+                    <characteristic name="RS" typeId="f5ab-f47a-e83b-e93d">9+</characteristic>
+                    <characteristic name="WS" typeId="8eac-d857-bc43-f54a">4+</characteristic>
+                    <characteristic name="Front" typeId="e6cb-8d4c-6d1f-0b9f">15</characteristic>
+                    <characteristic name="Side" typeId="47e8-d724-9e09-78a2">15</characteristic>
+                    <characteristic name="Rear" typeId="a649-6921-b44c-55b6">14</characteristic>
+                    <characteristic name="Save" typeId="9c7d-1809-8957-b7a8">8+</characteristic>
+                    <characteristic name="HP" typeId="a87f-3cb8-5628-b9b5">5</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Devoted to Rage" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="7e16-cc6a-5b2d-8223">
+                  <characteristics>
+                    <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">If this model is equipped with 2 of the same melee weapon, it gains +2 to the attacks value of its melee weapons for its next melee attack after making a charge</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Ranged Weapons" id="de22-8ec1-e5ce-d60f" hidden="false" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Flame Spitter Cybernetic" hidden="false" id="43c6-8b86-1b36-f05a" type="selectionEntry" targetId="8b14-ecd3-220e-f195" defaultAmount="1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6feb-24fe-2721-1831" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="915d-5df0-d4ee-27b3" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Melee Weapons" id="1436-f3d0-50c7-a26e" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Cyber-Augmented Fists" hidden="false" id="49b2-9918-e572-42a2" type="selectionEntry" targetId="0e2b-3d7b-4495-7bb5" defaultAmount="2"/>
+                    <entryLink import="true" name="Integrated Arm Blades" hidden="false" id="ad39-a320-86f4-1a1e" type="selectionEntry" targetId="924b-eedb-e1a7-76ac"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3a9f-7fbe-797b-59cf" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a9cb-db2d-b9c2-3416" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee23-380a-ff09-4290" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4db9-7050-54df-5dfb" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cyber-Augmented Fists" hidden="false" id="0e2b-3d7b-4495-7bb5" sortIndex="1">
+      <profiles>
+        <profile name="Cyber-Augmented Fists" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="3a41-11ae-70e8-5ae7">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">1</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">4</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">10</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">-3</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">2</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af">Sustained 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Integrated Arm Blades" hidden="false" id="924b-eedb-e1a7-76ac" sortIndex="2">
+      <profiles>
+        <profile name="Integrated Arm Blades" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="f06b-644a-be03-1952">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">1</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">8</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">5</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">-2</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af">Precision, Sustained 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flame Spitter Cybernetic" hidden="false" id="8b14-ecd3-220e-f195" sortIndex="21">
+      <profiles>
+        <profile name="Flame Spitter Cybernetic" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="efd9-1748-b0c3-fd46">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">8&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">2D5+2</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">5</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Auto-Hit</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Acts of Faith reference" hidden="false" id="1e48-3d20-9773-8cde" type="selectionEntry" targetId="03bf-a8a3-ca0e-fed9" sortIndex="3">
+      <entryLinks>
+        <entryLink import="true" name="Spirit of the Martyr" hidden="false" id="869b-4e1f-18d1-4d84" type="selectionEntry" targetId="06e7-5bf6-2bd9-28af" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5928-f9f2-8121-7d66" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32af-a974-0726-d203" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Scapegotic Knights" hidden="false" id="3b15-2646-3e10-1d5d" type="selectionEntry" targetId="284f-44e4-a1a5-6877"/>
+  </entryLinks>
+</catalogue>

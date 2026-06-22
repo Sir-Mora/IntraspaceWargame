@@ -131,7 +131,7 @@
             <characteristic name="Str" typeId="777b-524e-5178-d91d">5</characteristic>
             <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">-3</characteristic>
             <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
-            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af">Terror 7+</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af">Terror 14+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -413,7 +413,7 @@
             <characteristic name="Str" typeId="777b-524e-5178-d91d">4</characteristic>
             <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">-1</characteristic>
             <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
-            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af">Sustained 1, Terror 6+</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af">Sustained 1, Terror 12+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -700,7 +700,7 @@
             <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
             <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-6</characteristic>
             <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">3</characteristic>
-            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Heavy, Intra-Exile, Terror 4+</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Heavy, Intra-Exile, Terror 8+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -715,7 +715,7 @@
             <characteristic name="Str" typeId="777b-524e-5178-d91d">6</characteristic>
             <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">-1</characteristic>
             <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">2</characteristic>
-            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af">Terror 8+</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af">Terror 16+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1051,9 +1051,9 @@ If multiple units have this ability, more than 1 unit may not be assigned to eac
                     <characteristic name="M" typeId="6dcb-59ed-386f-0f47">5&quot;</characteristic>
                     <characteristic name="RS" typeId="f5ab-f47a-e83b-e93d">4+</characteristic>
                     <characteristic name="WS" typeId="8eac-d857-bc43-f54a">7+</characteristic>
-                    <characteristic name="Front" typeId="e6cb-8d4c-6d1f-0b9f">11</characteristic>
-                    <characteristic name="Side" typeId="47e8-d724-9e09-78a2">11</characteristic>
-                    <characteristic name="Rear" typeId="a649-6921-b44c-55b6">11</characteristic>
+                    <characteristic name="Front" typeId="e6cb-8d4c-6d1f-0b9f">15</characteristic>
+                    <characteristic name="Side" typeId="47e8-d724-9e09-78a2">15</characteristic>
+                    <characteristic name="Rear" typeId="a649-6921-b44c-55b6">15</characteristic>
                     <characteristic name="Save" typeId="9c7d-1809-8957-b7a8">7+</characteristic>
                     <characteristic name="HP" typeId="a87f-3cb8-5628-b9b5">13</characteristic>
                   </characteristics>
@@ -1127,11 +1127,11 @@ If multiple units have this ability, more than 1 unit may not be assigned to eac
 
 For units with downed models with multiple wounds, sum the entirety of the downed models wounds.</description>
     </rule>
-    <rule name="Faction keyword: Terror" id="7679-8baf-220a-5196" hidden="true">
-      <comment>With lore</comment>
+    <rule name="Terror" id="7679-8baf-220a-5196" hidden="true">
+      <comment>Army rule With lore</comment>
       <description>*Few mortal men have fought the Untended, those who have are shocked, left in states of panic and delirium from horrors wrought from a past better left forgotten.*
 
-Some weapons and abilities will have a “Terror X+” keyword, after attacking with these weapons, if any models in the target unit were killed by the attack, that unit must roll 2d5 against X+ adding or subtracting values based on that units type on the [Terror Modifier Table]
+Some weapons and abilities will have a “Terror X+” keyword, after attacking with these weapons, if any models in the target unit were killed by the attack, that unit must roll 2d10 against X+ adding or subtracting values based on that units type on the [Terror Modifier Table]
 
 If a unit fails its Terror Test, then that unit is now terrified until the end of the round, and several modifiers now apply.
 
@@ -1146,9 +1146,9 @@ at the end of the round, for each missing model in that unit, roll a d10, on a 1
         </modifier>
       </modifiers>
     </rule>
-    <rule name="Faction keyword: Terror" id="a555-8a51-062c-b31d" hidden="false">
-      <comment>Without lore</comment>
-      <description>Some weapons and abilities will have a “Terror X+” keyword, after attacking with these weapons, if any models in the target unit were killed by the attack, that unit must roll 2d5 against X+ adding or subtracting values based on that units type on the [Terror Modifier Table]
+    <rule name="Terror" id="a555-8a51-062c-b31d" hidden="false">
+      <comment>Army rule Without lore</comment>
+      <description>Some weapons and abilities will have a “Terror X+” keyword, after attacking with these weapons, if any models in the target unit were killed by the attack, that unit must roll 2d10 against X+ adding or subtracting values based on that units type on the [Terror Modifier Table]
 
 
 If a unit fails its Terror Test, then that unit is now terrified until the end of the round, and several modifiers now apply.

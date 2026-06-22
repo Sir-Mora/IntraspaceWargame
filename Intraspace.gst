@@ -13,6 +13,7 @@
     <categoryEntry name="Monster" id="6695-a701-809a-0f15" hidden="false"/>
     <categoryEntry name="Additional Lore" id="c308-79ff-6084-3b62" hidden="false"/>
     <categoryEntry name="Drone" id="b88d-3713-1b76-e33b" hidden="false"/>
+    <categoryEntry name="Dedicated Transport" id="515d-6dc0-79f2-a70d" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="New Force" id="a90e-7e45-ab7e-f24c" hidden="false">
@@ -22,6 +23,7 @@
         <categoryLink name="Troops" hidden="false" id="9ddd-8975-4804-68d8" targetId="19d7-3b92-a41b-df59"/>
         <categoryLink name="Elites" hidden="false" id="192f-89b4-05ee-ede1" targetId="2727-059b-b6db-360e"/>
         <categoryLink name="Heavy Support" hidden="false" id="c8ee-a3b5-dbaf-8ac4" targetId="ee70-a05d-9619-a81c"/>
+        <categoryLink name="Dedicated Transport" hidden="false" id="51ff-a4dc-f4a0-0772" targetId="515d-6dc0-79f2-a70d"/>
         <categoryLink name="Additional Lore" hidden="false" id="9d38-0324-8a28-851a" targetId="c308-79ff-6084-3b62">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -86,6 +88,13 @@
         <characteristicType name="HP" id="a87f-3cb8-5628-b9b5"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Transport" id="a81b-e483-414f-3651" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Capacity" id="9f77-0e18-c923-5769"/>
+        <characteristicType name="Access Points" id="3847-4e9c-92b0-092e"/>
+        <characteristicType name="Fire Points" id="9b38-4b6f-4b22-cf2a"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <sharedRules>
     <rule name="Rapid Fire " id="f613-2b6e-c98c-4614" hidden="false">
@@ -125,7 +134,10 @@ Step 2: Roll a d10, then subtract the X value from the roll, then move the point
 
 Step 3: Place down a circular template Y&quot; in diameter (or just measure each model within 1/2 Y inches of the point)
 
-Step 4: all models underneath that template are automatically hit by the weapon</description>
+Step 4: all models underneath that template are automatically hit by the weapon for its number of attacks. For each unit, roll as if it was hit by that many attacks.
+
+
+If multiple weapons in a unit have barrage, simply roll to scatter and move the first template, then roll the scatter dice for each following weapon, placing the template next to the previous weapons template in the direction that the scatter die points. If the scatter die rolls a direct hit, the template may be placed in any direction. The templates may not overlap.</description>
     </rule>
     <rule name="Limited X" id="ecb2-8de1-e144-7d74" hidden="false">
       <description>Limited X: Limited weapons may only be used X number of times. Afterwards the model with the weapon cannot use them.</description>
@@ -156,6 +168,16 @@ Step 4: all models underneath that template are automatically hit by the weapon<
     </rule>
     <rule name="Glitch" id="73d0-6251-474a-73f2" hidden="false">
       <description>This weapon does not inflict damage, your opponent subtracts 1 from any hit rolls made for units hit by a this weapon until the end of the round</description>
+    </rule>
+    <rule name="Leadership X" id="6709-6d05-98dc-3c7c" hidden="false">
+      <description>When a friendly model within 6&quot; of this model takes a morale test, that friendly unit may add the X value to that roll</description>
+    </rule>
+    <rule name="Bravery X+" id="30e1-2ae5-8697-e6c1" hidden="false">
+      <description>This unit makes a morale roll on the X+ value instead of on a 10+</description>
+    </rule>
+    <rule name="Morale" id="3c03-ebb6-5e8e-3cef" hidden="false">
+      <alias>Morale Test</alias>
+      <description>Some rules require a unit to make a Morale Test. When doing so, that units controller rolls 2d10 against a 10+, adding or subtracting the relevant modifers, if the roll is above a 10+, then the unit passes, if it is bellow a 10+ then the unit fails.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
