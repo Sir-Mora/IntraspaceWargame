@@ -970,5 +970,6 @@ additionally, if a unit makes a melee attack and has not made a ranged attack, a
     <entryLink import="true" name="Hoplite Squad" hidden="false" id="9039-66c6-71a7-bb01" type="selectionEntry" targetId="2708-0a91-d20d-3727"/>
     <entryLink import="true" name="Interitus Squad" hidden="false" id="e676-19fe-04bb-858f" type="selectionEntry" targetId="3eb2-b172-14ed-4671"/>
     <entryLink import="true" name="Cadueceator War-Walker" hidden="false" id="d488-6722-870c-a5ea" type="selectionEntry" targetId="7099-6387-aa0d-ad9a"/>
+    <entryLink import="true" name="Caedes Squad" hidden="false" id="e9a2-a8fe-d340-0d5e" type="selectionEntry" targetId="b7ac-d5e6-d3f4-fe2a"/>
   </entryLinks>
 </catalogue>
