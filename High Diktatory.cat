@@ -690,7 +690,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="3513-57f3-6212-3f59" value="30"/>
+            <cost name="Points" typeId="3513-57f3-6212-3f59" value="18"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
