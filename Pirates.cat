@@ -96,10 +96,7 @@ At the start of any round, you can declare The Big Score. While the Big Score is
     </profileType>
   </profileTypes>
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" hidden="false" id="29a6-527d-f9af-bc2a" sortIndex="0">
-      <comment>1-10 Commander</comment>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Pirate Lord" hidden="false" id="9ece-b225-f4cc-8c5c" sortIndex="1">
+    <selectionEntry type="unit" import="true" name="Pirate Lord" hidden="false" id="9ece-b225-f4cc-8c5c" sortIndex="10">
       <categoryLinks>
         <categoryLink targetId="bc8a-1751-58b3-bcce" id="e18f-8b01-61a8-d856" primary="false" name="Infantry"/>
         <categoryLink targetId="60b7-3bbc-e392-6c6d" id="8beb-c0f9-90ea-9918" primary="true" name="Commander"/>
@@ -202,7 +199,7 @@ At the start of any round, you can declare The Big Score. While the Big Score is
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Cutlass" hidden="false" id="e9c7-3d5b-1ddb-2e08" sortIndex="101">
+    <selectionEntry type="upgrade" import="true" name="Cutlass" hidden="false" id="e9c7-3d5b-1ddb-2e08" sortIndex="1">
       <profiles>
         <profile name="Cutlass" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="ac7e-a844-5d89-29cc">
           <characteristics>
@@ -220,10 +217,7 @@ At the start of any round, you can declare The Big Score. While the Big Score is
         <categoryLink targetId="5bbf-e9f1-338b-c996" id="3658-f239-7593-e055" primary="true" name="Melee Weapon"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" hidden="false" id="acb3-d0ab-c8c6-3572" sortIndex="101">
-      <comment>101-120 Melee Weapons</comment>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Combo Cutlass" hidden="false" id="6cc4-8c2d-04ca-9e9f" sortIndex="102">
+    <selectionEntry type="upgrade" import="true" name="Combo Cutlass" hidden="false" id="6cc4-8c2d-04ca-9e9f" sortIndex="1">
       <profiles>
         <profile name="Combo Cutlass" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="55a5-7e49-18a4-5648">
           <characteristics>
@@ -261,13 +255,7 @@ At the start of any round, you can declare The Big Score. While the Big Score is
         <categoryLink targetId="5bbf-e9f1-338b-c996" id="5d76-9e1a-69c6-e6af" primary="true" name="Melee Weapon"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" hidden="false" id="f2c7-add3-ebff-397f" sortIndex="121">
-      <comment>121-140 Ranged Weapons</comment>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" hidden="false" id="a0b3-5a39-4b33-6494" sortIndex="141">
-      <comment>141-150 Attached Weapons</comment>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Attached Flame Spitter" hidden="false" id="b696-b719-a17b-c630" sortIndex="141">
+    <selectionEntry type="upgrade" import="true" name="Attached Flame Spitter" hidden="false" id="b696-b719-a17b-c630" sortIndex="2">
       <profiles>
         <profile name="Attached Flame Spitter" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="920a-dcb0-d182-17f8">
           <characteristics>
@@ -282,7 +270,7 @@ At the start of any round, you can declare The Big Score. While the Big Score is
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Attached Boomstick" hidden="false" id="8b03-0b25-3ce4-202a" sortIndex="142">
+    <selectionEntry type="upgrade" import="true" name="Attached Boomstick" hidden="false" id="8b03-0b25-3ce4-202a" sortIndex="2">
       <profiles>
         <profile name="Attached Boomstick" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="7de3-8e68-0fac-03b6">
           <characteristics>
@@ -297,7 +285,7 @@ At the start of any round, you can declare The Big Score. While the Big Score is
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mecha Gauntlet" hidden="false" id="ac2f-c41d-1d1e-ba0e" sortIndex="110">
+    <selectionEntry type="upgrade" import="true" name="Mecha Gauntlet" hidden="false" id="ac2f-c41d-1d1e-ba0e" sortIndex="1">
       <profiles>
         <profile name="Mecha Gauntlet" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="0758-5688-e9c2-82e6">
           <characteristics>
@@ -315,7 +303,7 @@ At the start of any round, you can declare The Big Score. While the Big Score is
         <categoryLink targetId="5bbf-e9f1-338b-c996" id="a756-5268-dfe1-9f83" primary="true" name="Melee Weapon"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Stolen SMG" hidden="false" id="7a36-5e84-5e5a-4d1e" sortIndex="121">
+    <selectionEntry type="upgrade" import="true" name="Stolen SMG" hidden="false" id="7a36-5e84-5e5a-4d1e" sortIndex="2">
       <profiles>
         <profile name="Stolen SMG" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="5e1c-379a-c4ec-cc94">
           <characteristics>
@@ -333,7 +321,7 @@ At the start of any round, you can declare The Big Score. While the Big Score is
         <categoryLink targetId="4f8f-e83d-8d24-eab5" id="036f-646a-5ca3-6661" primary="true" name="Ranged Weapon"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Boomstick" hidden="false" id="0ef8-7e36-35c5-4659" sortIndex="122">
+    <selectionEntry type="upgrade" import="true" name="Boomstick" hidden="false" id="0ef8-7e36-35c5-4659" sortIndex="2">
       <profiles>
         <profile name="Boomstick" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="365f-ae49-fce7-af96">
           <characteristics>
@@ -351,7 +339,7 @@ At the start of any round, you can declare The Big Score. While the Big Score is
         <categoryLink targetId="19d7-3b92-a41b-df59" id="ef25-437f-dbe7-5f4b" primary="true" name="Troops"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mechanic" hidden="false" id="571d-fd64-cfad-8e2b" sortIndex="3">
+    <selectionEntry type="upgrade" import="true" name="Mechanic" hidden="false" id="571d-fd64-cfad-8e2b" sortIndex="10">
       <categoryLinks>
         <categoryLink name="Infantry" hidden="false" id="763e-be2d-5319-63cf" targetId="bc8a-1751-58b3-bcce" primary="false"/>
         <categoryLink name="Commander" hidden="false" id="e61c-0daa-3f51-7ae8" targetId="60b7-3bbc-e392-6c6d" primary="true"/>
@@ -446,7 +434,7 @@ At the start of any round, you can declare The Big Score. While the Big Score is
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Auto-Tools" hidden="false" id="b631-3446-1513-4d90" sortIndex="104">
+    <selectionEntry type="upgrade" import="true" name="Auto-Tools" hidden="false" id="b631-3446-1513-4d90" sortIndex="4">
       <profiles>
         <profile name="Auto-Tools" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="cc9b-ceae-1c18-ad74">
           <characteristics>
@@ -469,7 +457,7 @@ At the start of any round, you can declare The Big Score. While the Big Score is
         <categoryLink name="Melee Weapon" hidden="false" id="ad80-3e90-e675-1b64" targetId="5bbf-e9f1-338b-c996" primary="true"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Pirate Lord in Powered Rig" hidden="false" id="8b5b-0ecd-27e3-458f" sortIndex="2">
+    <selectionEntry type="unit" import="true" name="Pirate Lord in Powered Rig" hidden="false" id="8b5b-0ecd-27e3-458f" sortIndex="10">
       <categoryLinks>
         <categoryLink name="Commander" hidden="false" id="d61c-616b-32a4-4027" targetId="60b7-3bbc-e392-6c6d" primary="true"/>
         <categoryLink targetId="bc8a-1751-58b3-bcce" id="ef99-e3ad-7fb9-8669" primary="false" name="Infantry"/>
@@ -491,7 +479,7 @@ At the start of any round, you can declare The Big Score. While the Big Score is
                     <cost name="Points" typeId="3513-57f3-6212-3f59" value="0"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Crusher Claw" hidden="false" id="219e-fc4e-eed8-6d90" type="selectionEntry" targetId="a580-ba0d-4175-bd88" sortIndex="2">
+                <entryLink import="true" name="Mecha Claw" hidden="false" id="219e-fc4e-eed8-6d90" type="selectionEntry" targetId="a580-ba0d-4175-bd88" sortIndex="2">
                   <costs>
                     <cost name="Points" typeId="3513-57f3-6212-3f59" value="15"/>
                   </costs>
@@ -557,7 +545,7 @@ At the start of any round, you can declare The Big Score. While the Big Score is
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mecha Claw" hidden="false" id="a580-ba0d-4175-bd88" sortIndex="111">
+    <selectionEntry type="upgrade" import="true" name="Mecha Claw" hidden="false" id="a580-ba0d-4175-bd88" sortIndex="1">
       <profiles>
         <profile name="Mecha Claw" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="8dd1-154b-e005-f204">
           <characteristics>
@@ -572,16 +560,7 @@ At the start of any round, you can declare The Big Score. While the Big Score is
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="7844-ee51-de80-2a16" sortIndex="11">
-      <comment>11-20 Troops</comment>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="21db-f705-82ae-8be1" sortIndex="21">
-      <comment>21-30 Elites</comment>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="5807-c8ec-16f9-a9b8" sortIndex="31">
-      <comment>31-40 Heavy Support</comment>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pirate Technical Truck" hidden="false" id="2e5e-d085-d1d8-81d1" sortIndex="31">
+    <selectionEntry type="upgrade" import="true" name="Modified Buffalo Cargo Truck" hidden="false" id="2e5e-d085-d1d8-81d1" sortIndex="15">
       <profiles>
         <profile name="Pirate Technical Truck" typeId="0f74-e791-1423-bb47" typeName="Vehicle" hidden="false" id="d88e-00a1-8da5-7922">
           <characteristics>
@@ -599,12 +578,132 @@ At the start of any round, you can declare The Big Score. While the Big Score is
         <profile name="Pirate Technical Truck" typeId="a81b-e483-414f-3651" typeName="Transport" hidden="false" id="f566-e1cc-eb67-da50">
           <characteristics>
             <characteristic name="Capacity" typeId="9f77-0e18-c923-5769">This model has a transport capacity of 12 PIRATES INFANTRY models, it cannot transport models in POWERED RIGS.</characteristic>
+            <characteristic name="Access Points" typeId="3847-4e9c-92b0-092e">Side and Rear</characteristic>
+            <characteristic name="Fire Points" typeId="9b38-4b6f-4b22-cf2a">All</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="New Group" id="2710-56cf-7e7c-91d3" hidden="false"/>
+        <selectionEntryGroup name="Improvised Improvements" id="2710-56cf-7e7c-91d3" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55d5-a823-f325-411e" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Up-Armored" hidden="false" id="6f01-e55c-44f9-5bae" type="selectionEntry" targetId="efb2-140a-e1d0-79b1">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Stripped Down" hidden="false" id="0ba6-9361-cb11-a498" type="selectionEntry" targetId="ceb4-be45-575a-d515">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Reinforced Front" hidden="false" id="7d5f-d831-26a0-5429" type="selectionEntry" targetId="8d3b-f58b-1ef5-6ba4">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Turret Weapons" id="5c97-d730-ef20-acbd" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Big Auto Boomstick" hidden="false" id="5240-ae97-e53e-d534" type="selectionEntry" targetId="adfa-e648-b76b-c806" defaultAmount="1"/>
+            <entryLink import="true" name="Rocket Rack" hidden="false" id="20ad-0c16-687e-a129" type="selectionEntry" targetId="e07e-5477-bb82-a59b"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bca-8a04-ed8b-1c94" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa1a-c213-6580-ff5d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Open Topped" id="8397-f834-1f83-ce7f" hidden="false" type="rule" targetId="4769-ae14-54d5-d942"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="3513-57f3-6212-3f59" value="60"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1783-40df-349b-4bdd" id="5e80-04da-7669-37c8" primary="false" name="Vehicle"/>
+        <categoryLink targetId="515d-6dc0-79f2-a70d" id="a731-b782-8e6d-2c6f" primary="true" name="Dedicated Transport"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Big Auto Boomstick" hidden="false" id="adfa-e648-b76b-c806" sortIndex="2">
+      <profiles>
+        <profile name="Big Auto Boomstick" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="5dd1-ee9d-85bf-596b">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">36&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">3</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">5</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Assault </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rocket Rack" hidden="false" id="e07e-5477-bb82-a59b" sortIndex="2">
+      <profiles>
+        <profile name="Rocket Rack" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="c95e-2ce9-6e89-be92">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">24&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">8</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-3</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">D2+1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Jet Boosters" hidden="false" id="5b35-66df-c5d7-a0e2" sortIndex="-1">
+      <infoLinks>
+        <infoLink name="Jet Boosters" id="3c8f-7e2a-cf14-a8d8" hidden="false" type="profile" targetId="8541-7372-1cf8-8c19"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Improvised Forcefield" hidden="false" id="2e74-a431-c312-ff9d" sortIndex="-1">
+      <infoLinks>
+        <infoLink name="Improvised Forcefield" id="fc28-c6cd-7cd5-df45" hidden="false" type="profile" targetId="1154-adf2-887f-4cd1"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reinforced Front" hidden="false" id="8d3b-f58b-1ef5-6ba4" sortIndex="-1">
+      <infoLinks>
+        <infoLink name="Reinforced Front" id="0469-2626-dbaf-2a46" hidden="false" type="profile" targetId="71ad-9a37-71f1-67f7"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="increment" value="2" field="e6cb-8d4c-6d1f-0b9f" scope="parent" affects="profiles.Vehicle"/>
+        <modifier type="increment" value="1" field="47e8-d724-9e09-78a2" scope="parent" affects="profiles.Vehicle"/>
+        <modifier type="decrement" value="2" field="a649-6921-b44c-55b6" scope="parent" affects="profiles.Vehicle"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Stripped Down" hidden="false" id="ceb4-be45-575a-d515" sortIndex="-1">
+      <infoLinks>
+        <infoLink name="Stripped Down" id="1e34-53ac-72e4-709d" hidden="false" type="profile" targetId="7518-6ccd-0df3-71e1"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="increment" value="2" field="6dcb-59ed-386f-0f47" scope="parent" affects="profiles.Vehicle"/>
+        <modifier type="decrement" value="2" field="e6cb-8d4c-6d1f-0b9f" scope="parent" affects="profiles.Vehicle"/>
+        <modifier type="decrement" value="2" field="47e8-d724-9e09-78a2" scope="parent" affects="profiles.Vehicle"/>
+        <modifier type="decrement" value="2" field="a649-6921-b44c-55b6" scope="parent" affects="profiles.Vehicle"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Turbo Charged Engines" hidden="false" id="13f3-64b1-124d-ddc8" sortIndex="-1">
+      <infoLinks>
+        <infoLink name="Turbo Charged Engines" id="9a11-e06a-9d57-285b" hidden="false" type="profile" targetId="6e18-c98e-3697-4b8f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Up-Armored" hidden="false" id="efb2-140a-e1d0-79b1" sortIndex="-1">
+      <infoLinks>
+        <infoLink name="Up-Armored" id="1c9b-a39d-fe5c-a370" hidden="false" type="profile" targetId="48f9-f7db-16e7-b225"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="decrement" value="2" field="6dcb-59ed-386f-0f47" scope="parent" affects="profiles.Vehicle"/>
+        <modifier type="increment" value="2" field="e6cb-8d4c-6d1f-0b9f" scope="parent" affects="profiles.Vehicle"/>
+        <modifier type="increment" value="2" field="47e8-d724-9e09-78a2" scope="parent" affects="profiles.Vehicle"/>
+        <modifier type="increment" value="2" field="a649-6921-b44c-55b6" scope="parent" affects="profiles.Vehicle"/>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -654,5 +753,6 @@ Boost (2 AP): Move 2d5&quot; in a straight line</characteristic>
     <entryLink import="true" name="Pirate Lord" hidden="false" id="9689-f293-544f-204d" type="selectionEntry" targetId="9ece-b225-f4cc-8c5c"/>
     <entryLink import="true" name="Pirate Lord in Powered Rig" hidden="false" id="00e3-6b14-e1d2-ddc3" type="selectionEntry" targetId="8b5b-0ecd-27e3-458f"/>
     <entryLink import="true" name="Mechanic" hidden="false" id="ed3c-91cf-71f9-5240" type="selectionEntry" targetId="571d-fd64-cfad-8e2b"/>
+    <entryLink import="true" name="Modified Buffalo Cargo Truck" hidden="false" id="3db8-733d-5702-ded5" type="selectionEntry" targetId="2e5e-d085-d1d8-81d1"/>
   </entryLinks>
 </catalogue>

@@ -1050,7 +1050,7 @@ Word harder!: That unit gains +1 AP on its next activation, this does not stack.
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24f8-1baa-a81e-1ed7" includeChildSelections="false"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Heavy Machine gun" hidden="false" id="23c8-0fe7-b917-222a" type="selectionEntry" targetId="9f1f-0f0c-b043-29d9" sortIndex="1" defaultAmount="1">
+                    <entryLink import="true" name="Heavy Automatik Machine Gun" hidden="false" id="23c8-0fe7-b917-222a" type="selectionEntry" targetId="9f1f-0f0c-b043-29d9" sortIndex="1" defaultAmount="1">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="953f-9cb4-8632-e876" includeChildSelections="false"/>
                       </constraints>
@@ -1179,7 +1179,7 @@ Word harder!: That unit gains +1 AP on its next activation, this does not stack.
                 <cost name="Points" typeId="3513-57f3-6212-3f59" value="20"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Heavy Laz Cannon" hidden="false" id="b38b-a07e-13e0-0af9" type="selectionEntry" targetId="3c82-bcd3-5de3-9fd5" sortIndex="4">
+            <entryLink import="true" name="Heavy Laz-Cannon" hidden="false" id="b38b-a07e-13e0-0af9" type="selectionEntry" targetId="3c82-bcd3-5de3-9fd5" sortIndex="4">
               <costs>
                 <cost name="Points" typeId="3513-57f3-6212-3f59" value="20"/>
               </costs>
@@ -1194,7 +1194,7 @@ Word harder!: That unit gains +1 AP on its next activation, this does not stack.
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95ac-a83f-9c3d-e925" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Heavy Automatik gun" hidden="false" id="f64b-a89c-f58b-2213" type="selectionEntry" targetId="9f1f-0f0c-b043-29d9">
+            <entryLink import="true" name="Heavy Automatik Machine Gun" hidden="false" id="f64b-a89c-f58b-2213" type="selectionEntry" targetId="9f1f-0f0c-b043-29d9">
               <costs>
                 <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
               </costs>
@@ -1421,7 +1421,7 @@ Word harder!: That unit gains +1 AP on its next activation, this does not stack.
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a398-0f90-9674-084b" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Heavy Automatik gun" hidden="false" id="f811-079c-1709-29c9" type="selectionEntry" targetId="9f1f-0f0c-b043-29d9">
+            <entryLink import="true" name="Heavy Automatik Machine Gun" hidden="false" id="f811-079c-1709-29c9" type="selectionEntry" targetId="9f1f-0f0c-b043-29d9">
               <costs>
                 <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
               </costs>

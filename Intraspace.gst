@@ -37,7 +37,7 @@
     </forceEntry>
   </forceEntries>
   <profileTypes>
-    <profileType name="Unit" id="2c7e-2f96-4991-c2cf" hidden="false">
+    <profileType name="Unit" id="2c7e-2f96-4991-c2cf" hidden="false" sortIndex="2">
       <characteristicTypes>
         <characteristicType name="AP" id="43a8-4786-0175-dcd0"/>
         <characteristicType name="M" id="ed74-71b7-9404-c409"/>
@@ -48,7 +48,7 @@
         <characteristicType name="HP" id="0638-f061-dc89-fc79"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Ranged Weapons" id="598e-2831-d78e-a4c8" hidden="false">
+    <profileType name="Ranged Weapons" id="598e-2831-d78e-a4c8" hidden="false" sortIndex="3">
       <characteristicTypes>
         <characteristicType name="Range" id="f0b9-ef2b-6d06-ec2c"/>
         <characteristicType name="Cost" id="f046-bdab-8918-0f81"/>
@@ -59,7 +59,7 @@
         <characteristicType name="Keywords" id="3d71-fbb0-fd92-2d83"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Melee Weapons" id="1a42-313a-ac28-9662" hidden="false">
+    <profileType name="Melee Weapons" id="1a42-313a-ac28-9662" hidden="false" sortIndex="4">
       <characteristicTypes>
         <characteristicType name="Range" id="8f7f-52be-387a-ddbf"/>
         <characteristicType name="Cost" id="32cf-2ec3-c904-6d84"/>
@@ -70,12 +70,12 @@
         <characteristicType name="Keywords" id="de8d-b0c8-da98-d7af"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Abilities" id="6a24-9ebc-0a52-315c" hidden="false">
+    <profileType name="Abilities" id="6a24-9ebc-0a52-315c" hidden="false" sortIndex="5">
       <characteristicTypes>
         <characteristicType name="Description" id="48e9-7c24-9d42-a0b1"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Vehicle" id="0f74-e791-1423-bb47" hidden="false">
+    <profileType name="Vehicle" id="0f74-e791-1423-bb47" hidden="false" sortIndex="1">
       <characteristicTypes>
         <characteristicType name="AP" id="6f3e-0c10-951f-79a3"/>
         <characteristicType name="M" id="6dcb-59ed-386f-0f47"/>
@@ -88,7 +88,7 @@
         <characteristicType name="HP" id="a87f-3cb8-5628-b9b5"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Transport" id="a81b-e483-414f-3651" hidden="false">
+    <profileType name="Transport" id="a81b-e483-414f-3651" hidden="false" sortIndex="6">
       <characteristicTypes>
         <characteristicType name="Capacity" id="9f77-0e18-c923-5769"/>
         <characteristicType name="Access Points" id="3847-4e9c-92b0-092e"/>
@@ -178,6 +178,16 @@ If multiple weapons in a unit have barrage, simply roll to scatter and move the 
     <rule name="Morale" id="3c03-ebb6-5e8e-3cef" hidden="false">
       <alias>Morale Test</alias>
       <description>Some rules require a unit to make a Morale Test. When doing so, that units controller rolls 2d10 against a 10+, adding or subtracting the relevant modifers, if the roll is above a 10+, then the unit passes, if it is bellow a 10+ then the unit fails.</description>
+    </rule>
+    <rule name="Open Topped" id="4769-ae14-54d5-d942" hidden="false">
+      <description>This vehicle has several modifiers due to being open topped
+
+* These vehicles add 1 to rolls on the vehicle damage table
+* The vehicles gain the assault vehicle rule
+* Models inside of this vehicle can shoot out of it using their ranged weapons on any side</description>
+    </rule>
+    <rule name="Assault Vehicle" id="5492-707c-9801-a528" hidden="false">
+      <description>Models disembarking from this vehicle may charge during their turn</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>

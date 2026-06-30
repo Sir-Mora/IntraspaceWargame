@@ -255,7 +255,7 @@ This unit gains Grit 6+ until their next activation</characteristic>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Scapegotic Knights" hidden="false" id="284f-44e4-a1a5-6877" sortIndex="51">
+    <selectionEntry type="upgrade" import="true" name="Scapegotic Knights" hidden="false" id="284f-44e4-a1a5-6877" sortIndex="12">
       <categoryLinks>
         <categoryLink targetId="bc8a-1751-58b3-bcce" id="4266-ff35-c267-44e0" primary="false" name="Infantry"/>
         <categoryLink targetId="ee70-a05d-9619-a81c" id="3b66-3906-06e2-2dbf" primary="true" name="Heavy Support"/>
@@ -285,7 +285,7 @@ This unit gains Grit 6+ until their next activation</characteristic>
       <selectionEntryGroups>
         <selectionEntryGroup name="1-3 Scapegotic Knights" id="6d11-47cb-969e-1983" hidden="false" sortIndex="2">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Scapegotic Knight" hidden="false" id="8ef4-9afe-e92d-24e2" sortIndex="" defaultAmount="1">
+            <selectionEntry type="upgrade" import="true" name="Scapegotic Knight" hidden="false" id="8ef4-9afe-e92d-24e2" defaultAmount="1">
               <costs>
                 <cost name="Points" typeId="3513-57f3-6212-3f59" value="80"/>
               </costs>
@@ -355,7 +355,7 @@ This unit gains Grit 6+ until their next activation</characteristic>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Integrated Arm Blades" hidden="false" id="924b-eedb-e1a7-76ac" sortIndex="2">
+    <selectionEntry type="upgrade" import="true" name="Integrated Arm Blades" hidden="false" id="924b-eedb-e1a7-76ac" sortIndex="1">
       <profiles>
         <profile name="Integrated Arm Blades" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="f06b-644a-be03-1952">
           <characteristics>
@@ -370,7 +370,7 @@ This unit gains Grit 6+ until their next activation</characteristic>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Flame Spitter Cybernetic" hidden="false" id="8b14-ecd3-220e-f195" sortIndex="21">
+    <selectionEntry type="upgrade" import="true" name="Flame Spitter Cybernetic" hidden="false" id="8b14-ecd3-220e-f195" sortIndex="2">
       <profiles>
         <profile name="Flame Spitter Cybernetic" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="efd9-1748-b0c3-fd46">
           <characteristics>
@@ -378,6 +378,273 @@ This unit gains Grit 6+ until their next activation</characteristic>
             <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
             <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">2D5+2</characteristic>
             <characteristic name="Str" typeId="d965-bd05-5d27-6d68">5</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Auto-Hit</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Holy Bell Procession" hidden="false" id="8988-7abf-16b8-d74b" sortIndex="13">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Holy Bell Cart" hidden="false" id="4330-0db7-7391-5c21">
+          <costs>
+            <cost name="Points" typeId="3513-57f3-6212-3f59" value="140"/>
+          </costs>
+          <profiles>
+            <profile name="Holy Bell Cart (120 × 92mm)" typeId="0f74-e791-1423-bb47" typeName="Vehicle" hidden="false" id="95f8-22f1-1562-a2d2">
+              <characteristics>
+                <characteristic name="AP" typeId="6f3e-0c10-951f-79a3">4</characteristic>
+                <characteristic name="M" typeId="6dcb-59ed-386f-0f47">1&quot;</characteristic>
+                <characteristic name="RS" typeId="f5ab-f47a-e83b-e93d">-</characteristic>
+                <characteristic name="WS" typeId="8eac-d857-bc43-f54a">6+</characteristic>
+                <characteristic name="Front" typeId="e6cb-8d4c-6d1f-0b9f">13</characteristic>
+                <characteristic name="Side" typeId="47e8-d724-9e09-78a2">13</characteristic>
+                <characteristic name="Rear" typeId="a649-6921-b44c-55b6">13</characteristic>
+                <characteristic name="Save" typeId="9c7d-1809-8957-b7a8">7+</characteristic>
+                <characteristic name="HP" typeId="a87f-3cb8-5628-b9b5">16</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Pushed Along" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="eaf5-cd43-8b47-eee2">
+              <characteristics>
+                <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">If this unit is within 3&quot; of a friendly infantry model when it starts a movement action, then this unit may replace its movement with that infantry units up to 6&quot;.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Tolling the Bell (2 AP)" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="cbe9-bdca-d65e-ea3d">
+              <characteristics>
+                <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">This unit may toll the bell, to do so, roll a dice for each time this ability has been used before, starting at 1 dice, then 2, and so on and so forth.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoGroups>
+            <infoGroup name="Tolling the Bell Table" id="ec25-9fb5-9acc-d37a" hidden="false">
+              <profiles>
+                <profile name="1-3" typeId="9d59-0ca8-2468-c40a" typeName="Holy Bell Toll Chart" hidden="false" id="476e-8ea2-7aa4-cc92">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="b613-ab95-ae0c-d979">The Holy Bell Cart may move a extra D5&quot; inches in a straight line</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="4-6" typeId="9d59-0ca8-2468-c40a" typeName="Holy Bell Toll Chart" hidden="false" id="ce28-b54e-9b06-b1ca">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="b613-ab95-ae0c-d979">All Troop units may reroll morale tests until this units next activation</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="7-9" typeId="9d59-0ca8-2468-c40a" typeName="Holy Bell Toll Chart" hidden="false" id="dccf-18a6-7613-0816">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="b613-ab95-ae0c-d979">All enemy units within 24&quot; of the Holy Bell Cart must take a 11+ Morale Test, if failed that unit cannot shoot or charge in its next activation.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="9-11" typeId="9d59-0ca8-2468-c40a" typeName="Holy Bell Toll Chart" hidden="false" id="2d4e-01d7-e804-25da">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="b613-ab95-ae0c-d979">Roll a d10 for each vehicle within 12&quot; on a roll of 8+ it cracks apart and suffers D2+1 unavoidable damage</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="12-15" typeId="9d59-0ca8-2468-c40a" typeName="Holy Bell Toll Chart" hidden="false" id="0af0-e847-ae60-73c4">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="b613-ab95-ae0c-d979">All friendly units within 24&quot; gain +1 attack in melee until this units next activation</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="16-19" typeId="9d59-0ca8-2468-c40a" typeName="Holy Bell Toll Chart" hidden="false" id="c55f-6195-be8e-6798">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="b613-ab95-ae0c-d979">Roll a d10 for each vehicle within 15&quot; on a roll of 6+ it cracks apart and suffers D2+1 unavoidable damage</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="20-22" typeId="9d59-0ca8-2468-c40a" typeName="Holy Bell Toll Chart" hidden="false" id="2fe9-e74a-09a1-f0d7">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="b613-ab95-ae0c-d979">All enemy units within 24&quot; of the Holy Bell Cart must take a 13+ Morale Test, if failed that unit gets -1 to melee until this units next activation</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="23-25" typeId="9d59-0ca8-2468-c40a" typeName="Holy Bell Toll Chart" hidden="false" id="2b64-530f-a6ce-98a0">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="b613-ab95-ae0c-d979">Roll a d10 for each vehicle within 15&quot; on a roll of 5+ it cracks apart and suffers D2+1 unavoidable damage</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="26+" typeId="9d59-0ca8-2468-c40a" typeName="Holy Bell Toll Chart" hidden="false" id="6047-cdf6-4309-3c68">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="b613-ab95-ae0c-d979">The bell is destroyed with a massive crack, every non vehicle model within 3d5+3 inches takes a automatic strength 3 hit as their eardrums burst</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </infoGroup>
+          </infoGroups>
+          <categoryLinks>
+            <categoryLink targetId="1783-40df-349b-4bdd" id="f932-9d8b-37f2-5447" primary="true" name="Vehicle"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85e3-cab3-87d9-5391" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4f8a-12b4-02b1-2b75" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="5-20 Processors" id="3371-ff05-6a83-3b6f" hidden="false">
+          <categoryLinks>
+            <categoryLink targetId="bc8a-1751-58b3-bcce" id="7614-bc92-1041-0e39" primary="true" name="Infantry"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Processor" hidden="false" id="414f-75b5-7894-d5e9">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="5"/>
+              </costs>
+              <profiles>
+                <profile name="Processor" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="b80f-aa81-b08f-3cfe">
+                  <characteristics>
+                    <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+                    <characteristic name="M" typeId="ed74-71b7-9404-c409">6</characteristic>
+                    <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">8+</characteristic>
+                    <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">8+</characteristic>
+                    <characteristic name="Save" typeId="cd53-7d25-3999-ff79">8+</characteristic>
+                    <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">3</characteristic>
+                    <characteristic name="HP" typeId="0638-f061-dc89-fc79">1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Worshipper of the Bell" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="2a14-8d04-3b0b-b888">
+                  <characteristics>
+                    <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1">While this model is within 6&quot; of a friendly Holy Bell Cart model, it gains Grit 9+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Dutiful Knife" hidden="false" id="a3f6-62ab-1ffd-847a" type="selectionEntry" targetId="98e3-94c0-6c67-613c"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="1979-517b-b0d5-415a" includeChildSelections="false"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="47f4-3511-ab09-6f19" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="ee70-a05d-9619-a81c" id="36eb-a469-6673-ffc6" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dutiful Knife" hidden="false" id="98e3-94c0-6c67-613c" sortIndex="1">
+      <profiles>
+        <profile name="Dutiful Knife" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="abe0-17d1-7efe-9d0b">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">1</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">1</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">3</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">0</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Curate" hidden="false" id="7bc1-f4cc-2400-b5ec" sortIndex="10">
+      <costs>
+        <cost name="Points" typeId="3513-57f3-6212-3f59" value="65"/>
+      </costs>
+      <profiles>
+        <profile name="Curate" typeId="2c7e-2f96-4991-c2cf" typeName="Unit" hidden="false" id="2d40-3e01-48d5-b0f2">
+          <characteristics>
+            <characteristic name="AP" typeId="43a8-4786-0175-dcd0">4</characteristic>
+            <characteristic name="M" typeId="ed74-71b7-9404-c409">3&quot;</characteristic>
+            <characteristic name="RS" typeId="ecac-60f7-f5c6-b8d3">3+</characteristic>
+            <characteristic name="WS" typeId="d5a3-a536-ce50-2ed7">3+</characteristic>
+            <characteristic name="Save" typeId="cd53-7d25-3999-ff79">4+</characteristic>
+            <characteristic name="Tough" typeId="ee19-1466-fbf3-132b">3</characteristic>
+            <characteristic name="HP" typeId="0638-f061-dc89-fc79">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipment" id="51ea-d23c-3b99-8e8a" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Revolver" hidden="false" id="8d67-dc79-86b2-e958" type="selectionEntry" targetId="8100-96f1-5a89-8281" defaultAmount="1" sortIndex="1"/>
+            <entryLink import="true" name="Revolver Rifle" hidden="false" id="c2dc-8c40-9247-e623" type="selectionEntry" targetId="c76e-fb7c-48f1-2a4a" sortIndex="1"/>
+            <entryLink import="true" name="Ripper Sword" hidden="false" id="a0b8-f69a-ef07-3a32" type="selectionEntry" targetId="e7d0-346b-8f0c-d9be" defaultAmount="1" sortIndex="2"/>
+            <entryLink import="true" name="Heavy Ripper Sword" hidden="false" id="e6f7-a480-24ab-3b46" type="selectionEntry" targetId="6abc-bfad-8b42-6553" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="3513-57f3-6212-3f59" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b59d-28b1-cc1b-06ac" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="81ab-6c94-e34f-b440" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="bc8a-1751-58b3-bcce" id="c531-d899-58bd-483c" primary="false" name="Infantry"/>
+        <categoryLink targetId="60b7-3bbc-e392-6c6d" id="8c57-9453-fab9-2636" primary="true" name="Commander"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Holy Relics" hidden="false" id="ec1f-7857-26cb-ea7f" type="selectionEntryGroup" targetId="1702-420d-4d01-6dd0"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Revolver" hidden="false" id="8100-96f1-5a89-8281" sortIndex="2">
+      <profiles>
+        <profile name="Revolver" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="064d-9c02-d07c-1a6b">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">12&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">1</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Pistol</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Revolver Rifle" hidden="false" id="c76e-fb7c-48f1-2a4a" sortIndex="2">
+      <profiles>
+        <profile name="Revolver Rifle" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="f910-f408-295f-4999">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">24&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">1</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
+            <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
+            <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
+            <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ripper Sword" hidden="false" id="e7d0-346b-8f0c-d9be" sortIndex="1">
+      <profiles>
+        <profile name="Ripper Sword" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="a1eb-b857-09e5-fb82">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">1</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">2</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">4</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">0</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Ripper Sword" hidden="false" id="6abc-bfad-8b42-6553" sortIndex="1">
+      <profiles>
+        <profile name="Heavy Ripper Sword" typeId="1a42-313a-ac28-9662" typeName="Melee Weapons" hidden="false" id="8e10-50a6-9545-43e2">
+          <characteristics>
+            <characteristic name="Range" typeId="8f7f-52be-387a-ddbf">Melee</characteristic>
+            <characteristic name="Cost" typeId="32cf-2ec3-c904-6d84">1</characteristic>
+            <characteristic name="Atks" typeId="b258-229e-a909-9674">2</characteristic>
+            <characteristic name="Str" typeId="777b-524e-5178-d91d">6</characteristic>
+            <characteristic name="Rend" typeId="49aa-e078-d58a-eed2">-3</characteristic>
+            <characteristic name="Dmg" typeId="5f0f-1054-43f8-088e">1</characteristic>
+            <characteristic name="Keywords" typeId="de8d-b0c8-da98-d7af"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flamethrower" hidden="false" id="1e68-9d37-64b5-e53c" sortIndex="2">
+      <profiles>
+        <profile name="Flame Spitter Cybernetic" typeId="598e-2831-d78e-a4c8" typeName="Ranged Weapons" hidden="false" id="5903-1de7-bdf2-6b59">
+          <characteristics>
+            <characteristic name="Range" typeId="f0b9-ef2b-6d06-ec2c">12&quot;</characteristic>
+            <characteristic name="Cost" typeId="f046-bdab-8918-0f81">2</characteristic>
+            <characteristic name="Atks" typeId="6fb6-ebc3-335d-512f">1D5+1</characteristic>
+            <characteristic name="Str" typeId="d965-bd05-5d27-6d68">4</characteristic>
             <characteristic name="Rend" typeId="f1e9-46c4-3f20-a1a4">-1</characteristic>
             <characteristic name="Dmg" typeId="bfe6-e18f-0ed8-fc28">1</characteristic>
             <characteristic name="Keywords" typeId="3d71-fbb0-fd92-2d83">Auto-Hit</characteristic>
@@ -398,5 +665,32 @@ This unit gains Grit 6+ until their next activation</characteristic>
       </entryLinks>
     </entryLink>
     <entryLink import="true" name="Scapegotic Knights" hidden="false" id="3b15-2646-3e10-1d5d" type="selectionEntry" targetId="284f-44e4-a1a5-6877"/>
+    <entryLink import="true" name="Holy Bell Procession" hidden="false" id="9dee-ad29-74b7-0c95" type="selectionEntry" targetId="8988-7abf-16b8-d74b"/>
+    <entryLink import="true" name="Curate" hidden="false" id="3c3f-fb31-c031-b990" type="selectionEntry" targetId="7bc1-f4cc-2400-b5ec"/>
   </entryLinks>
+  <profileTypes>
+    <profileType name="Holy Bell Toll Chart" id="9d59-0ca8-2468-c40a" hidden="false" kind="spell">
+      <characteristicTypes>
+        <characteristicType name="Effect" id="b613-ab95-ae0c-d979"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Holy Relics" id="1702-420d-4d01-6dd0" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Litanties of the Faith" hidden="false" id="5397-4619-ca43-7d97">
+          <profiles>
+            <profile name="Litanties of the Faith" typeId="6a24-9ebc-0a52-315c" typeName="Abilities" hidden="false" id="127d-29c7-1118-0f70">
+              <characteristics>
+                <characteristic name="Description" typeId="48e9-7c24-9d42-a0b1"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="aad3-7497-58b9-181e" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
